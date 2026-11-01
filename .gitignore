@@ -1,0 +1,12 @@
+# KiCad
+.history/
+*-backups/
+*.bak
+*.kicad_prl
+*.lck
+~*.lck
+
+# Temporary files
+*.tmp
+*.swp
+*~
