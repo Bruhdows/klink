@@ -1,4 +1,3 @@
-
 $fn = 48;
 
 // Tile dimensions
@@ -27,19 +26,10 @@ pcb_mount_height = 9;
 pcb_post_diameter = 8;
 pcb_hole_diameter = 2.2;
 
-// Electrical contacts
+// Contact recess is disabled until the connector is selected.
 contact_width = 18;
 contact_height = 7;
 contact_recess_depth = 0;
-
-// Preview spacing between parts
-preview_gap = 0.4;
-
-// Render options:
-// "tile" - Single base tile
-// "pair" - Two adjacent tiles
-// "test" - Two small pieces for testing magnets
-render_mode = "tile";
 
 module on_edges() {
     for (angle = [0, 90, 180, 270])
@@ -108,7 +98,6 @@ module side_cutouts() {
                         h=magnet_thickness+magnet_extra_depth+0.05
                     );
 
-        // Disabled until the electrical connector is selected
         if (contact_recess_depth > 0)
             translate([
                 -contact_width/2,
@@ -124,7 +113,6 @@ module side_cutouts() {
 }
 
 module top_cutouts() {
-    // Magnet pockets
     for (x = [-mount_spacing, mount_spacing])
         for (y = [-mount_spacing, mount_spacing])
             translate([
@@ -136,7 +124,7 @@ module top_cutouts() {
                     h=magnet_thickness+magnet_extra_depth+0.1
                 );
 
-    // Alignment sockets for modules and pillars
+    // Sockets for tracks and pillars.
     for (angle = [0, 90, 180, 270])
         rotate([0, 0, angle])
             translate([
@@ -179,34 +167,4 @@ module base_tile() {
     }
 }
 
-module magnet_test_piece() {
-    difference() {
-        translate([-25, -7, 0])
-            cube([50, 14, tile_height]);
-
-        for (x = [-side_magnet_spacing, side_magnet_spacing])
-            translate([x, -7.05, tile_height/2])
-                rotate([-90, 0, 0])
-                    cylinder(
-                        d=magnet_diameter+magnet_clearance,
-                        h=magnet_thickness+magnet_extra_depth+0.05
-                    );
-    }
-}
-
-if (render_mode == "pair") {
-    base_tile();
-
-    translate([tile_size+preview_gap, 0, 0])
-        base_tile();
-}
-else if (render_mode == "test") {
-    magnet_test_piece();
-
-    translate([0, -14-preview_gap, 0])
-        rotate([0, 0, 180])
-            magnet_test_piece();
-}
-else {
-    base_tile();
-}
+base_tile();
