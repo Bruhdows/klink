@@ -1,8 +1,8 @@
 
 $fn = 64;
+include <../common/tile_dimensions.scad>
 
 // Tile
-tile_size = 80;
 tile_thickness = 5.5;
 
 // Track
@@ -15,7 +15,7 @@ magnet_diameter = 6;
 magnet_thickness = 3;
 magnet_clearance = 0.25;
 magnet_extra_depth = 0.2;
-magnet_spacing = 24;
+magnet_spacing = mount_spacing;
 
 module track_body() {
     union() {

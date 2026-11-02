@@ -1,9 +1,8 @@
 
 $fn = 48;
+include <../common/tile_dimensions.scad>
 
 // Tile dimensions
-tile_size = 80;
-tile_height = 20;
 wall_thickness = 3;
 roof_thickness = 4.5;
 
@@ -16,23 +15,18 @@ side_magnet_spacing = 18;
 side_magnet_support_depth = 5.5;
 
 // Top mounting
-mount_spacing = 24;
 locator_spacing = 29;
 locator_width = 4.5;
 locator_depth = 2.8;
 locator_clearance = 0.3;
 
 // PCB mounting
-pcb_mount_spacing = 30;
-pcb_mount_height = 9;
 pcb_post_diameter = 8;
 pcb_hole_diameter = 2.2;
 
+// Preliminary PCB preview. No routed board currently implements this outline.
 // PCB preview
 show_pcb_preview = true;
-pcb_preview_size = 68;
-pcb_preview_thickness = 1.6;
-pcb_preview_hole_diameter = 2.5;
 pcb_tongue_width = 17;
 pcb_tongue_extension = 5;
 
@@ -43,6 +37,7 @@ landing_pcb_thickness = 1.6;
 landing_pcb_front = 0.35; // Recessed from outer wall
 landing_guide_clearance = 0.2;
 
+// Legacy 04F spring/pad pockets. Not approved for the SAMZO 23E candidate pair.
 // Electrical edge interface
 spring_window_width = 18;
 spring_window_height = 7;

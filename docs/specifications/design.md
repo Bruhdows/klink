@@ -1,73 +1,42 @@
-# Klink design
+# Design
 
-Klink is a modular building system with magnetic tiles and programmable components. The first application is a marble run with a motorized lift, sensors and three-way splitters.
+Klink starts with a marble run, but the tiles should also work for other programmable machines. Keep one smart-tile design for everything.
 
-## Tiles
+## First kit
 
-The base tiles are 80 x 80 x 20 mm and will be printed in PETG. Each tile contains a small PCB, with magnets and electrical contacts along its edges.
+- About 16-20 tiles for a Maker Faire demo.
+- Automatic neighbor discovery and a Hub that works out the layout.
+- Stable tile IDs, even when coordinates change.
+- Identifiable modules, event handling and computer control.
+- Programs that keep running after the computer is disconnected.
+- Two addressable RGB LEDs on every tile.
 
-The current connector concept uses spring contacts against PCB pads. Magnets hold neighboring tiles together, while recessed alignment features keep the contacts in place. The exact connector geometry still needs testing.
+Communication should support at least 64 tiles. Power depends on the layout and loads; 64 tiles doesn't mean unlimited motors.
 
-Tiles will also support vertical construction through pillars that carry power and data between levels.
+## Mechanical parts
 
-The initial target is 16 intelligent tiles.
+Tiles are 80 × 80 × 20 mm. Each gets twelve 6 × 3 mm magnets: eight on the sides and four on top. Use clear PETG for bases and transparent blue for tracks. Yellow accents and small white diffusers are optional. Test light transmission first; even perimeter lighting isn't required.
 
-## Electronics
+Bases keep the same cardinal orientation. Tracks can rotate where they fit. Electronic modules need keying so they can't connect backwards. PCB dimensions are still provisional; see [interfaces](interfaces.md).
 
-The current microcontroller candidate is the CH32X035G8U6. It has four UART peripherals, potentially allowing a separate serial connection on each side of the tile. Pin assignments still need verification.
-
-Each tile communicates with its neighbors and forwards messages through the network. A central Hub connects the board to a computer over USB-C.
-
-The planned power system uses a protected 5V supply with local 3.3V regulation. Higher-current modules, such as the lift, will require a separate power connection.
-
-Power distribution, hot-swapping and connections that create network loops still need to be worked out.
+The Hub takes two grid cells, about 160 × 80 mm and 60-80 mm tall, with six tile connections.
 
 ## Modules
 
-Modules attach to the top of a tile. The proposed interface uses I2C for communication and a method for identifying the attached module.
+Passive parts: straight and curved tracks, ramps, pillars and gates. Passive pillars don't carry power unless an interconnect is added and tested.
 
-Initial modules include marble tracks, ramps, pillars, a motorized lift, a three-way splitter, marble sensors, buttons and RGB lights.
+Electronic modules: buttons, lights, marble sensors, gates, splitters and an elevator. Use the tile's GPIO/PWM and I²C when possible. Simple modules don't need another MCU.
 
-The module interface should also support custom hardware.
+Test sensors with real marbles and ambient light, and check their output voltage.
+
+MG90S servos and a 12V N20 geared motor are candidates. Measure startup/stall current and mechanical load before choosing supplies. The elevator needs its own converter, driver, end stops and stall protection. That driver belongs on the module, not every tile.
 
 ## Software
 
-Each tile has a unique ID and reports its neighbors to the Hub. The Hub uses this information to reconstruct the board layout and expose connected modules to the desktop application.
+Tile firmware handles links, module ID, I/O, power switching, faults and RGB. Hub firmware handles discovery, routing limits, USB, storage and standalone programs.
 
-Modules can be addressed by their position or ID. Events and commands travel through the tile network.
+The plan is a TypeScript SDK and Klink Studio in the browser. Use WebHID for Studio and CDC for SDK/development access. The SDK should work without depending on one transport.
 
-Example API:
+Standalone programs should use a small event-driven format with checked actions, conditions, timers and variables. No full JavaScript runtime is needed. Storage needs safe, atomic updates and recovery. SPI flash is a candidate; capacity is undecided.
 
-```js
-const button = board.at(0, 1).module();
-const light = board.at(2, 1).module();
-
-button.on("pressed", () => {
-    light.setColor("#ff0000");
-});
-```
-
-Marble run example:
-
-```js
-const lift = board.at(3, 0).module();
-const splitter = board.at(1, 2).module();
-
-await lift.start();
-
-splitter.on("marble_detected", async () => {
-    await splitter.setRoute("left");
-});
-```
-
-These examples describe the intended API. Neither is implemented yet.
-
-The firmware will need neighbor discovery, message routing and reconnection handling. The first version may require a fixed tile orientation to simplify layout detection.
-
-## Current status
-
-The mechanical design is in the early prototype stage. The tile dimensions and magnet arrangement are provisional.
-
-The CH32X035 is the leading MCU candidate, but no PCB schematic has been finalized. Spring contacts, module connections and power protection still need physical testing.
-
-The next prototype will focus on magnetic alignment, electrical contacts and communication between three microcontrollers.
+These are requirements, not finished software. Current hardware details are in [Rev A](rev-a.md).

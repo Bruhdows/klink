@@ -1,45 +1,25 @@
-# Prototype plan
+# Next steps
 
-## Magnetic connections
+## Samples and fit
 
-Print two small connector test pieces in PETG using 6 x 3 mm magnets.
+The committed straight-track STL is older than the SCAD. Export from the current source before printing.
 
-Test magnet fit, polarity, alignment and resistance to sideways movement. The connection should hold the pieces together without leaving a noticeable gap.
+Order magnets and SAMZO 03E315320 samples. Confirm the missing dimensions and working compression, then print the [connector fixture](interfaces.md#fit-tests). Check alignment, continuity, magnet polarity, holding force, sideways slip and repeated mating. Try lifting the center out with four neighbors held down.
 
-Once the connection works, print two full 80 x 80 x 20 mm tiles and check the fit.
+Test the top interface with offset, tilt and reversed insertion. Nothing should let 20V touch a signal pad. Keep these tests unpowered.
 
-## Electrical connectors
+## Power and communication
 
-Select a spring contact and design a small PCB with matching contact pads.
+Finish the Hub's branch protection and total cutoff. Check faults through grid loops, not just a chain. Test the buck on a current-limited supply, then both module outputs with electronic loads. Measure ripple, startup, temperature and short-circuit recovery before adding motors.
 
-Test continuity, alignment tolerance and repeated connections. The contacts must work reliably without requiring precise manual positioning.
+Use three CH32X035 boards for discovery and forwarding. Then run four UARTs, RGB and hardware I²C together. Test brownout, missing neighbors, duplicate packets and stuck-bus recovery. Check the actual MCU silicon lot supports I²C.
 
-Initial tests will use a current-limited 5V supply. Power protection and live hot-swapping will be tested separately.
+## First boards
 
-## Tile communication
+Low-voltage placement can continue. Connector fit and power protection need to be settled before high-voltage placement and routing.
 
-Use three CH32X035 development boards to test the proposed network.
+After the [release checks](validation.md#before-ordering), order 3-5 trial boards. Test those before making the rest. Another revision might still be needed.
 
-Start with UART communication between two controllers, then add message forwarding through a third.
+Then finish the Hub and start with button/light modules, followed by sensors, servos and the elevator. Measure motor and servo stall loads first.
 
-The firmware needs unique tile IDs, directional neighbor detection and automatic rediscovery when a connection changes.
-
-The first functional test will use a button connected to one controller and an LED connected to another. The Hub should detect the connected layout and forward the button event to the correct tile.
-
-## First PCB
-
-Design a smart-tile PCB after the connector and communication tests.
-
-The board will contain the CH32X035, four edge interfaces, power regulation and protection, a top module connector and programming contacts.
-
-A small prototype batch will be used to test the complete system before producing 16 boards.
-
-## Marble run
-
-Develop the tracks, pillars, lift and splitter alongside the electronics.
-
-The first mechanical test will use a simple track with an elevated section. The lift will then be added to return marbles to the upper level.
-
-The splitter will use a servo to select between three outputs, with a sensor to detect incoming marbles.
-
-The first complete prototype should run a continuous marble loop with software-controlled routing and automatic tile discovery.
+The demo should run a marble loop, react to events, identify tiles with RGB and keep running without a laptop. Rearrange tiles only with power disconnected.
