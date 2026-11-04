@@ -39,7 +39,11 @@ For five contacts, the drawing gives:
 
 The missing bits matter: is 5A per contact with all contacts loaded? At what temperature rise and compression? Force, working travel, plating thickness and test conditions aren't given. The 500V entry has no test duration, so it doesn't prove transient survival.
 
+The distribution target now requires at least 5A continuous capability for every power and return path at the qualified temperature, including redistribution. The first V1 resistance target is no more than 80mΩ for a complete positive/return link including both copper paths and carrier joints. The listed 30mΩ contact figure has no established hot/compression/life conditions and does not qualify that target. A twenty-tile 3W chain across the lower input range needs closer to 40mΩ; that may require another contact arrangement. Short-pulse acceptance must come from waveform testing and manufacturer evidence, not the 5A continuous entry. Keep the production footprint unreleased.
+
 The springs compress perpendicular to the board. Horizontal tile mating needs vertical carriers: two spring boards and two flat-pad boards per tile are the current idea. The body fits between the ±18mm magnet centers on paper. Retention, solder access and wall clearance need samples. Both faces can't sit behind flush walls and still touch. The guard needs an upward escape path so a surrounded tile can lift out.
+
+Four carriers per tile would add 80 small PCBs, their attachment joints and alignment work for twenty tiles. Panelizing them reduces fabrication overhead but not assembly operations. Keep these as contact-test coupons until stroke and mating finish are known. Flat mating boards need only copper and finish, not purchased contacts. A side-entry connector mounted directly on the main board could remove carriers, but 03E315320 is a normal-to-board spring and cannot be rotated electrically by changing its footprint. Do not add board-to-board headers or an interposer to solve that orientation. Quote a directly mounted side-entry contact and the existing carrier arrangement after sample tests, while keeping the same universal tile and five edge signals.
 
 There's no manufacturer STEP or verified imported footprint. `Klink:SAMZO_03E315320_TestOnly` uses a provisional 1.4mm land width and test-channel numbers. Don't assign it to J3-J6 yet.
 

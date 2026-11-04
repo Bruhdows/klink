@@ -622,4 +622,1114 @@
 					(effects
 						(font
 							(size 1 1)))))))
+
+	(symbol "INA301A1DGK"
+		(pin_names
+			(offset 1.016))
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "INA301A1DGK"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina301.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(symbol "INA301A1DGK_0_1"
+			(rectangle
+				(start -10.16 10.16)
+				(end 10.16 -10.16)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background))))
+		(symbol "INA301A1DGK_1_1"
+			(pin power_in line
+				(at 0 12.7 270)
+				(length 2.54)
+				(name "VS"
+					(effects
+						(font
+							(size 1 1))))
+				(number "1"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin output line
+				(at 12.7 5.08 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1 1))))
+				(number "2"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin input line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "LIMIT"
+					(effects
+						(font
+							(size 1 1))))
+				(number "3"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin power_in line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1 1))))
+				(number "4"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin input line
+				(at -12.7 -5.08 0)
+				(length 2.54)
+				(name "RESET"
+					(effects
+						(font
+							(size 1 1))))
+				(number "5"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin open_collector line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{ALERT}"
+					(effects
+						(font
+							(size 1 1))))
+				(number "6"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin input line
+				(at -12.7 0 0)
+				(length 2.54)
+				(name "IN-"
+					(effects
+						(font
+							(size 1 1))))
+				(number "7"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin input line
+				(at -12.7 5.08 0)
+				(length 2.54)
+				(name "IN+"
+					(effects
+						(font
+							(size 1 1))))
+				(number "8"
+					(effects
+						(font
+							(size 1 1)))))))
+
+	(symbol "TPS70933DBV"
+		(pin_names
+			(offset 1.016))
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "TPS70933DBV"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps709.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(symbol "TPS70933DBV_0_1"
+			(rectangle
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background))))
+		(symbol "TPS70933DBV_1_1"
+			(pin power_in line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "IN"
+					(effects
+						(font
+							(size 1 1))))
+				(number "1"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin power_in line
+				(at 0 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1 1))))
+				(number "2"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1 1))))
+				(number "3"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin no_connect line
+				(at 0 0 0)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1 1))))
+				(number "4"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin power_out line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1 1))))
+				(number "5"
+					(effects
+						(font
+							(size 1 1)))))))
+
+	(symbol "TPS26630RGE"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -8.89 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "TPS26630RGE"
+			(at 7.62 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias"
+			(at 0 -31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2663.pdf"
+			(at -10.16 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Description" "60V, 6A Power Limiting, Surge Protection Industrial eFuse, Adjustable Overvoltage cut-off, Active Current Limiting, VQFN-24"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "ki_keywords" "efuse protection switch"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "ki_fp_filters" "Texas_RGE0024H*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(symbol "TPS26630RGE_0_1"
+			(rectangle
+				(start -10.16 15.24)
+				(end 10.16 -17.78)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background))))
+		(symbol "TPS26630RGE_1_1"
+			(pin power_in line
+				(at -12.7 12.7 0)
+				(length 2.54)
+				(name "IN"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin passive line
+				(at -12.7 12.7 0)
+				(length 2.54)
+				(hide yes)
+				(name "IN"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin output line
+				(at -12.7 7.62 0)
+				(length 2.54)
+				(name "B_GATE"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin output line
+				(at -12.7 2.54 0)
+				(length 2.54)
+				(name "DRV"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin power_in line
+				(at 0 17.78 270)
+				(length 2.54)
+				(name "IN_SYS"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "UVLO"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -12.7 -7.62 0)
+				(length 2.54)
+				(name "OVP"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin power_in line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin passive line
+				(at 12.7 -15.24 180)
+				(length 2.54)
+				(name "dVdT"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin passive line
+				(at 12.7 -12.7 180)
+				(length 2.54)
+				(name "ILIM"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -12.7 -15.24 0)
+				(length 2.54)
+				(name "MODE"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "~{SHDN}"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin output line
+				(at 12.7 -5.08 180)
+				(length 2.54)
+				(name "IMON"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin open_collector line
+				(at 12.7 0 180)
+				(length 2.54)
+				(name "~{FLT}"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "PGTH"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin open_collector line
+				(at 12.7 -2.54 180)
+				(length 2.54)
+				(name "PGOOD"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin power_out line
+				(at 12.7 12.7 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin passive line
+				(at 12.7 12.7 180)
+				(length 2.54)
+				(hide yes)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin no_connect line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin no_connect line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin no_connect line
+				(at -10.16 0 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin no_connect line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin no_connect line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin no_connect line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin passive line
+				(at 0 -20.32 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27))))))
+		(embedded_fonts no))
+	(symbol "SN74LVC74APW"
+		(property "Reference" "U"
+			(at -7.62 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "SN74LVC74APW"
+			(at -7.62 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc74a.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Description" "Dual D Flip-flop, Set & Reset"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "ki_keywords" "TTL DFF"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "ki_fp_filters" "TSSOP*14*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(embedded_fonts no)
+		(pin_names
+			(offset 1.016))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(symbol "SN74LVC74APW_1_0"
+			(pin input line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "~{R}"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input clock
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "~{S}"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin output line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "Q"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin output line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name "~{Q}"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27))))))
+		(symbol "SN74LVC74APW_1_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background))))
+		(symbol "SN74LVC74APW_2_0"
+			(pin output line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name "~{Q}"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin output line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "Q"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "~{S}"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input clock
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "~{R}"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27))))))
+		(symbol "SN74LVC74APW_2_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background))))
+		(symbol "SN74LVC74APW_3_0"
+			(pin power_in line
+				(at 0 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin power_in line
+				(at 0 10.16 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27))))))
+		(symbol "SN74LVC74APW_3_1"
+			(rectangle
+				(start -5.08 7.62)
+				(end 5.08 -7.62)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background))))
+		(embedded_fonts no))
+	(symbol "SN74HCS11PW"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -5.08 10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Value" "SN74HCS11PW"
+			(at 7.62 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hcs11.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Description" "Triple 3-input AND with Schmitt inputs, TSSOP-14"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "ki_keywords" "Single Gate AND triple LVC CMOS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "ki_fp_filters" "TSSOP*14*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(embedded_fonts no)
+		(symbol "SN74HCS11PW_1_1"
+			(arc
+				(start 0 6.35)
+				(mid 6.3224 0)
+				(end 0 -6.35)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background)))
+			(polyline
+				(pts
+					(xy 0 -6.35)
+					(xy -7.62 -6.35)
+					(xy -7.62 6.35)
+					(xy 0 6.35))
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background)))
+			(pin input line
+				(at -15.24 0 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -15.24 -5.08 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -15.24 5.08 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin output line
+				(at 12.7 0 180)
+				(length 6.35)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27))))))
+		(symbol "SN74HCS11PW_2_1"
+			(arc
+				(start 0 6.35)
+				(mid 6.3224 0)
+				(end 0 -6.35)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background)))
+			(polyline
+				(pts
+					(xy 0 -6.35)
+					(xy -7.62 -6.35)
+					(xy -7.62 6.35)
+					(xy 0 6.35))
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background)))
+			(pin input line
+				(at -15.24 0 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -15.24 -5.08 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -15.24 5.08 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin output line
+				(at 12.7 0 180)
+				(length 6.35)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27))))))
+		(symbol "SN74HCS11PW_3_1"
+			(arc
+				(start 0 6.35)
+				(mid 6.3224 0)
+				(end 0 -6.35)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background)))
+			(polyline
+				(pts
+					(xy 0 -6.35)
+					(xy -7.62 -6.35)
+					(xy -7.62 6.35)
+					(xy 0 6.35))
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background)))
+			(pin input line
+				(at -15.24 0 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -15.24 -5.08 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin input line
+				(at -15.24 5.08 0)
+				(length 7.62)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin output line
+				(at 12.7 0 180)
+				(length 6.35)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27))))))
+		(symbol "SN74HCS11PW_4_1"
+			(rectangle
+				(start -2.54 5.08)
+				(end 2.54 -5.08)
+				(stroke
+					(width 0.254)
+					(type default))
+				(fill
+					(type background)))
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1 1))))
+				(number "14"
+					(effects
+						(font
+							(size 1 1)))))
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1 1))))
+				(number "7"
+					(effects
+						(font
+							(size 1 1)))))))
 )

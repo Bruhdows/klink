@@ -1,0 +1,2361 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "bf2ac168-7452-479f-a541-71cb81365808")
+	(paper "A3")
+	(title_block
+		(title "Klink Hub - distribution"))
+	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0.762)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no)))
+	(embedded_fonts no)
+	(wire
+		(pts
+			(xy 35.56 40.64)
+			(xy 30.48 40.64))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "35426953-734f-46d3-8a72-f116f92d0147"))
+	(hierarchical_label "HUB_20V"
+		(shape input)
+		(at 30.48 40.64 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "f9d25bbc-7a97-43a2-b2af-217893201e2b"))
+	(wire
+		(pts
+			(xy 35.56 50.8)
+			(xy 30.48 50.8))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5773b1e0-39b9-4f29-b0ce-4247d4455339"))
+	(hierarchical_label "CONTROL_3V3"
+		(shape input)
+		(at 30.48 50.8 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "a48ec38b-6c61-4f3a-a2b4-f1a1d8acaedf"))
+	(wire
+		(pts
+			(xy 35.56 60.96)
+			(xy 30.48 60.96))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "718d26f3-9138-494d-828c-42de7f4f10e8"))
+	(label "CONTROL_GOOD"
+		(at 30.48 60.96 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "7ae97d07-fbde-42e5-aa2d-765aeb2b22bd"))
+	(wire
+		(pts
+			(xy 35.56 71.12)
+			(xy 30.48 71.12))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c595ca9e-cb11-42eb-bfe1-9bca41f42c37"))
+	(hierarchical_label "INPUT_ENABLE"
+		(shape input)
+		(at 30.48 71.12 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "d509d3ff-800f-4a96-b9e0-5658eb90735d"))
+	(wire
+		(pts
+			(xy 111.76 40.64)
+			(xy 116.84 40.64))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4f4a8c67-17fa-43d4-b07f-648613f2e2f5"))
+	(label "PORT1_20V"
+		(at 116.84 40.64 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "de4bac93-29c6-479d-a98f-a7f00b62a966"))
+	(wire
+		(pts
+			(xy 111.76 50.8)
+			(xy 116.84 50.8))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "eea5223b-c525-458a-8fe0-1a634e41e898"))
+	(label "PORT1_MON"
+		(at 116.84 50.8 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "d239b20c-da5b-4641-84f2-4ac4b515f0a8"))
+	(wire
+		(pts
+			(xy 111.76 60.96)
+			(xy 116.84 60.96))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "82e4773f-9b7d-4b85-8de3-53f5a2b5cb6d"))
+	(label "PORT1_OC_N"
+		(at 116.84 60.96 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "c681619b-8741-4f86-b450-379faf64d435"))
+	(wire
+		(pts
+			(xy 111.76 71.12)
+			(xy 116.84 71.12))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e56884e3-b503-4c7a-9f64-3db9f653e728"))
+	(label "PORT1_HEALTH_N"
+		(at 116.84 71.12 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "6016a461-aa26-4b5e-96ad-63a79037437f"))
+	(sheet
+		(at 35.56 30.48)
+		(size 76.2 50.8)
+		(stroke
+			(width 0.1524)
+			(type default))
+		(fill
+			(color 0 0 0 0))
+		(uuid "775baaef-0199-4782-ad12-44f2dd685406")
+		(property "Sheetname" "Port 1"
+			(at 35.56 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "port-power.kicad_sch"
+			(at 35.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(pin "HUB_20V" input
+			(at 35.56 40.64 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "01f7bd4f-68e5-4b65-a82d-49dbff507429"))
+		(pin "CONTROL_3V3" input
+			(at 35.56 50.8 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "39178b14-e7ef-48c1-a80b-22125dc3ee12"))
+		(pin "CONTROL_GOOD" input
+			(at 35.56 60.96 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "24bc1952-d8bb-4bb0-9924-ac81e371f5b9"))
+		(pin "INPUT_ENABLE" input
+			(at 35.56 71.12 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "20815251-7b1b-4af5-85a8-4f91064a0a31"))
+		(pin "PORT_20V" output
+			(at 111.76 40.64 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "5c879ae6-fd73-4a57-9e90-aaddab376ff8"))
+		(pin "MON" output
+			(at 111.76 50.8 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "4cf7a0ea-0928-4e28-90ee-f5da558e9c84"))
+		(pin "OC_N" output
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "fe61f189-7a1d-476d-8782-7422801abbe5"))
+		(pin "HEALTH_N" output
+			(at 111.76 71.12 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "8164e156-db35-4a32-8c73-1237c0e62dc2"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(page "4")))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54000000000002 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "6056a1d6-064d-4474-b194-56a1795d9408")
+		(property "Reference" "TP10"
+			(at 129.54 47.498 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT1_20V"
+			(at 129.54 45.72 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 134.62 40.64 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "166593f7-b1ac-4266-a9df-aa17f52002ab"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP10")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 40.64)
+			(xy 129.54 43.18))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e31d0e5f-c13b-4a7d-97d2-e4b7312491f8"))
+	(label "PORT1_20V"
+		(at 129.54 43.18 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "a141686c-c85a-4ce5-994a-36ef88a3c001"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54000000000002 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "e717bb1f-1178-4d60-bf45-aee91e9c409f")
+		(property "Reference" "TP20"
+			(at 129.54 67.818 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT1_MON"
+			(at 129.54 66.04 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 134.62 60.96 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "48768403-4d60-4226-8285-094c7588cce3"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP20")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 60.96)
+			(xy 129.54 63.5))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9d7765fa-b198-4b00-a211-f39d400b3fdd"))
+	(label "PORT1_MON"
+		(at 129.54 63.5 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "94b79b1a-0955-4c7c-9825-6548f555cc8d"))
+	(wire
+		(pts
+			(xy 170.18 40.64)
+			(xy 165.1 40.64))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "022cf614-50cb-4963-aec6-82f000b2266f"))
+	(label "HUB_20V"
+		(at 165.1 40.64 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "63452ce0-0cea-4e47-958d-7cc7e9098162"))
+	(wire
+		(pts
+			(xy 170.18 50.8)
+			(xy 165.1 50.8))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1f6a0571-5e0b-41c4-b582-a7ba45c56b8b"))
+	(label "CONTROL_3V3"
+		(at 165.1 50.8 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "c9f12c72-bfb7-4aec-bf05-dad27a82fa55"))
+	(wire
+		(pts
+			(xy 170.18 60.96)
+			(xy 165.1 60.96))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7934a661-1f3a-41e4-8384-eec4fd5841b3"))
+	(label "CONTROL_GOOD"
+		(at 165.1 60.96 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "056af288-7774-49e7-94fe-6cb1f8d6e413"))
+	(wire
+		(pts
+			(xy 170.18 71.12)
+			(xy 165.1 71.12))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0c5d39ae-b29b-453d-a098-904219bdabf7"))
+	(label "INPUT_ENABLE"
+		(at 165.1 71.12 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "6a751107-37b4-4fac-807f-ebd842bfba3b"))
+	(wire
+		(pts
+			(xy 246.38 40.64)
+			(xy 251.46 40.64))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b6e7935c-de62-4166-a064-451e8d2dac25"))
+	(label "PORT2_20V"
+		(at 251.46 40.64 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "f93079bf-c4f2-4af8-ac7a-30f5608befe9"))
+	(wire
+		(pts
+			(xy 246.38 50.8)
+			(xy 251.46 50.8))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "16b8fcd6-0dff-4817-99ed-f61570b4f10d"))
+	(label "PORT2_MON"
+		(at 251.46 50.8 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "5afd52b5-d4e2-4661-9392-a74f9922470d"))
+	(wire
+		(pts
+			(xy 246.38 60.96)
+			(xy 251.46 60.96))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "92981b9d-f511-4493-bcf3-428420d567ac"))
+	(label "PORT2_OC_N"
+		(at 251.46 60.96 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "6aa80f7d-b3a7-4a0c-91c4-035e02456d5a"))
+	(wire
+		(pts
+			(xy 246.38 71.12)
+			(xy 251.46 71.12))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7d2c5def-c5df-4a8c-8f2d-99374524830b"))
+	(label "PORT2_HEALTH_N"
+		(at 251.46 71.12 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "cf256eb3-239f-4818-8c92-f49ecc15c367"))
+	(sheet
+		(at 170.18 30.48)
+		(size 76.2 50.8)
+		(stroke
+			(width 0.1524)
+			(type default))
+		(fill
+			(color 0 0 0 0))
+		(uuid "0b3307cc-fd68-4e09-82b7-fdb3ed0277f5")
+		(property "Sheetname" "Port 2"
+			(at 170.18 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "port-power.kicad_sch"
+			(at 170.18 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(pin "HUB_20V" input
+			(at 170.18 40.64 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "c4236ae7-dffc-4108-8b2a-b37b5e05eed8"))
+		(pin "CONTROL_3V3" input
+			(at 170.18 50.8 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "1945803f-586c-47f1-ac32-eb3fce3ba707"))
+		(pin "CONTROL_GOOD" input
+			(at 170.18 60.96 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "7f6c0c13-dd1e-4063-8f17-0ca85de1741b"))
+		(pin "INPUT_ENABLE" input
+			(at 170.18 71.12 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "60c86cb8-5954-415f-a6e9-2b56e09ca50a"))
+		(pin "PORT_20V" output
+			(at 246.38 40.64 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "8005fbbd-04c8-455b-8a88-f9588d28d384"))
+		(pin "MON" output
+			(at 246.38 50.8 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "8b8bccaa-621b-4c91-9128-1864e701723e"))
+		(pin "OC_N" output
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "bcd79f8d-a511-46b0-bf9a-775a6074751b"))
+		(pin "HEALTH_N" output
+			(at 246.38 71.12 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "634576e4-02be-402c-987f-b0ea1afe5b44"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(page "5")))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 264.16 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "ec07ef20-71a1-446f-9f1f-de21e16f2135")
+		(property "Reference" "TP11"
+			(at 264.16 47.498 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT2_20V"
+			(at 264.16 45.72 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 269.24 40.64 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "5c1ccd04-9897-446c-b98b-cd55472c6dc2"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP11")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 264.16 40.64)
+			(xy 264.16 43.18))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "51343876-dd08-4171-84c5-914ad36c7416"))
+	(label "PORT2_20V"
+		(at 264.16 43.18 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "f95a0f98-44a9-4d4d-94cd-dfaf1d94f69d"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 264.16 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "b934d3e5-ed71-4541-b5d9-bb6351ba6490")
+		(property "Reference" "TP21"
+			(at 264.16 67.818 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT2_MON"
+			(at 264.16 66.04 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 269.24 60.96 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "4848a1ca-e0b8-4c02-b1a2-9f5aa8390ee7"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP21")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 264.16 60.96)
+			(xy 264.16 63.5))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4f701f4a-77cc-499a-b5cd-cb83c0ab9aa8"))
+	(label "PORT2_MON"
+		(at 264.16 63.5 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "58e1dbee-059b-45df-bfec-3d7b7dcd7cd1"))
+	(wire
+		(pts
+			(xy 35.56 121.92)
+			(xy 30.48 121.92))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d4bb028c-04c2-4a66-a4ab-86818762ad86"))
+	(label "HUB_20V"
+		(at 30.48 121.92 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "d274a3ae-6855-4f25-9205-3aa7c33e9e12"))
+	(wire
+		(pts
+			(xy 35.56 132.08)
+			(xy 30.48 132.08))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f51da636-ddd3-4779-8ec7-4b14079d2762"))
+	(label "CONTROL_3V3"
+		(at 30.48 132.08 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "e9f28fa3-7e29-458d-ae2b-0d21b102b0f1"))
+	(wire
+		(pts
+			(xy 35.56 142.24)
+			(xy 30.48 142.24))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "41702443-f2c6-4653-9411-90c1657ad7b1"))
+	(label "CONTROL_GOOD"
+		(at 30.48 142.24 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "717695c8-705c-4f34-8528-836ab102b0a6"))
+	(wire
+		(pts
+			(xy 35.56 152.4)
+			(xy 30.48 152.4))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "178a6f20-9440-42cf-b023-605d4c88b705"))
+	(label "INPUT_ENABLE"
+		(at 30.48 152.4 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "08078ad9-bafe-4b35-830c-948dab2ac008"))
+	(wire
+		(pts
+			(xy 111.76 121.92)
+			(xy 116.84 121.92))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "049835d7-739a-4bb8-9ce5-b35207031091"))
+	(label "PORT3_20V"
+		(at 116.84 121.92 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "226978c9-4e8a-434f-b295-0059016c2126"))
+	(wire
+		(pts
+			(xy 111.76 132.08)
+			(xy 116.84 132.08))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2985b48d-05fa-4474-a874-8e4eb3ca5d84"))
+	(label "PORT3_MON"
+		(at 116.84 132.08 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "f81203c2-29ad-41db-9bd6-f4774d77e82e"))
+	(wire
+		(pts
+			(xy 111.76 142.24)
+			(xy 116.84 142.24))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d351ac92-baf5-4246-b723-52b8252f156e"))
+	(label "PORT3_OC_N"
+		(at 116.84 142.24 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "80874e0a-6ee6-4b1c-8872-79a0840fb265"))
+	(wire
+		(pts
+			(xy 111.76 152.4)
+			(xy 116.84 152.4))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8246aea1-3f5d-4e91-a61f-c8e3c528838f"))
+	(label "PORT3_HEALTH_N"
+		(at 116.84 152.4 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "6e000234-7e75-487e-8317-1ee3ce403527"))
+	(sheet
+		(at 35.56 111.76)
+		(size 76.2 50.8)
+		(stroke
+			(width 0.1524)
+			(type default))
+		(fill
+			(color 0 0 0 0))
+		(uuid "b558f9df-63e4-4cd1-997e-d69ee4746ec5")
+		(property "Sheetname" "Port 3"
+			(at 35.56 110.49000000000001 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "port-power.kicad_sch"
+			(at 35.56 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(pin "HUB_20V" input
+			(at 35.56 121.92 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "63436d58-743b-4178-a553-c9c138b4c1c6"))
+		(pin "CONTROL_3V3" input
+			(at 35.56 132.08 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "428d8c20-b722-41f3-ad13-cc4e8a085b4e"))
+		(pin "CONTROL_GOOD" input
+			(at 35.56 142.24 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "ec5755f4-4f68-4d40-9c47-f11c82db3ffc"))
+		(pin "INPUT_ENABLE" input
+			(at 35.56 152.4 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "33d03fa6-0969-4d88-a30e-e2f3a8ef1889"))
+		(pin "PORT_20V" output
+			(at 111.76 121.92 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "eda598e1-6a10-4c63-a3de-a2a2d64405dd"))
+		(pin "MON" output
+			(at 111.76 132.08 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "28ea2e5f-73ab-4902-94af-f0f252df2885"))
+		(pin "OC_N" output
+			(at 111.76 142.24 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "d091140b-ba7f-4140-86c8-6343b771e82d"))
+		(pin "HEALTH_N" output
+			(at 111.76 152.4 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "e3c498a9-0ee3-4246-a868-cb9ae76910de"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(page "6")))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54000000000002 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "06520a83-b685-450c-a20d-649dd8777544")
+		(property "Reference" "TP12"
+			(at 129.54 128.778 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT3_20V"
+			(at 129.54 127.0 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 134.62 121.92 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "88e7b60b-db5f-4d06-b57a-bc51a0e949b0"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP12")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 121.92)
+			(xy 129.54 124.46))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5243e215-9921-4072-90f0-45866099e164"))
+	(label "PORT3_20V"
+		(at 129.54 124.46 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "ce4516b2-3fab-4f55-ab41-fe2a34a7915c"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54000000000002 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "2c43750b-7325-4b9a-948c-a734121a44ef")
+		(property "Reference" "TP22"
+			(at 129.54 149.098 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT3_MON"
+			(at 129.54 147.32 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 134.62 142.24 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "299f455d-c0a8-4658-a91a-ba6cb6a947bc"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP22")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 142.24)
+			(xy 129.54 144.78))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "076904e9-5c6a-4b5f-b12f-cd73bf8648a3"))
+	(label "PORT3_MON"
+		(at 129.54 144.78 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "99b41f7e-f72d-490e-bc61-647ed3d9b442"))
+	(wire
+		(pts
+			(xy 170.18 121.92)
+			(xy 165.1 121.92))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "63728f39-bcce-479c-ae25-00632628bb5b"))
+	(label "HUB_20V"
+		(at 165.1 121.92 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "a9f1babc-1839-4c82-9ef6-93c2f4e5ff7d"))
+	(wire
+		(pts
+			(xy 170.18 132.08)
+			(xy 165.1 132.08))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d9c9c301-12bc-4942-9878-1a280d44a1ae"))
+	(label "CONTROL_3V3"
+		(at 165.1 132.08 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "ba4ac33c-6c34-48eb-b136-09c34eaff6c1"))
+	(wire
+		(pts
+			(xy 170.18 142.24)
+			(xy 165.1 142.24))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0766016a-d407-49dc-a982-b06a655444a7"))
+	(label "CONTROL_GOOD"
+		(at 165.1 142.24 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "a15503b6-5b07-43a9-b2d2-0529c7e6e50c"))
+	(wire
+		(pts
+			(xy 170.18 152.4)
+			(xy 165.1 152.4))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5dc7a9c8-5271-4fb6-9ef1-5b314978ccd0"))
+	(label "INPUT_ENABLE"
+		(at 165.1 152.4 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "eaf68877-d5b6-4c7c-a94e-41680fafa2b2"))
+	(wire
+		(pts
+			(xy 246.38 121.92)
+			(xy 251.46 121.92))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7f77e9fc-733b-45e3-83af-042142b6aa21"))
+	(label "PORT4_20V"
+		(at 251.46 121.92 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "6382f904-0bc4-44a9-9bbd-43cf29596e40"))
+	(wire
+		(pts
+			(xy 246.38 132.08)
+			(xy 251.46 132.08))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "844f6d4d-14fa-473c-bf6c-cee553420443"))
+	(label "PORT4_MON"
+		(at 251.46 132.08 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "30c2631b-a102-4ce6-822f-5b966f88e9aa"))
+	(wire
+		(pts
+			(xy 246.38 142.24)
+			(xy 251.46 142.24))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0b0b6448-149d-4aa3-a079-d230e6f65dc8"))
+	(label "PORT4_OC_N"
+		(at 251.46 142.24 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "b679307e-bf34-48de-bcb9-9f0601f94228"))
+	(wire
+		(pts
+			(xy 246.38 152.4)
+			(xy 251.46 152.4))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "28969172-3b22-410d-8e64-33be81757c39"))
+	(label "PORT4_HEALTH_N"
+		(at 251.46 152.4 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "ae329f5e-cd2a-451f-91f2-45d7cd92a674"))
+	(sheet
+		(at 170.18 111.76)
+		(size 76.2 50.8)
+		(stroke
+			(width 0.1524)
+			(type default))
+		(fill
+			(color 0 0 0 0))
+		(uuid "0b81591b-6698-4a4c-9f31-07c6720d19d4")
+		(property "Sheetname" "Port 4"
+			(at 170.18 110.49000000000001 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "port-power.kicad_sch"
+			(at 170.18 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(pin "HUB_20V" input
+			(at 170.18 121.92 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "c29a8d56-6de1-4a2c-9e7e-7d0a652588a7"))
+		(pin "CONTROL_3V3" input
+			(at 170.18 132.08 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "3e451a8a-e4fc-426a-a148-393b98bb7ed9"))
+		(pin "CONTROL_GOOD" input
+			(at 170.18 142.24 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "b908a03f-2324-4786-8e5e-e43ae3c29fb2"))
+		(pin "INPUT_ENABLE" input
+			(at 170.18 152.4 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "8d4e7822-27a6-45a6-9c93-df5209aee313"))
+		(pin "PORT_20V" output
+			(at 246.38 121.92 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "8a69600f-ed8c-475b-bcb9-4bfaf0e2dbbb"))
+		(pin "MON" output
+			(at 246.38 132.08 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "01cb8574-35f8-4ded-a2c3-ee6575581fcf"))
+		(pin "OC_N" output
+			(at 246.38 142.24 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "d55991bf-d57e-42e7-a9b8-336bd69fb893"))
+		(pin "HEALTH_N" output
+			(at 246.38 152.4 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "46e97879-67a8-4cd8-98bb-a0e11e0b3af9"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(page "7")))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 264.16 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "ad2a1fa4-a4e0-4fd6-8a4e-515abb03bd73")
+		(property "Reference" "TP13"
+			(at 264.16 128.778 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT4_20V"
+			(at 264.16 127.0 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 269.24 121.92 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "907a7b5b-8e81-4976-9801-780220131ba7"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP13")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 264.16 121.92)
+			(xy 264.16 124.46))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2d105640-0d3b-4b9f-8c10-9ad1793a3cb4"))
+	(label "PORT4_20V"
+		(at 264.16 124.46 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "bfa179e5-3359-4275-9ec0-fa56cd70d6dd"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 264.16 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "1e8b2996-db23-4caf-9822-7986ea82f1b4")
+		(property "Reference" "TP23"
+			(at 264.16 149.098 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT4_MON"
+			(at 264.16 147.32 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 269.24 142.24 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "220425f8-8b06-4646-9a70-9b936bf231d1"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP23")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 264.16 142.24)
+			(xy 264.16 144.78))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "634881bf-7731-4eac-b84c-e88aa1a0bc10"))
+	(label "PORT4_MON"
+		(at 264.16 144.78 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "a7ab4673-663f-4044-8578-6cd9e074b8d6"))
+	(wire
+		(pts
+			(xy 35.56 203.2)
+			(xy 30.48 203.2))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "aaf065d4-801d-4e1d-a6a1-2363f9f78444"))
+	(label "HUB_20V"
+		(at 30.48 203.2 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "aed7cd5a-10a6-4867-ac59-8d23deee61d3"))
+	(wire
+		(pts
+			(xy 35.56 213.36)
+			(xy 30.48 213.36))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "622e6f9d-aabb-4142-86a4-d4784d68b03a"))
+	(label "CONTROL_3V3"
+		(at 30.48 213.36 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "2ba992b9-7717-46e3-8e6c-78dfe9a062e6"))
+	(wire
+		(pts
+			(xy 35.56 223.52)
+			(xy 30.48 223.52))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2fa3bfc7-4859-4a72-b145-b6cab26a80c3"))
+	(label "CONTROL_GOOD"
+		(at 30.48 223.52 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "66daba77-cc22-4833-aa50-0dc53f332aa5"))
+	(wire
+		(pts
+			(xy 35.56 233.68)
+			(xy 30.48 233.68))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "081ad225-94e9-45ea-ab77-18e48e5188bf"))
+	(label "INPUT_ENABLE"
+		(at 30.48 233.68 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "4d6587e9-5632-4a8b-9b29-1d547d05d41d"))
+	(wire
+		(pts
+			(xy 111.76 203.2)
+			(xy 116.84 203.2))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "56bcca04-cbbe-4c4b-8c74-7378187de37d"))
+	(label "PORT5_20V"
+		(at 116.84 203.2 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "017b2010-b0d6-4580-a7f9-583352e1925c"))
+	(wire
+		(pts
+			(xy 111.76 213.36)
+			(xy 116.84 213.36))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6088cb11-2916-4235-b5cd-824cef826f7f"))
+	(label "PORT5_MON"
+		(at 116.84 213.36 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "0a0f74e9-3d10-4986-bb7f-35b0d8bb3e90"))
+	(wire
+		(pts
+			(xy 111.76 223.52)
+			(xy 116.84 223.52))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0b60fa68-44d8-4916-827c-33ac0c323efb"))
+	(label "PORT5_OC_N"
+		(at 116.84 223.52 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "9e053e41-0a89-4f45-83b2-d775b9e83368"))
+	(wire
+		(pts
+			(xy 111.76 233.68)
+			(xy 116.84 233.68))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8b3eafc2-0de8-4998-a542-2ed4d9b0a2ac"))
+	(label "PORT5_HEALTH_N"
+		(at 116.84 233.68 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "e56518c3-dfc1-4b22-81f5-6e80b64cdf4c"))
+	(sheet
+		(at 35.56 193.04)
+		(size 76.2 50.8)
+		(stroke
+			(width 0.1524)
+			(type default))
+		(fill
+			(color 0 0 0 0))
+		(uuid "afa8a2f1-6d92-4612-83ea-613a1c19521f")
+		(property "Sheetname" "Port 5"
+			(at 35.56 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "port-power.kicad_sch"
+			(at 35.56 245.10999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(pin "HUB_20V" input
+			(at 35.56 203.2 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "2c56d02e-6bbe-48cc-8db8-8e2f78184e87"))
+		(pin "CONTROL_3V3" input
+			(at 35.56 213.36 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "ecb4a765-dd1b-488d-8796-4adf3ec4d856"))
+		(pin "CONTROL_GOOD" input
+			(at 35.56 223.52 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "2a2ac99f-e0e7-4ced-8406-bc622f62391c"))
+		(pin "INPUT_ENABLE" input
+			(at 35.56 233.68 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "b3f023ae-1c0d-4959-9a1e-590771e2c4bf"))
+		(pin "PORT_20V" output
+			(at 111.76 203.2 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "01c11f14-76eb-47b9-8ddd-1b0ad957fb77"))
+		(pin "MON" output
+			(at 111.76 213.36 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "d6e6a307-b990-4942-9b38-dfdd75bc3690"))
+		(pin "OC_N" output
+			(at 111.76 223.52 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "1148d6c1-fa1b-40a1-b288-39988fa8048b"))
+		(pin "HEALTH_N" output
+			(at 111.76 233.68 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "9a0af2e6-b47d-42db-8a62-0a9690a703e0"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(page "8")))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54000000000002 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "c0f0f8b4-1eea-49f1-a34f-58ef258ad6db")
+		(property "Reference" "TP14"
+			(at 129.54 210.058 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT5_20V"
+			(at 129.54 208.28 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 134.62 203.2 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "f21c5fd2-22c6-4ab3-a06b-850be383b585"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP14")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 203.2)
+			(xy 129.54 205.74))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9efbe977-3992-4276-be11-95a5f6964f5c"))
+	(label "PORT5_20V"
+		(at 129.54 205.74 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "d31dca6b-1143-46dd-9d11-7ad200ffe3e4"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54000000000002 223.51999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "4f51655e-e81a-47bb-91ec-88a07e797eb8")
+		(property "Reference" "TP24"
+			(at 129.54 230.378 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT5_MON"
+			(at 129.54 228.6 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 134.62 223.52 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "db8ec737-7d85-40e6-a2bf-2d40c91326fe"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP24")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 223.52)
+			(xy 129.54 226.06))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "657eb887-8230-47cc-a6bc-cf38c85b3e06"))
+	(label "PORT5_MON"
+		(at 129.54 226.06 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "2afad2af-7ee6-4fa8-8694-71a74350099d"))
+	(wire
+		(pts
+			(xy 170.18 203.2)
+			(xy 165.1 203.2))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ca6ae178-ce95-49bb-850a-8eefb1be171f"))
+	(label "HUB_20V"
+		(at 165.1 203.2 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "bd0730f5-9afb-4819-a66d-34d90d8609d6"))
+	(wire
+		(pts
+			(xy 170.18 213.36)
+			(xy 165.1 213.36))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4fbf9fc3-7be7-4c90-9760-abc7560d943e"))
+	(label "CONTROL_3V3"
+		(at 165.1 213.36 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "0db3f109-b671-4b36-a4ce-8902592fac3a"))
+	(wire
+		(pts
+			(xy 170.18 223.52)
+			(xy 165.1 223.52))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4857861b-6ff7-4da8-8862-8e8023ae1051"))
+	(label "CONTROL_GOOD"
+		(at 165.1 223.52 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "b9091d05-4f3a-45f2-9b51-bd5549212443"))
+	(wire
+		(pts
+			(xy 170.18 233.68)
+			(xy 165.1 233.68))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "fb04af1c-3aa2-4276-9150-ca3d36e7ccd4"))
+	(label "INPUT_ENABLE"
+		(at 165.1 233.68 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "a176af67-1f6a-432a-913f-b13acd6aaaa3"))
+	(wire
+		(pts
+			(xy 246.38 203.2)
+			(xy 251.46 203.2))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3c8ceac9-1704-46b2-86a1-47994f57a8b5"))
+	(label "PORT6_20V"
+		(at 251.46 203.2 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "1e183eb0-a886-4ff9-92b7-3b074e350786"))
+	(wire
+		(pts
+			(xy 246.38 213.36)
+			(xy 251.46 213.36))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "62ae020d-5ed8-458d-ab98-a03321243402"))
+	(label "PORT6_MON"
+		(at 251.46 213.36 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "e0ff432f-4e1e-4ce5-a43c-d08ac0770026"))
+	(wire
+		(pts
+			(xy 246.38 223.52)
+			(xy 251.46 223.52))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "82d3fb59-bbcb-4305-9c40-0dbba5de013a"))
+	(label "PORT6_OC_N"
+		(at 251.46 223.52 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "452df93e-423b-448f-9a5d-0c09e14339f2"))
+	(wire
+		(pts
+			(xy 246.38 233.68)
+			(xy 251.46 233.68))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1df5efce-bd04-4a09-b04c-1750f49bfad6"))
+	(label "PORT6_HEALTH_N"
+		(at 251.46 233.68 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "7ec308e7-42a4-491c-a100-34c1f312f242"))
+	(sheet
+		(at 170.18 193.04)
+		(size 76.2 50.8)
+		(stroke
+			(width 0.1524)
+			(type default))
+		(fill
+			(color 0 0 0 0))
+		(uuid "54d63dbb-30de-4704-b010-9d63dd0f69cf")
+		(property "Sheetname" "Port 6"
+			(at 170.18 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "port-power.kicad_sch"
+			(at 170.18 245.10999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(pin "HUB_20V" input
+			(at 170.18 203.2 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "1ef97555-eaf6-46b1-adf6-03d03eaceb26"))
+		(pin "CONTROL_3V3" input
+			(at 170.18 213.36 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "14915372-0f73-4dc7-ab91-900a9d345a4e"))
+		(pin "CONTROL_GOOD" input
+			(at 170.18 223.52 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "c2a5e9cb-bff6-41bf-89fc-43a4b2beb1aa"))
+		(pin "INPUT_ENABLE" input
+			(at 170.18 233.68 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "55eff9ca-70ce-4131-a863-9945a4397862"))
+		(pin "PORT_20V" output
+			(at 246.38 203.2 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "c83762ea-f4d7-48e3-9a52-0e08f701cda2"))
+		(pin "MON" output
+			(at 246.38 213.36 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "6288f01d-e3a6-45f1-9e6d-fb600ebb8c95"))
+		(pin "OC_N" output
+			(at 246.38 223.52 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "5a66d756-beb5-48ca-83ca-dc200c3be672"))
+		(pin "HEALTH_N" output
+			(at 246.38 233.68 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "4a061788-6ef2-405a-86d2-b76fc421e862"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(page "9")))))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 264.16 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "e0deda66-3f88-48eb-a7da-2d48e7d2ff84")
+		(property "Reference" "TP15"
+			(at 264.16 210.058 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT6_20V"
+			(at 264.16 208.28 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 269.24 203.2 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "66a70c70-5afd-4d3a-a2e1-a41ed506cbbc"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP15")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 264.16 203.2)
+			(xy 264.16 205.74))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f37ea29d-c845-4136-8fc6-512e1e6d00ee"))
+	(label "PORT6_20V"
+		(at 264.16 205.74 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "c671b6a7-6c93-4aeb-bced-bb8b6194f820"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 264.16 223.51999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "1b3d97eb-54b7-4b8a-9ad5-273bc82e61a0")
+		(property "Reference" "TP25"
+			(at 264.16 230.378 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Value" "PORT6_MON"
+			(at 264.16 228.6 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 269.24 223.52 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "1f97d4a5-8a75-4d8f-8bef-b4aac7604c00"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(reference "TP25")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 264.16 223.52)
+			(xy 264.16 226.06))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4efa4e19-9e68-46e9-97be-5d1916ec3358"))
+	(label "PORT6_MON"
+		(at 264.16 226.06 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "252ac1d9-386b-434a-8829-7881db9c89ec"))
+	(wire
+		(pts
+			(xy 294.64 38.1)
+			(xy 289.56 38.1))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "46663fce-9ccd-4a5a-a7b4-5a81b76ee03b"))
+	(label "CONTROL_3V3"
+		(at 289.56 38.1 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "337bac6f-85bb-4f9d-a573-c6d61181ca27"))
+	(wire
+		(pts
+			(xy 294.64 44.45)
+			(xy 289.56 44.45))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f3177e11-b50f-48e7-89b9-b0451aa1e777"))
+	(hierarchical_label "CONTROL_GOOD_RAW"
+		(shape input)
+		(at 289.56 44.45 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "60caf824-c580-4541-b3c8-29a42e1453f7"))
+	(wire
+		(pts
+			(xy 294.64 50.8)
+			(xy 289.56 50.8))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "23bd82af-215b-4c8a-a1ac-d3f4df8e08f5"))
+	(label "INPUT_ENABLE"
+		(at 289.56 50.8 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "11dfe05c-5f85-4c68-9723-1363abdebb5b"))
+	(wire
+		(pts
+			(xy 294.64 57.15)
+			(xy 289.56 57.15))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2030700e-d325-4329-828d-4c0fc515dd33"))
+	(hierarchical_label "INPUT_OC_N"
+		(shape input)
+		(at 289.56 57.15 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "b3bdae1f-26d2-48d9-a5e6-1f13430cb866"))
+	(wire
+		(pts
+			(xy 294.64 63.5)
+			(xy 289.56 63.5))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ee904c38-21ea-4b49-8dde-905c5ef75283"))
+	(hierarchical_label "INPUT_FAULT_N"
+		(shape input)
+		(at 289.56 63.5 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "41bf98ba-669c-45d3-aa0a-92d9801f28dd"))
+	(wire
+		(pts
+			(xy 294.64 69.85)
+			(xy 289.56 69.85))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3c05e28e-63fd-48df-857b-02e240920803"))
+	(label "PORT1_OC_N"
+		(at 289.56 69.85 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "85633864-70de-49e0-ba0e-b8413936785b"))
+	(wire
+		(pts
+			(xy 294.64 76.2)
+			(xy 289.56 76.2))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "90bbf692-d065-49b7-bdbd-501c3972bebf"))
+	(label "PORT2_OC_N"
+		(at 289.56 76.2 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "d46dbd92-12fd-49ad-bc84-1d2fd5cb05ca"))
+	(wire
+		(pts
+			(xy 294.64 82.55)
+			(xy 289.56 82.55))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9f953d45-2c3b-407d-a4d6-5f7d60f64ba1"))
+	(label "PORT3_OC_N"
+		(at 289.56 82.55 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "5b751115-57c2-4ce8-8887-d3ae6c1864f7"))
+	(wire
+		(pts
+			(xy 294.64 88.9)
+			(xy 289.56 88.9))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "63ac599c-ce31-4dff-b3d6-aec2533078ad"))
+	(label "PORT4_OC_N"
+		(at 289.56 88.9 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "e2dd8658-e8d6-4508-8cb3-84a5c1126de0"))
+	(wire
+		(pts
+			(xy 294.64 95.25)
+			(xy 289.56 95.25))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6f1db465-10d1-4d6b-aa34-c035388c3490"))
+	(label "PORT5_OC_N"
+		(at 289.56 95.25 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "5cc67e72-4f24-4367-840b-49efd8b37437"))
+	(wire
+		(pts
+			(xy 294.64 101.6)
+			(xy 289.56 101.6))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7a847a90-d93d-4456-9011-70508a4b1432"))
+	(label "PORT6_OC_N"
+		(at 289.56 101.6 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "c4e5ef9d-8138-4e4b-ae3d-d87841ce66f8"))
+	(wire
+		(pts
+			(xy 294.64 107.95)
+			(xy 289.56 107.95))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ae462917-c580-499f-acb4-84509d639a18"))
+	(label "PORT1_HEALTH_N"
+		(at 289.56 107.95 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "a283f92d-147a-4c18-9681-bf3156130bb5"))
+	(wire
+		(pts
+			(xy 294.64 114.3)
+			(xy 289.56 114.3))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8e533f8c-d4c7-46f7-8d85-f0ffef66f0f4"))
+	(label "PORT2_HEALTH_N"
+		(at 289.56 114.3 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "c4a3c0f4-1775-4f0a-9fa5-e4c52f3ed4b6"))
+	(wire
+		(pts
+			(xy 294.64 120.65)
+			(xy 289.56 120.65))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3beb118a-9aea-4698-aaec-0bb77a4f773d"))
+	(label "PORT3_HEALTH_N"
+		(at 289.56 120.65 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "f1e2e89d-c99c-48ca-8ec4-cac81551ed56"))
+	(wire
+		(pts
+			(xy 294.64 127.0)
+			(xy 289.56 127.0))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b4987bd5-f8f5-46b0-a016-4cb4feed70be"))
+	(label "PORT4_HEALTH_N"
+		(at 289.56 127.0 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "5626be47-da15-455c-93a9-5aaf38b095ed"))
+	(wire
+		(pts
+			(xy 294.64 133.35)
+			(xy 289.56 133.35))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0f928f3d-dbb3-47ff-b233-367957d24249"))
+	(label "PORT5_HEALTH_N"
+		(at 289.56 133.35 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "b4285dcf-618c-4f4f-a592-8478ae77c437"))
+	(wire
+		(pts
+			(xy 294.64 139.7)
+			(xy 289.56 139.7))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "61733051-3d42-4226-8be8-355cd455e2d4"))
+	(label "PORT6_HEALTH_N"
+		(at 289.56 139.7 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "ecb5876c-dd65-4a5a-9d14-2d1cf4042b55"))
+	(wire
+		(pts
+			(xy 391.15999999999997 88.9)
+			(xy 396.24 88.9))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "021f7ce9-c082-4ba7-9ef2-20653ded5d70"))
+	(hierarchical_label "RUN_OK"
+		(shape output)
+		(at 396.24 88.9 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "b66bd903-7729-4462-96a6-6165ca729cf4"))
+	(sheet
+		(at 294.64 30.48)
+		(size 96.52 121.92)
+		(stroke
+			(width 0.1524)
+			(type default))
+		(fill
+			(color 0 0 0 0))
+		(uuid "ec9acaa6-5412-47ff-b856-963cb7c9290a")
+		(property "Sheetname" "Fault shutdown"
+			(at 294.64 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property "Sheetfile" "shutdown.kicad_sch"
+			(at 294.64 153.67000000000002 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(pin "CONTROL_3V3" input
+			(at 294.64 38.1 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "b38d3eb4-7a95-4c37-a8d4-be1200695dd5"))
+		(pin "CONTROL_GOOD_RAW" input
+			(at 294.64 44.45 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "5f90b852-1869-43e8-9282-16daeddf51fa"))
+		(pin "INPUT_ENABLE" input
+			(at 294.64 50.8 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "9f28e43a-6945-4a38-84f5-a250bde2cb8b"))
+		(pin "INPUT_OC_N" input
+			(at 294.64 57.15 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "2d1a03d8-b131-499d-8458-97ac4c6e7451"))
+		(pin "INPUT_FAULT_N" input
+			(at 294.64 63.5 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "4336e23d-f04e-43f6-9167-6346cfacf4ad"))
+		(pin "PORT1_OC_N" input
+			(at 294.64 69.85 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "f8a2332f-7a6e-435f-ac1a-66c023f06fd9"))
+		(pin "PORT2_OC_N" input
+			(at 294.64 76.2 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "7758b800-9e2f-48d7-b751-3f90355363cc"))
+		(pin "PORT3_OC_N" input
+			(at 294.64 82.55 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "a5f7d839-e3c7-45a2-88de-23081dc800eb"))
+		(pin "PORT4_OC_N" input
+			(at 294.64 88.9 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "06e5ab5c-01c2-4579-aac4-74c6fd43e800"))
+		(pin "PORT5_OC_N" input
+			(at 294.64 95.25 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "4f51cff9-c991-46cf-a045-773093851ffe"))
+		(pin "PORT6_OC_N" input
+			(at 294.64 101.6 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "8e3b7d00-1e2b-4f18-b2bc-09dc5dcfda5a"))
+		(pin "PORT1_HEALTH_N" input
+			(at 294.64 107.95 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "ac37318e-94b0-4fe3-85e8-4ddc119169fc"))
+		(pin "PORT2_HEALTH_N" input
+			(at 294.64 114.3 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "dca22f6b-a0d5-404c-82cc-4a709da17f72"))
+		(pin "PORT3_HEALTH_N" input
+			(at 294.64 120.65 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "50dc8710-4236-4c1b-8809-aff13aacac39"))
+		(pin "PORT4_HEALTH_N" input
+			(at 294.64 127.0 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "6fd40028-91c0-49e3-8676-ab86c83ddbd6"))
+		(pin "PORT5_HEALTH_N" input
+			(at 294.64 133.35 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "7869da1c-63d3-4a24-9869-13f76c765249"))
+		(pin "PORT6_HEALTH_N" input
+			(at 294.64 139.7 180)
+			(effects
+				(font
+					(size 1 1))
+				(justify left))
+			(uuid "12b4aaef-fdf5-49f2-8099-e7a86c0f94ee"))
+		(pin "RUN_OK" output
+			(at 391.15999999999997 88.9 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "bba3f50c-d54d-4466-b250-54b5d7b09a7b"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb"
+					(page "10"))))
+		(pin "CONTROL_GOOD" output
+			(at 391.15999999999997 106.68 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify right))
+			(uuid "c8b7298a-d4b6-4d70-86cf-dcd69252c764")))
+	(text "Power test pads only. Tile connector geometry is not released."
+		(at 294.64 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "c49806b5-7e9d-407e-9782-e349b668e7fb"))
+	(wire
+		(pts
+			(xy 391.15999999999997 106.68)
+			(xy 396.23999999999995 106.68))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4f1ad549-55bc-4448-a861-c699e3b6cd6d"))
+	(hierarchical_label "CONTROL_GOOD"
+		(shape output)
+		(at 396.23999999999995 106.68 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "47346f32-0521-46e4-b0e5-686caa5fbbfd")))

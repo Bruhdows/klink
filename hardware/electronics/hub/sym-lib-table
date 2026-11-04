@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "Klink") (type "KiCad") (uri "${KIPRJMOD}/../libraries/Klink.kicad_sym") (options "") (descr "Klink verified pin maps; footprint release status in rev-a.md")))
