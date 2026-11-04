@@ -2,7 +2,7 @@
 
 Rev A uses 20V between tiles. The old 5V bus needed too much current for the larger loads. Each tile now makes its own 5V and 3.3V. Don't join those local rails between tiles.
 
-The schematic has source protection, switched module power, four UART links and two RGB LEDs. The PCB only has initial low-voltage placement. It still needs connector checks, protection tests and routing. [Test results](validation.md) and [pinouts](interfaces.md) are separate.
+The schematic has source protection, switched module power, four UART links and two RGB LEDs. The PCB only has initial low-voltage placement. It still needs connector checks, protection tests and routing. See the [pinouts](interfaces.md).
 
 ## Power path
 
@@ -76,7 +76,7 @@ These are datasheet values and calculations, not measurements.
 - The TVS rating is 22V standoff, 35.5V maximum clamp at 16.9A for the stated pulse at 25°C. That is below the 60V/65V silicon limits but above the connector's listed 30V. Connector pulse tolerance is unknown. Temperature, pulse width and uneven TVS sharing still matter.
 - Littelfuse 0466001.NR is 1A/63V, 1206. Nominal cold resistance is 0.075Ω; nominal melting I²t is 0.0423A²s. Neither gives a maximum clearing-energy guarantee. At 25°C the series allows up to 5s at 2× rating and 0.2s at 3× rating. Continuous current is rerated to 0.75A at 25°C and 0.60A in the manufacturer's 70°C example.
 
-Each positive tile-to-tile path has two fuses. Don't fuse GND. Current can return through a different path, especially after a fuse opens. U7 only protects its local load, not a short on BUS_20V. Hub cutoff must handle every path still feeding a fault. See the [loop calculations](validation.md#power-calculations).
+Each positive tile-to-tile path has two fuses. Don't fuse GND. Current can return through a different path, especially after a fuse opens. U7 only protects its local load, not a short on BUS_20V. Hub cutoff must handle every path still feeding a fault. See the [distribution analysis](#distribution-recommendation).
 
 ### Buck and 3.3V
 

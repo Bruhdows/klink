@@ -11,6 +11,5 @@ Rev A uses a 20V bus, with 5V and 3.3V made on each tile. The schematic is in pl
 - [Connectors and pinouts](docs/specifications/interfaces.md)
 - [BOM](docs/specifications/BOM.md)
 - [Next steps](docs/specifications/prototype-plan.md)
-- [Checks and results](docs/specifications/validation.md)
 
 Hardware sources are in `hardware/electronics/` and `hardware/cad/`. Firmware, SDK and Studio are still planned work.

@@ -10,7 +10,7 @@ Test the top interface with offset, tilt and reversed insertion. Nothing should 
 
 ## Power and communication
 
-Finish the Hub's branch protection and total cutoff. Check faults through grid loops, not just a chain. Test the buck on a current-limited supply, then both module outputs with electronic loads. Measure ripple, startup, temperature and short-circuit recovery before adding motors.
+Qualify the Hub's branch protection and total cutoff. Check faults through grid loops, not just a chain. Test the buck on a current-limited supply, then both module outputs with electronic loads. Measure ripple, startup, temperature and short-circuit recovery before adding motors.
 
 Use three CH32X035 boards for discovery and forwarding. Then run four UARTs, RGB and hardware I²C together. Test brownout, missing neighbors, duplicate packets and stuck-bus recovery. Check the actual MCU silicon lot supports I²C.
 
@@ -18,7 +18,7 @@ Use three CH32X035 boards for discovery and forwarding. Then run four UARTs, RGB
 
 Low-voltage placement can continue. Connector fit and power protection need to be settled before high-voltage placement and routing.
 
-After the [release checks](validation.md#before-ordering), order 3-5 trial boards. Test those before making the rest. Another revision might still be needed.
+After connector qualification, protection testing and schematic/layout review, order 3-5 trial boards. Test those before making the rest. Another revision might still be needed.
 
 Then finish the Hub and start with button/light modules, followed by sensors, servos and the elevator. Measure motor and servo stall loads first.
 
