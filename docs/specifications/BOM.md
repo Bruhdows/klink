@@ -1,8 +1,12 @@
 # BOM
 
-The [tile BOM CSV](../../hardware/electronics/tile/bom.csv) has all 130 references, quantities, footprints and purchase links. It's a working list, not an assembly order. Blank prices mean unknown, not free.
+The [tile BOM CSV](../../hardware/electronics/tile/bom.csv) has all 124 references, quantities, footprints and purchase links. It's a working list, not an assembly order. Blank prices mean unknown, not free.
 
 The target is 35-45 PLN per assembled tile. There isn't a quote confirming that yet.
+
+For prototype budgeting, allow USD 20–35 per tile for the present electronic parts, USD 3–7 for four carrier boards, finish and their assembly, and USD 5–12 for main-board fabrication/assembly at small quantities. That is USD 28–54 per tile before magnets, plastic, modules, tax and shipping, or USD 560–1080 for twenty. These are procurement allowances, not a complete quote or evidence that the PLN target is attainable. The [TPS26600 listing](https://www.digikey.com/en/products/detail/texas-instruments/TPS26600PWPR/6199305) alone shows USD 4.02 at quantity one, with two needed per tile; [TPS259470](https://www.digikey.com/en/products/detail/texas-instruments/TPS259470LRPWR/14124014) shows USD 1.261 at ten in the checked cached listing. Obtain consolidated 20/40/80-piece quotes before changing the target.
+
+The proposed 7A transit-fuse candidate would add four larger fuse placements per tile in place of the four original transit fuses, not eliminate protection cost. Allow USD 4–8/tile for those four candidate parts until quoted, replacing the old fuse allowance within the parts estimate. It is not selected: hot resistance, clearing coordination and contact pulse limits remain unresolved. The two SAMZO spring bodies remain about USD 0.95/tile at the earlier cached price; four carrier assemblies and their finish can cost more than the springs. The [prototype plan](prototype-plan.md#connector-measurements) limits the first purchase to connector/fuse samples and a separate two-output protection experiment.
 
 ## Parts in the schematic
 
@@ -14,7 +18,7 @@ These have datasheet checks behind them, but still need sample and assembly test
 - U4: LMR36520ADDAR. 1 per tile, 20 for 20 tiles. [TI order page](https://www.ti.com/product/LMR36520/part-details/LMR36520ADDAR).
 - U5, U7: TPS26600PWPR. 2 per tile, 40 for 20 tiles. [TI order page](https://www.ti.com/product/TPS2660/part-details/TPS26600PWPR).
 - U6: SN74AHCT1G125DBVR. 1 per tile, 20 for 20 tiles. [TI order page](https://www.ti.com/product/SN74AHCT1G125/part-details/SN74AHCT1G125DBVR).
-- U8-U11: SN74LVC2G125DCUR. 4 per tile, 80 for 20 tiles. [TI order page](https://www.ti.com/product/SN74LVC2G125/part-details/SN74LVC2G125DCUR).
+- U8: SN74LVC244APWR. 1 per tile, 20 for 20 tiles. [TI order page](https://www.ti.com/product/SN74LVC244A/part-details/SN74LVC244APWR).
 - U12, U13: TMUX1511PWR. 2 per tile, 40 for 20 tiles. [TI order page](https://www.ti.com/product/TMUX1511/part-details/TMUX1511PWR).
 - U14: TPS3808G01DBVR. 1 per tile, 20 for 20 tiles. [TI order page](https://www.ti.com/product/TPS3808/part-details/TPS3808G01DBVR).
 - U15: SN74LVC1G08DBVR. 1 per tile, 20 for 20 tiles. [TI order page](https://www.ti.com/product/SN74LVC1G08/part-details/SN74LVC1G08DBVR).
@@ -55,12 +59,22 @@ Quote electronics, PCB/assembly, stencil/setup, hand work, PETG/magnets, modules
 
 ## Hub input and repeated costs
 
-The [Hub BOM](../../hardware/electronics/hub/bom.csv) is exported from the implemented input, six outputs and common shutdown. It contains seven TPS26630, seven INA301A1IDGKR, seven CSD19537Q3 and seven BSS138LT1G devices, plus control logic and seven rail clamps. The open-drain fault groups use two triple Schmitt AND packages, avoiding a separate buffer for every fault flag. It excludes the future MCU, main regulators, USB data and storage. Blank MPN fields remain purchase selections. Copper test points have no purchased-component cost. C9 is now a selected 10µF/50V 1206 part; effective capacitance and assembly remain qualification items.
+The [Hub BOM](../../hardware/electronics/hub/bom.csv) is exported from the full 350-component schematic, including input protection, six outputs, supplies, MCU, USB, UART interfaces, storage and diagnostics. It contains seven TPS26630, seven INA301A1IDGKR, seven CSD19537Q3 and seven BSS138LT1G devices, plus control logic and seven rail clamps. The open-drain fault groups use two triple Schmitt AND packages, avoiding a separate buffer for every fault flag. The full Hub still needs PCB layout and electrical qualification; its USB and execution firmware is not implemented. Blank MPN fields remain purchase selections. Copper test points have no purchased-component cost. C9 is now a selected 10µF/50V 1206 part; effective capacitance and assembly remain qualification items.
 
 For one prototype, allow roughly USD 65–105 additional parts for the six output circuits and shared shutdown, before PCB, assembly, tax and shipping. This uses small-quantity price bands, not a complete supplier quote. Reference DigiKey prices checked on 2026-11-03 were [TPS26630RGER](https://www.digikey.com/en/products/detail/texas-instruments/TPS26630RGER/10820326) USD 5.13 at one or 3.907 at ten, [INA301A1IDGKR](https://www.digikey.com/en/products/detail/texas-instruments/INA301A1IDGKR/6571979) 3.45 or 2.592, and [CSD19537Q3](https://www.digikey.com/en/products/detail/texas-instruments/CSD19537Q3/5438037) 2.13 or 1.356. Precision resistors, the specified C0G ramp capacitors, remaining small parts and logic are allowances. This range includes their prototype-quantity premiums. The independent precision trips and shared latch are retained; they are not repeated on twenty tiles.
 
 TPS26630 sourcing is a risk. TI and the checked large distributors showed no RGER stock. [LCSC's RGET listing](https://www.lcsc.com/product-image/C2864391.html) showed eight units in a cached result, USD 3.6238 each. RGET is an approved reel-size alternate in the BOM, not a different circuit. Recheck stock and authenticity before ordering; seven devices are needed for one Hub, leaving little sample margin. Do not substitute TPS26631/32 variants without rechecking their pulse-current and OVP behavior.
 
-The repeated tile cost drivers remain 40 TPS26600 devices, 20 TPS259470L switches, 20 LMR36520 converters, 80 UART buffers, 40 analog switches and 100 fuses. The recommended transit-fuse change would remove 80 fuse placements in a future qualified revision; F1 and local protection remain. No such change has been applied to the current tile BOM. Contacts, carrier joints and finish must first support the aggregate current and hot resistance targets in [Rev A](rev-a.md).
+The repeated tile cost drivers remain 40 TPS26600 devices, 20 TPS259470L switches, 20 LMR36520 converters, 20 octal UART buffers, 40 analog switches and 100 fuses. The transit-fuse replacement remains unresolved. Do not budget the removal of 80 fuse placements: a low-resistance replacement must retain coordinated protection. F1 and local protection remain unchanged. Contacts, carrier joints and finish must first support the aggregate current and hot resistance targets in [Rev A](rev-a.md).
 
 Doubling spring bodies on the two sprung faces would add forty bodies across twenty tiles, roughly USD 19 at the old cached connector price, plus assembly and wider carriers. That is about USD 0.95/tile before those costs. It does not establish equal sharing or reduce the required rating after one contact opens. Start with a small sample batch and obtain compression, force, plating, resistance and 5A test conditions before selecting the production arrangement. Neither board is ready for production fabrication.
+
+## Assembly selections
+
+The tile CSV now includes quantities for 16 and 32 tiles alongside the existing 20-tile column. Standard electronic parts have manufacturer selections; J3-J7 remain unreleased connectors. Bare copper test/debug pads do not represent purchased parts. Procurement links, live stock and prices still need a consolidated quote. Capacitor effective values and package clearances must be qualified before ordering assembled boards.
+
+UART consolidation removes three buffer packages and three bypass capacitors per tile, plus four packages and four capacitors at the Hub. That removes 104 placements from a sixteen-tile kit. Parts savings are `4 × dual-buffer price - octal-buffer price + 3 × bypass price` per tile. Illustrative USD 0.15/0.25/0.01 prices give about USD 0.38/tile plus assembly savings; these are assumptions, not quotes. Essential power and module protection is retained.
+
+Allow approximately USD 100–150 for the full Hub's prototype parts, excluding PCB/assembly, with the earlier six-output protection allowance included rather than added twice. The tile allowance remains provisional. Carrier fabrication, attachment and finish require quotes; lower realistic loads remove the present justification for doubling spring bodies.
+
+The [elevator BOM](../../hardware/electronics/elevator/bom.csv) covers its 47 board positions. Order one [Pololu 3044](https://www.pololu.com/product/3044) motor and one [TCST2103](https://www.vishay.com/docs/81147/tcst2103.pdf) separately, plus the normally closed stop and mechanical transmission after fit review. Reserve roughly USD 10–20 for prototype electronics and USD 27.45 for the motor at the checked manufacturer listing, before PCB, mechanics, shipping and tax. These are not a finished supplier quote.

@@ -2202,7 +2202,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "R302")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0722KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 111.76 259.08 0)
@@ -2239,7 +2245,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "R303")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-07100KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 381 139.7 0)
@@ -2276,7 +2288,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "R304")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 48.26 27.94 0)
@@ -2293,7 +2311,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 50.8 29.21 0)
 			(effects
 				(font
@@ -2313,7 +2331,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C300")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 48.26 119.38 0)
@@ -2330,7 +2354,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 50.8 120.64999999999999 0)
 			(effects
 				(font
@@ -2350,7 +2374,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C303")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 175.26 119.38 0)
@@ -2367,7 +2397,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 177.79999999999998 120.64999999999999 0)
 			(effects
 				(font
@@ -2387,7 +2417,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C306")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 228.6 88.9 0)
@@ -2404,7 +2440,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 231.14 90.17 0)
 			(effects
 				(font
@@ -2424,7 +2460,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C307")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 279.4 88.9 0)
@@ -2441,7 +2483,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 281.94 90.17 0)
 			(effects
 				(font
@@ -2461,7 +2503,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C308")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 175.26 63.5 0)
@@ -2478,7 +2526,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 177.79999999999998 64.77 0)
 			(effects
 				(font
@@ -2498,7 +2546,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C309")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 396.24 215.9 0)
@@ -2515,7 +2569,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 398.78 217.17 0)
 			(effects
 				(font
@@ -2535,7 +2589,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C310")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 279.4 238.76 0)
@@ -2552,7 +2612,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 281.94 240.03 0)
 			(effects
 				(font
@@ -2572,7 +2632,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C311")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 134.62 205.74 0)
@@ -2589,7 +2655,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 137.16 207.01000000000002 0)
 			(effects
 				(font
@@ -2609,7 +2675,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C312")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 381 109.22 0)
@@ -2749,7 +2821,8 @@
 			(width 0)
 			(type default))
 		(uuid "ba74f294-f937-45d4-9eba-0895a944ac12"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 187.96 127.0 0)
 		(effects
 			(font
@@ -2825,7 +2898,8 @@
 			(width 0)
 			(type default))
 		(uuid "f5dbd29f-9181-4a40-8e3b-74f61ea3d842"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 241.3 96.52 0)
 		(effects
 			(font
@@ -2901,7 +2975,8 @@
 			(width 0)
 			(type default))
 		(uuid "626aaa61-d2d3-43d6-a74c-674fe5814539"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 292.1 96.52 0)
 		(effects
 			(font
@@ -2916,7 +2991,8 @@
 			(width 0)
 			(type default))
 		(uuid "3f11dc40-b0b1-4b3f-b3af-003806c45d2d"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 170.18 83.82 180)
 		(effects
 			(font
@@ -2962,7 +3038,8 @@
 			(width 0)
 			(type default))
 		(uuid "2ab235df-387e-486f-b391-61d25029fed7"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 182.88 71.12 0)
 		(effects
 			(font
@@ -2977,7 +3054,8 @@
 			(width 0)
 			(type default))
 		(uuid "be952773-c91c-442f-80f4-9ee840354688"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 345.44 119.38 0)
 		(effects
 			(font
@@ -3039,7 +3117,8 @@
 			(width 0)
 			(type default))
 		(uuid "c3bf5b6a-bc56-4b81-80a3-254bcbb67d6e"))
-	(label "FAULT_LATCHED"
+	(global_label "FAULT_LATCHED"
+		(shape bidirectional)
 		(at 355.6 106.68 0)
 		(effects
 			(font
@@ -3070,7 +3149,8 @@
 			(width 0)
 			(type default))
 		(uuid "eb8f2ad9-6a90-4d49-8412-48116e6f1d76"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 345.44 203.2 0)
 		(effects
 			(font
@@ -3085,7 +3165,8 @@
 			(width 0)
 			(type default))
 		(uuid "dbf5f25e-d5e3-42cd-9909-0c4e0842117a"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 335.28 190.5 180)
 		(effects
 			(font
@@ -3115,7 +3196,8 @@
 			(width 0)
 			(type default))
 		(uuid "a0f31399-8a60-41fa-921b-38ea3b2dbe91"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 345.44 182.88 0)
 		(effects
 			(font
@@ -3130,7 +3212,8 @@
 			(width 0)
 			(type default))
 		(uuid "0ae44078-34c5-437d-af82-9fabb8db7c97"))
-	(label "ARMED"
+	(global_label "ARMED"
+		(shape bidirectional)
 		(at 355.6 190.5 0)
 		(effects
 			(font
@@ -3176,7 +3259,8 @@
 			(width 0)
 			(type default))
 		(uuid "3cfd3f48-313c-4c4a-95cd-462008f46fe9"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 381.0 210.82 0)
 		(effects
 			(font
@@ -3269,7 +3353,8 @@
 			(width 0)
 			(type default))
 		(uuid "45f68c2c-bd6a-4949-904d-076054005a5d"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 279.4 200.66 0)
 		(effects
 			(font
@@ -3315,7 +3400,8 @@
 			(width 0)
 			(type default))
 		(uuid "ebb4226b-9da9-481d-84a8-cfc1a5da4b02"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 111.76 223.52 180)
 		(effects
 			(font
@@ -3361,7 +3447,8 @@
 			(width 0)
 			(type default))
 		(uuid "c8eb8123-29c2-403a-a237-c29885a3046b"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 124.46 213.36 0)
 		(effects
 			(font
@@ -3376,7 +3463,8 @@
 			(width 0)
 			(type default))
 		(uuid "b6078ace-bbe8-4172-b253-78f458e2aebf"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 152.4 196.85 0)
 		(effects
 			(font
@@ -3406,7 +3494,8 @@
 			(width 0)
 			(type default))
 		(uuid "62223aec-6d39-407a-a2f2-c0e69eaaff0e"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 111.76 252.73 0)
 		(effects
 			(font
@@ -3467,7 +3556,8 @@
 			(width 0)
 			(type default))
 		(uuid "d910e4bd-b4b0-420a-94b1-b46cf12f387c"))
-	(label "FAULT_LATCHED"
+	(global_label "FAULT_LATCHED"
+		(shape bidirectional)
 		(at 381.0 111.76 0)
 		(effects
 			(font
@@ -3482,7 +3572,8 @@
 			(width 0)
 			(type default))
 		(uuid "37c1b344-972d-4077-a2c9-450d7e3aaf41"))
-	(label "ARMED"
+	(global_label "ARMED"
+		(shape bidirectional)
 		(at 381.0 193.04 0)
 		(effects
 			(font
@@ -3497,7 +3588,8 @@
 			(width 0)
 			(type default))
 		(uuid "1d3d5685-1d01-4826-971c-7ed0d8db6d16"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 48.26 21.59 0)
 		(effects
 			(font
@@ -3528,7 +3620,8 @@
 			(width 0)
 			(type default))
 		(uuid "4eee0563-83d8-471b-ac02-7c77c1e8106a"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 48.26 113.03 0)
 		(effects
 			(font
@@ -3559,7 +3652,8 @@
 			(width 0)
 			(type default))
 		(uuid "8d812f5b-0b71-47c2-a7b7-dafbd4e8ea3b"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 175.26 113.03 0)
 		(effects
 			(font
@@ -3590,7 +3684,8 @@
 			(width 0)
 			(type default))
 		(uuid "af15a446-34fd-4e7c-9aea-39fb4c22bf30"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 228.6 82.55 0)
 		(effects
 			(font
@@ -3621,7 +3716,8 @@
 			(width 0)
 			(type default))
 		(uuid "0bdc5ec1-615a-4f32-87bb-2589df8ab755"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 279.4 82.55 0)
 		(effects
 			(font
@@ -3652,7 +3748,8 @@
 			(width 0)
 			(type default))
 		(uuid "97689ae0-3cb5-4882-bc90-6aec6e7f28d7"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 175.26 57.15 0)
 		(effects
 			(font
@@ -3683,7 +3780,8 @@
 			(width 0)
 			(type default))
 		(uuid "02e322e2-3d0e-4a99-8d68-74e2e939eddc"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 396.24 209.55 0)
 		(effects
 			(font
@@ -3714,7 +3812,8 @@
 			(width 0)
 			(type default))
 		(uuid "abf37851-4a91-49c0-bf52-403339415255"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 279.4 232.41 0)
 		(effects
 			(font
@@ -3745,7 +3844,8 @@
 			(width 0)
 			(type default))
 		(uuid "17399953-999d-4fd7-b5c4-389df1ae0cef"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 134.62 199.39 0)
 		(effects
 			(font
@@ -4615,7 +4715,8 @@
 			(width 0)
 			(type default))
 		(uuid "198b6c8d-b405-4926-9130-7cbc929adb31"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 147.32 109.22 0)
 		(effects
 			(font
@@ -4851,7 +4952,8 @@
 			(width 0)
 			(type default))
 		(uuid "92d505a7-a376-4646-860a-e46122632a25"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 304.8 162.56 0)
 		(effects
 			(font
@@ -4874,7 +4976,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 281.94 176.53 0)
 			(effects
 				(font
@@ -4894,7 +4996,13 @@
 			(project "hub"
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/ec9acaa6-5412-47ff-b856-963cb7c9290a"
 					(reference "C313")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 279.4 171.45)
@@ -4903,7 +5011,8 @@
 			(width 0)
 			(type default))
 		(uuid "da875bcc-1859-4629-bba1-909950a70192"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 279.4 168.91 0)
 		(effects
 			(font

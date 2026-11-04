@@ -1947,7 +1947,13 @@
 					(unit 1))
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/54d63dbb-30de-4704-b010-9d63dd0f69cf"
 					(reference "R203")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0722KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 259.08 109.22 0)
@@ -1999,7 +2005,13 @@
 					(unit 1))
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/54d63dbb-30de-4704-b010-9d63dd0f69cf"
 					(reference "R204")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0722KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 196.85 78.74 0)
@@ -2307,7 +2319,13 @@
 					(unit 1))
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/54d63dbb-30de-4704-b010-9d63dd0f69cf"
 					(reference "R209")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:R")
 		(at 223.52 129.54 0)
@@ -2388,7 +2406,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 56.8452 31.75 0.0)
 			(effects
 				(font
@@ -2417,7 +2435,13 @@
 					(unit 1))
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/54d63dbb-30de-4704-b010-9d63dd0f69cf"
 					(reference "C150")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H105K125AB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 168.91 38.1 0)
@@ -2440,7 +2464,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 169.8752 34.29 0.0)
 			(effects
 				(font
@@ -2469,7 +2493,13 @@
 					(unit 1))
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/54d63dbb-30de-4704-b010-9d63dd0f69cf"
 					(reference "C151")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H105K125AB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 190.5 38.1 0)
@@ -2492,7 +2522,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 191.4652 34.29 0.0)
 			(effects
 				(font
@@ -2521,7 +2551,13 @@
 					(unit 1))
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/54d63dbb-30de-4704-b010-9d63dd0f69cf"
 					(reference "C152")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H105K125AB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(symbol
 		(lib_id "Device:C")
 		(at 168.91 109.22 0)
@@ -2602,7 +2638,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 226.06 26.669999999999998 0)
 			(effects
 				(font
@@ -2637,7 +2673,13 @@
 					(unit 1))
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/f037fac9-25a1-4281-b5fd-dd2752bedbbb/54d63dbb-30de-4704-b010-9d63dd0f69cf"
 					(reference "C154")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 119.38 63.5)
@@ -2861,7 +2903,8 @@
 			(width 0)
 			(type default))
 		(uuid "0acb6478-7192-4baa-bccf-c2b592fc1227"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 223.52 43.18 0)
 		(effects
 			(font
@@ -2970,7 +3013,8 @@
 			(width 0)
 			(type default))
 		(uuid "1607abed-db76-4153-b04f-36da8c0ca424"))
-	(label "HUB_20V"
+	(global_label "HUB_20V"
+		(shape bidirectional)
 		(at 208.28 53.34 180)
 		(effects
 			(font
@@ -3168,7 +3212,8 @@
 			(width 0)
 			(type default))
 		(uuid "4f17778a-4514-431b-8211-482d66d23d82"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 259.08 77.47 0)
 		(effects
 			(font
@@ -3198,7 +3243,8 @@
 			(width 0)
 			(type default))
 		(uuid "a57619e7-ae4b-4e72-84e3-f16e7e90c4d8"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 259.08 102.87 0)
 		(effects
 			(font

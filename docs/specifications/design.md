@@ -4,7 +4,7 @@ Klink starts with a marble run, but the tiles should also work for other program
 
 ## First kit
 
-- About 16-20 tiles for a Maker Faire demo.
+- At least 16 universal tiles and a continuously running motorized elevator for V1. A 3-5-board batch validates manufacturing before assembling the complete kit. Aim for 24-32 tiles within measured power/topology limits.
 - Automatic neighbor discovery and a Hub that works out the layout.
 - Stable tile IDs, even when coordinates change.
 - Identifiable modules, event handling and computer control.
@@ -29,7 +29,7 @@ Electronic modules: buttons, lights, marble sensors, gates, splitters and an ele
 
 Test sensors with real marbles and ambient light, and check their output voltage.
 
-MG90S servos and a 12V N20 geared motor are candidates. Measure startup/stall current and mechanical load before choosing supplies. The elevator needs its own converter, driver, end stops and stall protection. That driver belongs on the module, not every tile.
+Servos remain candidates with unmeasured loads. The elevator prototype uses a documented 12V gearmotor, a module-side converter and current-regulated driver; its local controller handles progress and fault supervision. Those circuits belong only on the elevator. Mechanical load, startup, stall and braking still need physical validation.
 
 ## Software
 

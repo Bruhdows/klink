@@ -1,0 +1,4712 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "f892b381-aedd-4968-9e23-1d96b25b851e")
+	(paper "A3")
+	(title_block
+		(title "Klink Hub - UART links"))
+	(lib_symbols
+		(symbol "74xx:74HC244"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -7.62 16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "74HC244"
+				(at -7.62 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "8-bit Buffer/Line Driver 3-state"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "HCMOS BUFFER 3State"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm* SSOP*4.4x6.5mm*P0.65mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "74HC244_1_0"
+				(polyline
+					(pts
+						(xy 1.27 0)
+						(xy -1.27 1.27)
+						(xy -1.27 -1.27)
+						(xy 1.27 0))
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(pin input inverted
+					(at -12.7 -10.16 0)
+					(length 5.08)
+					(name "1OE"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 12.7 0)
+					(length 5.08)
+					(name "1A0"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "2Y0"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 10.16 0)
+					(length 5.08)
+					(name "1A1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "2Y1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 7.62 0)
+					(length 5.08)
+					(name "1A2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "2Y2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 5.08)
+					(name "1A3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 -5.08 180)
+					(length 5.08)
+					(name "2Y3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -20.32 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 5.08)
+					(name "2A3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 5.08 180)
+					(length 5.08)
+					(name "1Y3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "2A2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 7.62 180)
+					(length 5.08)
+					(name "1Y2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "2A1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 10.16 180)
+					(length 5.08)
+					(name "1Y1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "2A0"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 12.7 180)
+					(length 5.08)
+					(name "1Y0"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input inverted
+					(at -12.7 -12.7 0)
+					(length 5.08)
+					(name "2OE"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 20.32 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(symbol "74HC244_1_1"
+				(rectangle
+					(start -7.62 15.24)
+					(end 7.62 -15.24)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background))))
+			(embedded_fonts no))
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0.254))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))
+					(justify left)))
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762))
+					(stroke
+						(width 0.508)
+						(type default))
+					(fill
+						(type none)))
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762))
+					(stroke
+						(width 0.508)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes))
+			(pin_names
+				(offset 0.762)
+				(hide yes))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default))
+					(fill
+						(type none))))
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(embedded_fonts no)))
+	(embedded_fonts no)
+	(symbol
+		(lib_id "74xx:74HC244")
+		(at 76.2 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c893110-c651-4579-b24e-b1b809bbb9a4")
+		(property "Reference" "U80"
+			(at 63.5 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1))))
+		(property "Value" "SN74LVC244APWR"
+			(at 76.2 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1))))
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 76.2 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf"
+			(at 76.2 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Description" "8-bit Buffer/Line Driver 3-state"
+			(at 76.2 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(pin "1"
+			(uuid "a730aae3-0b37-47b2-8ad3-466fe7f165e3"))
+		(pin "2"
+			(uuid "40e40ed2-aaa7-44fd-8397-89df58dfc2d7"))
+		(pin "3"
+			(uuid "0f6b9d9d-b539-4be4-9f30-3f94e2563b66"))
+		(pin "4"
+			(uuid "edfc04b1-8a99-4c1c-b9ac-31fd8d6e2e3a"))
+		(pin "5"
+			(uuid "2af055e1-1982-4698-9164-e4a71257989e"))
+		(pin "6"
+			(uuid "a1b1ef8d-96ae-46b2-9c6f-3cbb28950ca4"))
+		(pin "7"
+			(uuid "247de7f0-a982-4b20-bd1f-7552f637ffed"))
+		(pin "8"
+			(uuid "230fc9b9-26f2-4fc7-8236-667c75646922"))
+		(pin "9"
+			(uuid "33a01f5d-4bef-4dad-b2f4-38aecd875560"))
+		(pin "10"
+			(uuid "a46c126c-1493-49a2-8919-7a70020965bf"))
+		(pin "11"
+			(uuid "733f084d-2945-486f-9ff3-853f4c113f59"))
+		(pin "12"
+			(uuid "d7c186eb-189b-4885-a2d1-d2b70a1b78ed"))
+		(pin "13"
+			(uuid "6daefb1c-a505-49f2-b30a-f12301b6187c"))
+		(pin "14"
+			(uuid "ecf6468f-5a62-411a-810b-525aa36d16a2"))
+		(pin "15"
+			(uuid "9f7dc0e1-205d-4451-813f-cd87c73fc989"))
+		(pin "16"
+			(uuid "0dd12aba-3f4b-4bb6-9467-a62a546d07d5"))
+		(pin "17"
+			(uuid "07dfb15e-d0eb-43a9-88af-71603e2295a6"))
+		(pin "18"
+			(uuid "31a56d6b-3296-4204-8474-c198e60efc1b"))
+		(pin "19"
+			(uuid "f6df6a29-cbfd-482b-9d1c-ee7d0dfd665e"))
+		(pin "20"
+			(uuid "4663dd80-7af8-4b84-8b0f-c6e450a4e2db"))
+		(property "MPN" "SN74LVC244APWR"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "U80")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 63.5 78.74)
+			(xy 60.96 78.74))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7fa58e54-b61a-47a2-aff5-59c614586785"))
+	(global_label "UART_DISABLE"
+		(shape input)
+		(at 60.96 78.74 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "d8235977-8f54-4390-af45-e5b3a9cb2c83"))
+	(wire
+		(pts
+			(xy 63.5 81.28)
+			(xy 60.96 81.28))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3ce3d57a-df50-420c-b034-bc27c31c6585"))
+	(global_label "UART_DISABLE"
+		(shape input)
+		(at 60.96 81.28 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "2effad0b-f4cb-40b9-b326-e3f7acae567a"))
+	(wire
+		(pts
+			(xy 76.2 88.9)
+			(xy 76.2 91.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d337ce61-54ce-4b1f-9ced-4dea51e6c46a"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 76.2 91.44 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "3a2d8b81-44cb-418e-823b-386a7829c91d"))
+	(wire
+		(pts
+			(xy 76.2 48.26)
+			(xy 76.2 45.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a3573d02-1e07-403d-b04e-168871f7fbd9"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 76.2 45.72 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "9906e4e6-6b6b-4563-8300-2f36d8509cea"))
+	(wire
+		(pts
+			(xy 63.5 63.5)
+			(xy 60.96 63.5))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f6032486-18b4-4d7c-b705-9900b8afd807"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 60.96 63.5 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "e8f1e7f3-35c6-4850-a3f0-1c7da530b5c9"))
+	(wire
+		(pts
+			(xy 63.5 66.04)
+			(xy 60.96 66.04))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d15c0757-efef-4de4-b8c0-49db2365f046"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 60.96 66.04 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "0c8ea37d-c694-499a-85d4-d65265a921ec"))
+	(wire
+		(pts
+			(xy 63.5 55.88)
+			(xy 60.96 55.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c9b7c371-bd64-49de-b92d-2228d2eb19b5"))
+	(global_label "UART1_TX_MCU"
+		(shape input)
+		(at 60.96 55.88 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "a787c9d7-8d23-43b9-bc2d-ccec96202dd2"))
+	(wire
+		(pts
+			(xy 88.9 55.88)
+			(xy 91.44 55.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c8794b59-6150-4759-9187-e4c811197750"))
+	(global_label "UART1_TX_DRV"
+		(shape input)
+		(at 91.44 55.88 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "84b67a7c-2e26-4eec-9eba-d0f6156771f7"))
+	(wire
+		(pts
+			(xy 63.5 73.66)
+			(xy 60.96 73.66))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "92a2ca0e-4fbf-460e-8518-5525fc8bf988"))
+	(global_label "UART1_RX_IN"
+		(shape input)
+		(at 60.96 73.66 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "53894fbb-3561-4e2f-a6f0-1c204aacfc73"))
+	(wire
+		(pts
+			(xy 88.9 73.66)
+			(xy 91.44 73.66))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1291913f-7412-4eec-ba8e-058a388d9976"))
+	(global_label "UART1_RX_MCU"
+		(shape input)
+		(at 91.44 73.66 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "1ba004f6-fdb8-4671-a653-08e268b82f5e"))
+	(wire
+		(pts
+			(xy 63.5 58.42)
+			(xy 60.96 58.42))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "07aaef35-1ee4-474c-a0be-ed82428a1ba9"))
+	(global_label "UART2_TX_MCU"
+		(shape input)
+		(at 60.96 58.42 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "894feb16-1616-44e3-bc90-9ccc3b2d0b79"))
+	(wire
+		(pts
+			(xy 88.9 58.42)
+			(xy 91.44 58.42))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3f8e8c24-b422-452b-ad87-412d608ea347"))
+	(global_label "UART2_TX_DRV"
+		(shape input)
+		(at 91.44 58.42 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "aba36b9c-6af1-4270-b7a3-456045bca6d5"))
+	(wire
+		(pts
+			(xy 63.5 71.12)
+			(xy 60.96 71.12))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "41acf712-b423-4944-9ba5-4fbe7aa8023f"))
+	(global_label "UART2_RX_IN"
+		(shape input)
+		(at 60.96 71.12 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "d11cd021-11a5-42c2-b43a-af4391d6ea14"))
+	(wire
+		(pts
+			(xy 88.9 71.12)
+			(xy 91.44 71.12))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "bd496b63-508d-4e1d-b47f-eb61fb771d6b"))
+	(global_label "UART2_RX_MCU"
+		(shape input)
+		(at 91.44 71.12 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "558cca46-4499-4a53-bdbf-eca27c48cf3a"))
+	(wire
+		(pts
+			(xy 63.5 60.96)
+			(xy 60.96 60.96))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8b997c21-69d3-481f-a35c-77bd3a5aeb67"))
+	(global_label "UART3_TX_MCU"
+		(shape input)
+		(at 60.96 60.96 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "60d7a2a2-5de1-4487-9cc0-e63f0dc3231d"))
+	(wire
+		(pts
+			(xy 88.9 60.96)
+			(xy 91.44 60.96))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f763c951-f1ce-4648-ac2c-214388dc6bff"))
+	(global_label "UART3_TX_DRV"
+		(shape input)
+		(at 91.44 60.96 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "d2f7eef8-e6c3-4610-98da-bc71202b44ab"))
+	(wire
+		(pts
+			(xy 63.5 68.58)
+			(xy 60.96 68.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8c87889b-7118-4b1e-a29f-36d2549973ec"))
+	(global_label "UART3_RX_IN"
+		(shape input)
+		(at 60.96 68.58 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "197ad10f-b431-4f64-a281-6b898e10048c"))
+	(wire
+		(pts
+			(xy 88.9 68.58)
+			(xy 91.44 68.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "34fa02ab-6832-4946-990d-80386861bb11"))
+	(global_label "UART3_RX_MCU"
+		(shape input)
+		(at 91.44 68.58 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "f7ac6654-37fc-44e1-8a14-7d16ba5ef771"))
+	(no_connect
+		(at 88.9 66.04)
+		(uuid "04ab262f-df74-47a9-ab22-c77b74c3f6d3"))
+	(no_connect
+		(at 88.9 63.5)
+		(uuid "2b57cd80-deba-4740-addb-78ccf8293687"))
+	(symbol
+		(lib_id "Device:C")
+		(at 147.32 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "66538b4d-884e-4d20-93eb-7d7e5796808c")
+		(property "Reference" "C440"
+			(at 149.86 54.61 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "100nF 50V X7R"
+			(at 149.86 57.15 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 148.2852 52.07 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 45.72 -33.02 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "abe387e6-b846-4f9e-8541-05e8a4e39958"))
+		(pin "2"
+			(uuid "dd1985d4-f1c6-41c7-80ea-2cac623e2b3c"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "C440")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 147.32 52.07)
+			(xy 147.32 49.53))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "237cfee0-a07e-491d-b3ef-ca8e0d11190d"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 147.32 49.53 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "a994e1d1-da4f-449d-9ad2-2a812da76997"))
+	(wire
+		(pts
+			(xy 147.32 59.69)
+			(xy 147.32 62.23))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8fb38000-1f91-492b-8669-8d5806ab685c"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 147.32 62.23 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "7e68ce10-e6fd-4c8d-8902-a60f1517a295"))
+	(symbol
+		(lib_id "Device:R")
+		(at 111.76 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "6c7ddf7c-025f-4634-be0e-e5e9f961f504")
+		(property "Reference" "R440"
+			(at 114.30000000000001 138.42999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 114.30000000000001 140.97 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 109.982 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 2.54 96.52 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "5cb5ab1d-603c-4d54-b207-60a1a99459d3"))
+		(pin "2"
+			(uuid "59c2a768-99d8-4d01-b553-b8fdbe551778"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R440")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 111.76 135.89)
+			(xy 111.76 133.35))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4a16f0db-a63e-4195-8d51-eef3eefdf327"))
+	(global_label "UART1_TX_DRV"
+		(shape input)
+		(at 111.76 133.35 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "1feee15b-fc2a-4954-85c3-1fc39c040586"))
+	(wire
+		(pts
+			(xy 111.76 143.51)
+			(xy 111.76 146.05))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3dfa3f13-9f67-4776-a201-833c38aea564"))
+	(global_label "UART1_TX"
+		(shape input)
+		(at 111.76 146.05 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "cf306a9d-cbf6-4ffd-8048-30f785bb0c2d"))
+	(symbol
+		(lib_id "Device:R")
+		(at 147.32 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "d8fb023e-9a1d-4687-baae-6f4d31ff0832")
+		(property "Reference" "R441"
+			(at 149.85999999999999 138.42999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 149.85999999999999 140.97 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 145.542 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 38.1 73.66 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "dfb7f4cc-bc3e-429b-b236-a8e2cb2d90df"))
+		(pin "2"
+			(uuid "175af0ad-94dc-4a5d-b7ec-8469ab673b47"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R441")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 147.32 135.89)
+			(xy 147.32 133.35))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "687cc61a-5922-4da9-b6d9-573761bd9ef4"))
+	(global_label "UART1_RX"
+		(shape input)
+		(at 147.32 133.35 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "aa1d3dfb-66be-4778-92eb-3080d3ae8c14"))
+	(wire
+		(pts
+			(xy 147.32 143.51)
+			(xy 147.32 146.05))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b2bd969b-66e0-4290-b252-889cf7a0e7f9"))
+	(global_label "UART1_RX_IN"
+		(shape input)
+		(at 147.32 146.05 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "8e40474d-98d2-4c01-b58b-fbf69e0ff429"))
+	(symbol
+		(lib_id "Device:R")
+		(at 35.56 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "ea356116-44cf-4b7b-948c-bde1c158246b")
+		(property "Reference" "R442"
+			(at 38.1 138.42999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 38.1 140.97 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 33.782 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 2.54 96.52 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "8a817a4b-cf84-495c-8678-4462650c8489"))
+		(pin "2"
+			(uuid "57377b21-0036-4c69-8e43-aee9e6d7d485"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R442")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 35.56 135.89)
+			(xy 35.56 133.35))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "84950d10-e679-4bae-be37-b70811999bac"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 35.56 133.35 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "a765f853-b832-466c-8195-c265b4a7ed5b"))
+	(wire
+		(pts
+			(xy 35.56 143.51)
+			(xy 35.56 146.05))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dc33b25f-b44d-4cfd-ba4a-270458906886"))
+	(global_label "UART1_TX_MCU"
+		(shape input)
+		(at 35.56 146.05 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "bdfd0d5b-3216-4c68-b604-1bac2affd34f"))
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "cf2f6346-a720-4326-bf69-e78c035a0bf0")
+		(property "Reference" "R443"
+			(at 73.66000000000001 138.42999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 73.66000000000001 140.97 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 69.342 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 38.1 73.66 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "d64184fd-e9eb-4529-9051-02721b08eaf7"))
+		(pin "2"
+			(uuid "2606a7d8-bfa0-42a6-936b-d26eb72d9ac9"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R443")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 71.12 135.89)
+			(xy 71.12 133.35))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "147bcac3-212f-4e15-b8eb-ef5327edb2d2"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 71.12 133.35 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "762e6a46-9c70-4eef-b75e-94bb89c0b888"))
+	(wire
+		(pts
+			(xy 71.12 143.51)
+			(xy 71.12 146.05))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "cb6f7e65-3331-4743-8afa-7f160eb57ecd"))
+	(global_label "UART1_RX_IN"
+		(shape input)
+		(at 71.12 146.05 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "9a3c19e3-d05d-4214-a5dc-019014e6fa97"))
+	(symbol
+		(lib_id "Device:R")
+		(at 35.56 160.01999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "f21bf99d-4bc8-4f62-8382-46dcff62bcf3")
+		(property "Reference" "R480"
+			(at 38.1 158.74999999999997 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "10k 1%"
+			(at 38.1 161.29 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 33.782 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0710KL"
+			(at -106.68 71.12 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "4f1666cb-4ac1-498e-b0e6-7b9b7516de76"))
+		(pin "2"
+			(uuid "6f0fcde8-7bfc-4a1e-a1fc-ef1a1c8c334d"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R480")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 35.56 156.21)
+			(xy 35.56 153.67))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4b7eebc1-041f-49d1-86d5-1903469cfe4a"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 35.56 153.67 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "ac327e64-f03a-4054-94e9-cc8ddfd95ccb"))
+	(wire
+		(pts
+			(xy 35.56 163.83)
+			(xy 35.56 166.37))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2a897868-bf2f-4936-a2bb-e0947979d90e"))
+	(global_label "DETECT1"
+		(shape input)
+		(at 35.56 166.37 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "ade330d8-cfc8-4644-bdca-a164dec35e4d"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 182.88 132.07999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "684d097a-2322-4206-a802-e01f1fa39a5a")
+		(property "Reference" "TP50"
+			(at 182.88 138.938 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART1_TX"
+			(at 182.88 137.16 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 187.96 132.08 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "06f52595-ad69-4ebc-81fe-d5344c827cee"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP50")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 182.88 132.08)
+			(xy 182.88 134.62))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "244700a1-d3ed-4245-b5cf-d668786a5d8a"))
+	(global_label "UART1_TX"
+		(shape input)
+		(at 182.88 134.62 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "a8464a3e-1851-4a19-ab79-e2a7eafeed86"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 182.88 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "5d79e0a1-2bbf-4962-89c5-71f1d5628086")
+		(property "Reference" "TP51"
+			(at 182.88 154.178 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART1_RX"
+			(at 182.88 152.4 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 187.96 147.32 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "71b949c3-51a5-4a31-875f-1d49facf6b00"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP51")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 182.88 147.32)
+			(xy 182.88 149.86))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "18907f13-ce2f-4dad-82b0-ffb3b31bdcb8"))
+	(global_label "UART1_RX"
+		(shape input)
+		(at 182.88 149.86 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "e9e109f6-c5fd-46d0-9288-69bee0ad9906"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 71.12 160.01999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "f657d63f-7e4c-4561-ab9e-4f9fa2a8cc61")
+		(property "Reference" "TP62"
+			(at 71.12 166.878 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "DETECT1"
+			(at 71.12 165.1 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 76.2 160.02 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "b7656de1-dabe-4feb-8b6a-1244e9e92c16"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP62")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 71.12 160.02)
+			(xy 71.12 162.56))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0831d05e-99d2-4189-a227-b23a7545bc75"))
+	(global_label "DETECT1"
+		(shape input)
+		(at 71.12 162.56 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "c1fdd974-c896-48da-a56c-058b88152f56"))
+	(symbol
+		(lib_id "Device:R")
+		(at 111.76 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "e5096f34-3e8e-4ef1-8015-66512adb19d7")
+		(property "Reference" "R444"
+			(at 114.30000000000001 184.14999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 114.30000000000001 186.69 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 109.982 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at -193.04 142.24 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "3200691c-72c2-4e57-afcd-ab9f4a51e133"))
+		(pin "2"
+			(uuid "ac9a3f2f-a899-4447-ae83-dac28fd13fcc"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R444")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 111.76 181.61)
+			(xy 111.76 179.07))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "25e91883-b4dd-415a-9b29-d9a74a71d858"))
+	(global_label "UART2_TX_DRV"
+		(shape input)
+		(at 111.76 179.07 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "e49dd1fb-5860-4436-9ab7-c292630b76e7"))
+	(wire
+		(pts
+			(xy 111.76 189.23)
+			(xy 111.76 191.77))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6af360ca-df85-4d68-959b-5d2070192f03"))
+	(global_label "UART2_TX"
+		(shape input)
+		(at 111.76 191.77 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "02309483-43c1-477e-9ebe-60cf983a6654"))
+	(symbol
+		(lib_id "Device:R")
+		(at 147.32 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "b4b65760-4bdc-4fba-a629-92811e618aa5")
+		(property "Reference" "R445"
+			(at 149.85999999999999 184.14999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 149.85999999999999 186.69 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 145.542 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at -157.48 119.38 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "440e03b4-8ce6-40c1-b8fb-c3de69dca4d5"))
+		(pin "2"
+			(uuid "88ea41b4-631b-4f3f-bb9f-6957cbf08758"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R445")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 147.32 181.61)
+			(xy 147.32 179.07))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "70ec9eb6-a24a-4761-b01e-97cb7dd20e66"))
+	(global_label "UART2_RX"
+		(shape input)
+		(at 147.32 179.07 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "074ec93c-9509-48e3-81c2-253c3277d3a1"))
+	(wire
+		(pts
+			(xy 147.32 189.23)
+			(xy 147.32 191.77))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1ff668aa-a968-4c32-8757-4b9e5f7a20e7"))
+	(global_label "UART2_RX_IN"
+		(shape input)
+		(at 147.32 191.77 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "2fb3602f-9141-4fa8-a879-5ce9f459d230"))
+	(symbol
+		(lib_id "Device:R")
+		(at 35.56 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "26a996c9-749f-407c-aae3-25a0545c0eaa")
+		(property "Reference" "R446"
+			(at 38.1 184.14999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 38.1 186.69 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 33.782 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at -193.04 142.24 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "6b2af06d-a426-4845-87f3-fa0234299228"))
+		(pin "2"
+			(uuid "b136be98-843b-4629-81de-1f66e5a4558f"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R446")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 35.56 181.61)
+			(xy 35.56 179.07))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "2030df15-1642-4fba-95cf-75ac0102e2d5"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 35.56 179.07 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "aee29974-13cc-4228-ade9-24a65afa3c96"))
+	(wire
+		(pts
+			(xy 35.56 189.23)
+			(xy 35.56 191.77))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4958df5a-6e2f-43e1-b2de-a02416a91169"))
+	(global_label "UART2_TX_MCU"
+		(shape input)
+		(at 35.56 191.77 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "bde6ec6e-41d0-4359-b213-1057ebe01e93"))
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "5f539b7b-0613-45cb-8e75-96fbe2a3519a")
+		(property "Reference" "R447"
+			(at 73.66000000000001 184.14999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 73.66000000000001 186.69 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 69.342 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at -157.48 119.38 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "297ada60-5b13-4c82-9668-131fe07e150e"))
+		(pin "2"
+			(uuid "daf2a977-3361-4765-9b55-fc7817a0e832"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R447")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 71.12 181.61)
+			(xy 71.12 179.07))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dc0ed62a-7c01-430a-9a8a-5d51c5388e68"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 71.12 179.07 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "0852f3c0-d7ac-468b-a110-883a38428e1c"))
+	(wire
+		(pts
+			(xy 71.12 189.23)
+			(xy 71.12 191.77))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "449faa34-dcc8-43d8-8c01-d42669c0d956"))
+	(global_label "UART2_RX_IN"
+		(shape input)
+		(at 71.12 191.77 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "603bdd25-993b-4472-bd73-3d3fd73cd001"))
+	(symbol
+		(lib_id "Device:R")
+		(at 35.56 205.73999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "7a5bfb37-bed5-48b3-9343-c20e61f3364d")
+		(property "Reference" "R481"
+			(at 38.1 204.46999999999997 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "10k 1%"
+			(at 38.1 207.01 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 33.782 205.74 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0710KL"
+			(at -302.26 116.84 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "cf5092fe-8172-4248-916a-63c15c8527a5"))
+		(pin "2"
+			(uuid "cd6d5176-a5dc-42c3-923f-9f18912cfdae"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R481")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 35.56 201.93)
+			(xy 35.56 199.39))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "5b44a9ba-2d45-4878-9061-6d0cde3538b8"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 35.56 199.39 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "fae8e22c-2b39-4ff8-8572-7f9492ad6375"))
+	(wire
+		(pts
+			(xy 35.56 209.55)
+			(xy 35.56 212.09))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b5d15d69-f23e-4b26-9327-639aa7c0348c"))
+	(global_label "DETECT2"
+		(shape input)
+		(at 35.56 212.09 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "cff535e0-68df-4b79-8067-ef0c5343934e"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 182.88 177.79999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "b484a0f2-fbdb-4536-90e9-8833463a489e")
+		(property "Reference" "TP52"
+			(at 182.88 184.658 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART2_TX"
+			(at 182.88 182.88 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 187.96 177.8 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "90035e02-9da4-4ffa-8d5d-ffb413c0db17"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP52")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 182.88 177.8)
+			(xy 182.88 180.34))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dfeb2872-d057-40d2-adcc-06e6ace2010e"))
+	(global_label "UART2_TX"
+		(shape input)
+		(at 182.88 180.34 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "21c46dba-ee33-46e5-b981-076a013e64bd"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 182.88 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "7efe2a6e-f9ae-4085-8aa7-f78d873011a2")
+		(property "Reference" "TP53"
+			(at 182.88 199.898 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART2_RX"
+			(at 182.88 198.12 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 187.96 193.04 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "065f38de-6561-42f6-960a-2ea4a58ffff6"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP53")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 182.88 193.04)
+			(xy 182.88 195.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7159471b-f6cf-4e8a-b3bf-b5d252621422"))
+	(global_label "UART2_RX"
+		(shape input)
+		(at 182.88 195.58 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "0d6a0337-d998-4364-9870-6daebc406a4d"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 71.12 205.73999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "b50d3c19-4136-417b-ae67-07e02adef54a")
+		(property "Reference" "TP63"
+			(at 71.12 212.598 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "DETECT2"
+			(at 71.12 210.82 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 76.2 205.74 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "6a7890f0-412d-48e2-88ed-d23540343a05"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP63")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 71.12 205.74)
+			(xy 71.12 208.28))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "54b5fd1e-9213-4880-81cb-316b8b219370"))
+	(global_label "DETECT2"
+		(shape input)
+		(at 71.12 208.28 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "b2ceb4f3-6068-4c9e-855b-bf5b2f0c3980"))
+	(symbol
+		(lib_id "Device:R")
+		(at 111.76 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "bb0359c0-31ce-4e6f-8bf7-05251c2e8896")
+		(property "Reference" "R448"
+			(at 114.30000000000001 229.86999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 114.30000000000001 232.41 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 109.982 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 2.54 106.68 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "08f9c47e-665e-4218-b6d6-f3efb20b5d6e"))
+		(pin "2"
+			(uuid "dc3efb95-d95d-45b1-9262-84f4e0969c9b"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R448")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 111.76 227.33)
+			(xy 111.76 224.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "df81e586-b40a-4b09-9a1f-a6db82aaadb9"))
+	(global_label "UART3_TX_DRV"
+		(shape input)
+		(at 111.76 224.79 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "8b90c6da-58ef-4df0-be1a-54fba0baa050"))
+	(wire
+		(pts
+			(xy 111.76 234.95)
+			(xy 111.76 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "27e04487-1819-4b0b-83c7-891010b21471"))
+	(global_label "UART3_TX"
+		(shape input)
+		(at 111.76 237.49 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "4eb55ad5-1cf7-4c0b-8737-3e3657154e1e"))
+	(symbol
+		(lib_id "Device:R")
+		(at 147.32 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "64f610ca-88f4-4e26-8538-72f1adcccd7d")
+		(property "Reference" "R449"
+			(at 149.85999999999999 229.86999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 149.85999999999999 232.41 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 145.542 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 38.1 83.82 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "29e8426f-fa49-47e4-b09e-26906ff0c6f6"))
+		(pin "2"
+			(uuid "eb1faee5-11e9-46c9-ad95-517c4f707ed4"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R449")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 147.32 227.33)
+			(xy 147.32 224.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0f4d7913-5315-4ad0-8da2-b79aeca74aa8"))
+	(global_label "UART3_RX"
+		(shape input)
+		(at 147.32 224.79 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "e569d643-dd3b-48c6-9dec-45867859094b"))
+	(wire
+		(pts
+			(xy 147.32 234.95)
+			(xy 147.32 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "66954e46-dfdf-49d7-adc7-d28b6445cafe"))
+	(global_label "UART3_RX_IN"
+		(shape input)
+		(at 147.32 237.49 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "61830e7d-f3f4-4a22-bb29-88b86fa3412e"))
+	(symbol
+		(lib_id "Device:R")
+		(at 35.56 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "eb492bac-232f-4c8a-b3e7-a6c3beda92ab")
+		(property "Reference" "R450"
+			(at 38.1 229.86999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 38.1 232.41 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 33.782 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 2.54 106.68 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "7c4997f8-bd6b-4918-9db1-aaec9d2a687b"))
+		(pin "2"
+			(uuid "bec8d756-3d4a-4296-8c9a-1fcc12eede2f"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R450")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 35.56 227.33)
+			(xy 35.56 224.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8614b167-3302-44d1-abe4-e7805593ad56"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 35.56 224.79 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "5fd441ec-1c6c-4bdf-a5f1-a40bc5d4e8ef"))
+	(wire
+		(pts
+			(xy 35.56 234.95)
+			(xy 35.56 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d3e3fdbc-3b17-4c79-be09-6578cb317c0d"))
+	(global_label "UART3_TX_MCU"
+		(shape input)
+		(at 35.56 237.49 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "58526293-eaa7-4339-ab0c-65bf99d8ac0d"))
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "1bfc1ab4-2df4-4287-8045-0fc07e5702b6")
+		(property "Reference" "R451"
+			(at 73.66000000000001 229.86999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 73.66000000000001 232.41 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 69.342 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 38.1 83.82 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "33bf193c-5234-4770-80c2-bef1a01d34b4"))
+		(pin "2"
+			(uuid "5079c2f4-1543-4da2-b677-9afc77220896"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R451")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 71.12 227.33)
+			(xy 71.12 224.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "efab5dc0-0dad-4253-8bec-d6cb617a86c3"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 71.12 224.79 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "98e83874-f403-49c3-8f62-56e934d2f5f6"))
+	(wire
+		(pts
+			(xy 71.12 234.95)
+			(xy 71.12 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "779ae329-ab55-46ff-8240-4d508ce4c3a7"))
+	(global_label "UART3_RX_IN"
+		(shape input)
+		(at 71.12 237.49 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "7bad840c-b19a-4e8d-bdd8-d3a7e6f50a12"))
+	(symbol
+		(lib_id "Device:R")
+		(at 35.56 251.45999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "74140ec3-fa43-46c2-9234-335ef8533c12")
+		(property "Reference" "R482"
+			(at 38.1 250.18999999999997 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "10k 1%"
+			(at 38.1 252.73 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 33.782 251.46 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0710KL"
+			(at -106.68 81.28 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "b45913f8-28de-4931-aed2-8ddfb189fc89"))
+		(pin "2"
+			(uuid "62b4f55d-9490-45d9-8820-e2bd84161844"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R482")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 35.56 247.65)
+			(xy 35.56 245.11))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d358ba3e-dc71-4b10-b460-4cf29d09d1bc"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 35.56 245.11 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "754c21ae-3cf4-4a07-b488-da97f5472f74"))
+	(wire
+		(pts
+			(xy 35.56 255.27)
+			(xy 35.56 257.81))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7cda4721-55a4-4261-a0e1-575671b98be5"))
+	(global_label "DETECT3"
+		(shape input)
+		(at 35.56 257.81 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "daac8d7a-4d73-4f3f-8865-3fb7b2a8660c"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 182.88 223.51999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "e9ca6aa3-36a8-4712-a883-fc6196a87ab2")
+		(property "Reference" "TP54"
+			(at 182.88 230.378 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART3_TX"
+			(at 182.88 228.6 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 187.96 223.52 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ec460f6c-6038-4678-8971-640c50c5b6fc"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP54")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 182.88 223.52)
+			(xy 182.88 226.06))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d7df7731-494f-4f09-af1e-42badfcba168"))
+	(global_label "UART3_TX"
+		(shape input)
+		(at 182.88 226.06 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "16abfdc1-942e-4ef2-9653-94c6689bfec9"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 182.88 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "86b03731-cc92-4f77-a4a4-c6dbb0164977")
+		(property "Reference" "TP55"
+			(at 182.88 245.618 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART3_RX"
+			(at 182.88 243.84 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 187.96 238.76 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "8aa33796-bfa7-4339-ac4e-2f3ab4a7c144"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP55")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 182.88 238.76)
+			(xy 182.88 241.3))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8f96bfb7-c935-4084-b4a7-63c9f3ce5293"))
+	(global_label "UART3_RX"
+		(shape input)
+		(at 182.88 241.3 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "91499211-f88c-41ac-88f5-211d5167c57d"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 71.12 251.45999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "62ae0513-013c-471d-9bcc-9737218a4009")
+		(property "Reference" "TP64"
+			(at 71.12 258.318 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "DETECT3"
+			(at 71.12 256.54 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 76.2 251.46 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "688c0808-0f4a-43c8-9c04-ab0bda728d29"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP64")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 71.12 251.46)
+			(xy 71.12 254.0))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "cb807fd8-b63b-4e4a-a689-8451da3f2646"))
+	(global_label "DETECT3"
+		(shape input)
+		(at 71.12 254.0 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "2fdeba7e-3435-4b53-8954-625e1eb5745f"))
+	(symbol
+		(lib_id "74xx:74HC244")
+		(at 261.62 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5bf65462-38b2-4df0-ab14-ad70734a763d")
+		(property "Reference" "U83"
+			(at 248.92000000000002 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1))))
+		(property "Value" "SN74LVC244APWR"
+			(at 261.62 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1))))
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 261.62 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf"
+			(at 261.62 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Description" "8-bit Buffer/Line Driver 3-state"
+			(at 261.62 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(pin "1"
+			(uuid "482cc917-80fb-4819-9e59-d9659e5135d0"))
+		(pin "2"
+			(uuid "af841f43-8ab3-4ace-9a62-dde4fed18457"))
+		(pin "3"
+			(uuid "66e2ff25-9684-42d4-bc63-652d08f01c84"))
+		(pin "4"
+			(uuid "0f104837-d72e-4d33-ad0a-1f0c527b7a30"))
+		(pin "5"
+			(uuid "84c8225e-9103-4340-9c26-0e694e11d318"))
+		(pin "6"
+			(uuid "6ec11738-29a3-4f9b-96ec-7628e616029d"))
+		(pin "7"
+			(uuid "00cf4fc7-c4c8-4529-914a-16e8823bea67"))
+		(pin "8"
+			(uuid "f5988411-0905-421c-bfbc-c5dac6befccf"))
+		(pin "9"
+			(uuid "19498721-8ba4-4a66-9447-73630ad3af44"))
+		(pin "10"
+			(uuid "f8f3e9ab-2bf0-4736-b2ec-1bc43626d922"))
+		(pin "11"
+			(uuid "5a4fc1c3-a40c-4926-a3b5-4415e369048a"))
+		(pin "12"
+			(uuid "e5e0ad09-8444-4219-b07a-25d2d6d4244d"))
+		(pin "13"
+			(uuid "c0e6be54-abda-44f4-b6b7-b9f237b322bf"))
+		(pin "14"
+			(uuid "f406b6b9-0ba7-489b-ac91-726fee807ad1"))
+		(pin "15"
+			(uuid "38aefa26-bce8-4dbe-84a6-59fdf238fc85"))
+		(pin "16"
+			(uuid "55ac2261-f900-4fe4-b998-bbdcd013928b"))
+		(pin "17"
+			(uuid "9bbf75f4-de19-4ecb-a34e-122fb4029167"))
+		(pin "18"
+			(uuid "286d4744-824a-4009-bfc2-297eac052383"))
+		(pin "19"
+			(uuid "93ecf12d-037a-4871-aa60-fb035b9ef2d8"))
+		(pin "20"
+			(uuid "de212208-e212-4955-8636-dd31ac547a16"))
+		(property "MPN" "SN74LVC244APWR"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "U83")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 248.92 78.74)
+			(xy 246.38 78.74))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "08175380-1a8b-4bc9-ad2c-485fb682ce50"))
+	(global_label "UART_DISABLE"
+		(shape input)
+		(at 246.38 78.74 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "5d2868e6-c9ce-4992-98c3-021b891138e1"))
+	(wire
+		(pts
+			(xy 248.92 81.28)
+			(xy 246.38 81.28))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1bfd1c1e-d2e6-4a73-9b6b-88a37083a188"))
+	(global_label "UART_DISABLE"
+		(shape input)
+		(at 246.38 81.28 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "fe37d238-fcd1-412b-b947-4013b31589fe"))
+	(wire
+		(pts
+			(xy 261.62 88.9)
+			(xy 261.62 91.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f04597d2-9a3e-43ec-ad67-76397c648278"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 261.62 91.44 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "4ddd2441-8de4-4f34-aa7e-3fe070677621"))
+	(wire
+		(pts
+			(xy 261.62 48.26)
+			(xy 261.62 45.72))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "783802f7-bb67-4c08-bac4-c47681a09e15"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 261.62 45.72 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "eeb787f6-c7a8-4b40-b8a6-39d767df0d48"))
+	(wire
+		(pts
+			(xy 248.92 63.5)
+			(xy 246.38 63.5))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "71551b02-5e11-4961-905a-370307026d7b"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 246.38 63.5 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "5e634a2a-d86d-4adf-9b42-0376fae2e745"))
+	(wire
+		(pts
+			(xy 248.92 66.04)
+			(xy 246.38 66.04))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "abaffd83-d6c7-4505-a5f1-de3a55180be8"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 246.38 66.04 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "7e9ffa2e-bcb9-4aa5-abe4-939ca06b63e8"))
+	(wire
+		(pts
+			(xy 248.92 55.88)
+			(xy 246.38 55.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "bd2707a3-11cb-468f-9eeb-4ee00e9bd0d6"))
+	(global_label "UART4_TX_MCU"
+		(shape input)
+		(at 246.38 55.88 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "e11aeeb0-eb58-4a5e-b2c5-ce805a96aafd"))
+	(wire
+		(pts
+			(xy 274.32 55.88)
+			(xy 276.86 55.88))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8fe5ed8f-1a5f-476f-a567-c743933b2d2a"))
+	(global_label "UART4_TX_DRV"
+		(shape input)
+		(at 276.86 55.88 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "20c9e878-9276-403b-9f89-4d128c5f8f46"))
+	(wire
+		(pts
+			(xy 248.92 73.66)
+			(xy 246.38 73.66))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "26bb028b-5d0b-41d7-acb9-54f7e749421f"))
+	(global_label "UART4_RX_IN"
+		(shape input)
+		(at 246.38 73.66 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "3561cbe7-8762-4b52-89ed-70900d4f9a2d"))
+	(wire
+		(pts
+			(xy 274.32 73.66)
+			(xy 276.86 73.66))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "99896a20-6f6c-4e87-b7b1-0e9f99a0491d"))
+	(global_label "UART4_RX_MCU"
+		(shape input)
+		(at 276.86 73.66 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "e34302b3-86a4-414d-a9b4-e4bf54306915"))
+	(wire
+		(pts
+			(xy 248.92 58.42)
+			(xy 246.38 58.42))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7b1a9d36-867b-4b6f-abfd-84d0d7fddaa7"))
+	(global_label "UART5_TX_MCU"
+		(shape input)
+		(at 246.38 58.42 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "ee7aaaf9-0f0c-4292-8f37-53d2de0d1d0f"))
+	(wire
+		(pts
+			(xy 274.32 58.42)
+			(xy 276.86 58.42))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1b126b40-d042-4f49-9afb-73e068dfd2ee"))
+	(global_label "UART5_TX_DRV"
+		(shape input)
+		(at 276.86 58.42 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "3750d071-6ecf-4894-a1ef-dff6fa57024f"))
+	(wire
+		(pts
+			(xy 248.92 71.12)
+			(xy 246.38 71.12))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8eac7980-02da-4a52-bbe2-ec94b671a779"))
+	(global_label "UART5_RX_IN"
+		(shape input)
+		(at 246.38 71.12 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "2568f283-f6c1-47ee-814d-44126726a0a2"))
+	(wire
+		(pts
+			(xy 274.32 71.12)
+			(xy 276.86 71.12))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "cd312af9-086a-473a-b730-6ad6dab58072"))
+	(global_label "UART5_RX_MCU"
+		(shape input)
+		(at 276.86 71.12 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "931e341c-dee1-4c59-9aad-188a0da65bea"))
+	(wire
+		(pts
+			(xy 248.92 60.96)
+			(xy 246.38 60.96))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "49704529-3c36-489c-992d-95935754bb0e"))
+	(global_label "UART6_TX_MCU"
+		(shape input)
+		(at 246.38 60.96 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "62890364-9a3b-4f9a-877a-efc350fd8f38"))
+	(wire
+		(pts
+			(xy 274.32 60.96)
+			(xy 276.86 60.96))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "90fdcfac-063d-4c02-9f60-9c5d3e48b77b"))
+	(global_label "UART6_TX_DRV"
+		(shape input)
+		(at 276.86 60.96 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "3b4c169a-2754-406b-9024-a6ff1301273d"))
+	(wire
+		(pts
+			(xy 248.92 68.58)
+			(xy 246.38 68.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e7cca99b-2eab-4603-9c65-a30fe13c7347"))
+	(global_label "UART6_RX_IN"
+		(shape input)
+		(at 246.38 68.58 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "7b746f5c-23b2-48c0-9e81-267b45018365"))
+	(wire
+		(pts
+			(xy 274.32 68.58)
+			(xy 276.86 68.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "808088c4-c49e-4881-ac08-ddf13a35e7d0"))
+	(global_label "UART6_RX_MCU"
+		(shape input)
+		(at 276.86 68.58 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "51a66f6a-604f-4635-9bbb-31f874af1d45"))
+	(no_connect
+		(at 274.32 66.04)
+		(uuid "5ade2160-e2c0-4aa9-85c4-66e496f3e9bc"))
+	(no_connect
+		(at 274.32 63.5)
+		(uuid "5417a68c-c753-4fbb-af35-5393a92f9407"))
+	(symbol
+		(lib_id "Device:C")
+		(at 332.74 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "c52f2d07-8bbc-46fe-b95c-c62d6def135d")
+		(property "Reference" "C443"
+			(at 335.28 54.61 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "100nF 50V X7R"
+			(at 335.28 57.15 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 333.7052 52.07 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 35.56 -114.3 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "008c10d3-58da-4758-9b14-138f8be5e5a4"))
+		(pin "2"
+			(uuid "54df2260-e229-4ece-9e9e-7671cb2ff974"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "C443")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 332.74 52.07)
+			(xy 332.74 49.53))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4fae5d81-f1de-46c5-b371-a268ce75427f"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 332.74 49.53 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "3548ffcd-485e-4e43-857a-ceb99e5fb76c"))
+	(wire
+		(pts
+			(xy 332.74 59.69)
+			(xy 332.74 62.23))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f1943ca2-a1e7-415c-a712-0c3cd55cd32f"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 332.74 62.23 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "963bee1b-1c53-4ca2-bb45-1bbe29a78b60"))
+	(symbol
+		(lib_id "Device:R")
+		(at 297.18 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "5b3cb446-6f2b-4998-a8f4-21cd0c97da1b")
+		(property "Reference" "R452"
+			(at 299.72 138.42999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 299.72 140.97 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 295.402 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at -7.62 15.24 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "adf80651-64fa-4af3-8e6c-f55639a3c797"))
+		(pin "2"
+			(uuid "c6a5ced5-4744-4ece-976c-dc407e1a0f62"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R452")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 297.18 135.89)
+			(xy 297.18 133.35))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7f23769d-e456-4593-b764-b2bf25321111"))
+	(global_label "UART4_TX_DRV"
+		(shape input)
+		(at 297.18 133.35 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "ff4b6db5-d9c7-4b05-97de-9416fdf96f85"))
+	(wire
+		(pts
+			(xy 297.18 143.51)
+			(xy 297.18 146.05))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7a8aa754-4bda-4297-88b5-a72b2a075197"))
+	(global_label "UART4_TX"
+		(shape input)
+		(at 297.18 146.05 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "c671ad11-c94d-45a2-a3fe-b4f35b2d293d"))
+	(symbol
+		(lib_id "Device:R")
+		(at 332.74 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "5d4a9aa2-ecee-4589-a939-1f41e573e3e5")
+		(property "Reference" "R453"
+			(at 335.28000000000003 138.42999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 335.28000000000003 140.97 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 330.962 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 27.94 -7.62 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "1cd89555-4c3c-42c3-89e4-0b5d30c81902"))
+		(pin "2"
+			(uuid "fc6b93eb-924a-4a0f-80fa-4cfa68ac03fb"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R453")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 332.74 135.89)
+			(xy 332.74 133.35))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3e707742-0666-4c56-8c52-122da8809e31"))
+	(global_label "UART4_RX"
+		(shape input)
+		(at 332.74 133.35 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "0498a3af-d1ba-40d0-9d80-7f8abe8f59db"))
+	(wire
+		(pts
+			(xy 332.74 143.51)
+			(xy 332.74 146.05))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "df0b24f6-db1f-4709-8b5e-0b80702b2e34"))
+	(global_label "UART4_RX_IN"
+		(shape input)
+		(at 332.74 146.05 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "caf6c829-4dbf-4332-85fb-c275ccba80ab"))
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "087cbec1-382f-4139-b790-87f5f1e86f23")
+		(property "Reference" "R454"
+			(at 223.51999999999998 138.42999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 223.51999999999998 140.97 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 219.202 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at -7.62 15.24 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "9db2ec07-c6f2-4382-9a02-93178958ceda"))
+		(pin "2"
+			(uuid "2d6121ab-626c-47e4-a723-8b6f886acf59"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R454")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 220.98 135.89)
+			(xy 220.98 133.35))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "31497913-2c89-4c9f-a4ed-e67baaccae27"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 220.98 133.35 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "f35c3ee5-bbe2-44b8-8b7b-604791f73893"))
+	(wire
+		(pts
+			(xy 220.98 143.51)
+			(xy 220.98 146.05))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7a7fe156-df82-4ab0-bac9-80f1e7b2c0b7"))
+	(global_label "UART4_TX_MCU"
+		(shape input)
+		(at 220.98 146.05 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "ad8d7c03-4ead-421f-87bb-45291e6ffc3e"))
+	(symbol
+		(lib_id "Device:R")
+		(at 256.53999999999996 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "ed92c6f2-f113-48ee-9d3e-acf1f3b423d0")
+		(property "Reference" "R455"
+			(at 259.08 138.42999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 259.08 140.97 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 254.762 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 27.94 -7.62 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "a93bccd0-668a-4b85-bbd4-47ab12f1cef2"))
+		(pin "2"
+			(uuid "b4daf4d5-aabe-4dbe-91aa-df35e7c529f4"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R455")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 256.54 135.89)
+			(xy 256.54 133.35))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4fb5ab91-abec-4368-91af-6f014cd8c060"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 256.54 133.35 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "0f233c21-74c7-45e9-a08c-5c8d7f8f64f7"))
+	(wire
+		(pts
+			(xy 256.54 143.51)
+			(xy 256.54 146.05))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e5030fef-e0c6-4639-82c7-06e6783f8ae7"))
+	(global_label "UART4_RX_IN"
+		(shape input)
+		(at 256.54 146.05 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "9ee1d825-6879-4698-a546-893421dcdcd9"))
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 160.01999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "0e4937ac-0a72-4950-8e3d-332293509936")
+		(property "Reference" "R483"
+			(at 223.51999999999998 158.74999999999997 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "1k 1%"
+			(at 223.51999999999998 161.29 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 219.202 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-071KL"
+			(at -116.84 -10.16 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "7a7c5104-c343-4b39-b13d-0035545bc1e4"))
+		(pin "2"
+			(uuid "8796d4c5-8c73-44ab-b728-a769598eba2b"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R483")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 220.98 156.21)
+			(xy 220.98 153.67))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c24cf8fc-f911-4617-b52b-c8f4308e4b4b"))
+	(global_label "DETECT4"
+		(shape input)
+		(at 220.98 153.67 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "8b893d9d-edd2-4a71-9e63-5f13a119c20e"))
+	(wire
+		(pts
+			(xy 220.98 163.83)
+			(xy 220.98 166.37))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "c9860d32-73ee-495e-975f-7073e52c8e04"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 220.98 166.37 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "6313a704-dda2-4ec2-845f-726b33999a60"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.29999999999995 132.07999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "1257edf6-41d2-4fc9-9bcf-24d2d1596f7e")
+		(property "Reference" "TP56"
+			(at 368.3 138.938 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART4_TX"
+			(at 368.3 137.16 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 373.38 132.08 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "9c1fa442-9bd6-4dff-a0df-45db310c64fd"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP56")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 368.3 132.08)
+			(xy 368.3 134.62))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "29545495-8925-4684-81a7-8d02dad4bfd3"))
+	(global_label "UART4_TX"
+		(shape input)
+		(at 368.3 134.62 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "2fd0531b-16a1-44ad-bd76-9f4f93e0aa2e"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.29999999999995 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "a113e6f1-f0c8-4f3d-bfb1-2e57e21b5ea8")
+		(property "Reference" "TP57"
+			(at 368.3 154.178 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART4_RX"
+			(at 368.3 152.4 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 373.38 147.32 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "49b5ab65-c0f4-4b23-86da-f73231e63adb"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP57")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 368.3 147.32)
+			(xy 368.3 149.86))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4e713223-ca12-43d7-bc82-6ccd1b00b7ca"))
+	(global_label "UART4_RX"
+		(shape input)
+		(at 368.3 149.86 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "8186bf9e-d23e-4428-a89f-771589eecb2c"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 256.53999999999996 160.01999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "313fd9de-0778-4af0-a437-f5f6acd48320")
+		(property "Reference" "TP65"
+			(at 256.54 166.878 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "DETECT4"
+			(at 256.54 165.1 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 261.62 160.02 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "9690c8d6-e94d-4df3-9553-6e4764375608"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP65")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 256.54 160.02)
+			(xy 256.54 162.56))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "61c8b18e-c3f8-4814-879b-b4d2b2f70e56"))
+	(global_label "DETECT4"
+		(shape input)
+		(at 256.54 162.56 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "08dca6f3-1b19-4fa6-912c-e82d8046662f"))
+	(symbol
+		(lib_id "Device:R")
+		(at 297.18 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "3dffd2d5-c5cc-4df1-9728-29893e165d4b")
+		(property "Reference" "R456"
+			(at 299.72 184.14999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 299.72 186.69 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 295.402 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 187.96 -20.32 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "7908bda0-3e2f-4442-a306-298932a2590c"))
+		(pin "2"
+			(uuid "4c72cbe0-bb50-4dbb-a8a2-858510d91cc4"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R456")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 297.18 181.61)
+			(xy 297.18 179.07))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "cbe34d67-775c-4ab3-8c6c-2aa0d1d2dc8e"))
+	(global_label "UART5_TX_DRV"
+		(shape input)
+		(at 297.18 179.07 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "1e53fa95-ab55-4e17-bf41-90f4e0e077c0"))
+	(wire
+		(pts
+			(xy 297.18 189.23)
+			(xy 297.18 191.77))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "380d1e53-4db0-4957-899e-64c2a16079e7"))
+	(global_label "UART5_TX"
+		(shape input)
+		(at 297.18 191.77 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "d055190d-1889-4e3e-9b37-74df1293f5f1"))
+	(symbol
+		(lib_id "Device:R")
+		(at 332.74 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "b9924e6e-6221-48e1-b218-6da395dae5c8")
+		(property "Reference" "R457"
+			(at 335.28000000000003 184.14999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 335.28000000000003 186.69 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 330.962 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 223.52 -43.18 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "493ee2a2-a048-411f-94c3-f582db424f7a"))
+		(pin "2"
+			(uuid "f6aa2424-de02-4800-8215-7117b263cb9c"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R457")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 332.74 181.61)
+			(xy 332.74 179.07))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ed88402f-21ac-4a54-b995-ece1194e0c48"))
+	(global_label "UART5_RX"
+		(shape input)
+		(at 332.74 179.07 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "04b01e43-e909-4bc3-917a-10a7f8480d63"))
+	(wire
+		(pts
+			(xy 332.74 189.23)
+			(xy 332.74 191.77))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "8ce78af6-d7e8-4691-ab34-74dea982c115"))
+	(global_label "UART5_RX_IN"
+		(shape input)
+		(at 332.74 191.77 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "483e5db4-feed-45d0-934e-6412b79ee5fa"))
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "79435f76-5216-4025-935c-82f286a67ad7")
+		(property "Reference" "R458"
+			(at 223.51999999999998 184.14999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 223.51999999999998 186.69 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 219.202 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 187.96 -20.32 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "2aa59254-2393-4eb9-b71f-6d7ddf3e000a"))
+		(pin "2"
+			(uuid "1c0c2f96-447c-4a72-bad9-48807853da98"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R458")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 220.98 181.61)
+			(xy 220.98 179.07))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f2d5bf67-4da7-4321-9e2e-f5605ebe23ef"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 220.98 179.07 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "145045e0-4aa5-4e6b-8b58-5f49a76be11f"))
+	(wire
+		(pts
+			(xy 220.98 189.23)
+			(xy 220.98 191.77))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "768a7f20-52fe-4dd1-9970-0a0c8e623ce7"))
+	(global_label "UART5_TX_MCU"
+		(shape input)
+		(at 220.98 191.77 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "c915d874-4d57-4a5a-8058-cc32d5e51d50"))
+	(symbol
+		(lib_id "Device:R")
+		(at 256.53999999999996 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "4611d8e0-e182-4d6f-a10f-580d40dea9c9")
+		(property "Reference" "R459"
+			(at 259.08 184.14999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 259.08 186.69 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 254.762 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 223.52 -43.18 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "ed6966b9-952b-424d-8d6e-3b9df384995c"))
+		(pin "2"
+			(uuid "8cfff71f-56ca-4e51-890d-514d994744ea"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R459")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 256.54 181.61)
+			(xy 256.54 179.07))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e2659b60-df26-4088-90c6-14cd95a3e624"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 256.54 179.07 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "9de1bf0e-299e-4702-887a-f03ba4d1f226"))
+	(wire
+		(pts
+			(xy 256.54 189.23)
+			(xy 256.54 191.77))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "faf0a2e8-7214-45e5-a2a6-3e2a40b5fa2f"))
+	(global_label "UART5_RX_IN"
+		(shape input)
+		(at 256.54 191.77 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "5b8f7053-08a2-411c-b53a-6002ae362b97"))
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 205.73999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "3a383fea-0463-40c0-90c6-7141680e60af")
+		(property "Reference" "R484"
+			(at 223.51999999999998 204.46999999999997 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "1k 1%"
+			(at 223.51999999999998 207.01 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 219.202 205.74 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-071KL"
+			(at 78.74 -45.72 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "2796a7b0-b8ac-47f5-aa93-37f179f35dbf"))
+		(pin "2"
+			(uuid "516e4668-8cfe-4176-8194-c6ad06e4663c"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R484")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 220.98 201.93)
+			(xy 220.98 199.39))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "63c67298-488d-4e84-b272-5dfa1f88796e"))
+	(global_label "DETECT5"
+		(shape input)
+		(at 220.98 199.39 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "1a41c688-9e72-404c-8173-5ba94c8babda"))
+	(wire
+		(pts
+			(xy 220.98 209.55)
+			(xy 220.98 212.09))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "25c49eb1-3954-4fd7-9fe7-7f54602ec214"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 220.98 212.09 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "c7391de9-6aa2-4c3e-ae8e-43d1125bb72e"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.29999999999995 177.79999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "96ba00c7-a1a4-4d9c-8cf8-e4beefdcbe14")
+		(property "Reference" "TP58"
+			(at 368.3 184.658 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART5_TX"
+			(at 368.3 182.88 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 373.38 177.8 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "0b7d8674-cc12-436d-80ee-b36b83ce524b"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP58")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 368.3 177.8)
+			(xy 368.3 180.34))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6cd294c5-1ae1-4245-8917-dc789a60f8b8"))
+	(global_label "UART5_TX"
+		(shape input)
+		(at 368.3 180.34 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "52c264d0-ba21-4e18-bddf-ba03dd491f3c"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.29999999999995 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "435622dd-e2eb-4a4f-9036-217db086125a")
+		(property "Reference" "TP59"
+			(at 368.3 199.898 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART5_RX"
+			(at 368.3 198.12 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 373.38 193.04 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "08ff7506-fcff-484e-8d93-3d24c47a72a6"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP59")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 368.3 193.04)
+			(xy 368.3 195.58))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "7d6f9748-30c0-4262-aa12-40ad6ca12206"))
+	(global_label "UART5_RX"
+		(shape input)
+		(at 368.3 195.58 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "0bbc1095-9009-4f6e-b7a3-e7da1b3d2199"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 256.53999999999996 205.73999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "ed07df4d-adaf-46ca-906a-4c0fd411485d")
+		(property "Reference" "TP66"
+			(at 256.54 212.598 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "DETECT5"
+			(at 256.54 210.82 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 261.62 205.74 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "1ae6b24e-eea0-497a-b775-7bc45846e882"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP66")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 256.54 205.74)
+			(xy 256.54 208.28))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3cb846a5-a34b-4951-a6c6-99ba3a4b006c"))
+	(global_label "DETECT5"
+		(shape input)
+		(at 256.54 208.28 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "8f4104f4-112c-4a30-b102-675107bad348"))
+	(symbol
+		(lib_id "Device:R")
+		(at 297.18 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "b41acb6d-cc40-4209-a267-aa83b2fb78e3")
+		(property "Reference" "R460"
+			(at 299.72 229.86999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 299.72 232.41 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 295.402 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at -7.62 25.4 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "cb8e447f-6400-48ea-8c78-a610c00a080b"))
+		(pin "2"
+			(uuid "e2626d2f-ceec-4c08-b066-a863a2bb4088"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R460")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 297.18 227.33)
+			(xy 297.18 224.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f64bda8c-db3e-4e44-a933-c98aca2bf99d"))
+	(global_label "UART6_TX_DRV"
+		(shape input)
+		(at 297.18 224.79 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "51bc58f2-c3b9-491b-9d63-3e028424fb8f"))
+	(wire
+		(pts
+			(xy 297.18 234.95)
+			(xy 297.18 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ae42a087-61ac-4292-b991-f9c20a1a5e25"))
+	(global_label "UART6_TX"
+		(shape input)
+		(at 297.18 237.49 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "061de866-5ae1-4b0c-91bb-e0e3445627d0"))
+	(symbol
+		(lib_id "Device:R")
+		(at 332.74 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "a67ae53c-9237-4578-b486-50a7fcaec98e")
+		(property "Reference" "R461"
+			(at 335.28000000000003 229.86999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "2.2k 1% 0.25W"
+			(at 335.28000000000003 232.41 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 330.962 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 27.94 2.54 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "34f53c2d-1c6a-4d8b-9781-7df52f7c2531"))
+		(pin "2"
+			(uuid "426fe5fe-b39c-4a8b-800d-97b68e5538dd"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R461")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 332.74 227.33)
+			(xy 332.74 224.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "0de8f749-a8ca-41c5-9d2f-db3d4ef6c9f3"))
+	(global_label "UART6_RX"
+		(shape input)
+		(at 332.74 224.79 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "d9cd4d5e-4b7d-4292-bb3e-0f9ef9d4d6ac"))
+	(wire
+		(pts
+			(xy 332.74 234.95)
+			(xy 332.74 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d520ad48-6d51-4239-a7f2-7dba4312125b"))
+	(global_label "UART6_RX_IN"
+		(shape input)
+		(at 332.74 237.49 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "05b074df-5b64-4160-9384-721b48d61788"))
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "42d00ccd-74a2-4a8d-87e2-4402c7687c81")
+		(property "Reference" "R462"
+			(at 223.51999999999998 229.86999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 223.51999999999998 232.41 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 219.202 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at -7.62 25.4 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "63b25c8f-37ce-46c8-86d1-db3634c1dcb1"))
+		(pin "2"
+			(uuid "720f1b43-8185-4989-af46-96547626818c"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R462")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 220.98 227.33)
+			(xy 220.98 224.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "bf624af8-bcdc-4cf7-a614-66dde05a90c4"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 220.98 224.79 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "6b84ebd9-2548-4b40-b5c6-cd4769601f1f"))
+	(wire
+		(pts
+			(xy 220.98 234.95)
+			(xy 220.98 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f34ea691-59c8-4ea1-ba1a-945e12fe88e7"))
+	(global_label "UART6_TX_MCU"
+		(shape input)
+		(at 220.98 237.49 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "734a4b5e-04a0-4228-bd94-accf54f05a09"))
+	(symbol
+		(lib_id "Device:R")
+		(at 256.53999999999996 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "955b0e73-90f2-400f-96a1-1107e9d64deb")
+		(property "Reference" "R463"
+			(at 259.08 229.86999999999998 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "47k 1%"
+			(at 259.08 232.41 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 254.762 231.14 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 27.94 2.54 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "7aaef5ee-407f-4377-b3fa-e320044348f7"))
+		(pin "2"
+			(uuid "dec0bfa1-2fb4-464e-83d8-18200557ae0c"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R463")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 256.54 227.33)
+			(xy 256.54 224.79))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "fdc8a4b6-0764-4fe2-a8a9-5a8f122d042e"))
+	(global_label "HUB_3V3"
+		(shape input)
+		(at 256.54 224.79 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "83e0d87b-5022-400c-b26b-eb7b46c219ca"))
+	(wire
+		(pts
+			(xy 256.54 234.95)
+			(xy 256.54 237.49))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "ebc4caf7-7f5a-4eb2-b2ad-331a5225dc98"))
+	(global_label "UART6_RX_IN"
+		(shape input)
+		(at 256.54 237.49 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "a926d3a4-7dfd-4379-85b5-8ae4dde2f569"))
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 251.45999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "7223c40d-417b-49fe-a8cf-84750c091fee")
+		(property "Reference" "R485"
+			(at 223.51999999999998 250.18999999999997 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "1k 1%"
+			(at 223.51999999999998 252.73 0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 219.202 251.46 90)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-071KL"
+			(at -116.84 -0.0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(pin "1"
+			(uuid "74cc6f00-78cd-406e-8924-f3dc39579f19"))
+		(pin "2"
+			(uuid "a24f4883-fa0f-43e9-8584-c9afbd936962"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "R485")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 220.98 247.65)
+			(xy 220.98 245.11))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "94b1104e-5208-48a5-b23d-5706523fad3a"))
+	(global_label "DETECT6"
+		(shape input)
+		(at 220.98 245.11 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "473e1eb8-d8c7-40e1-934f-3b20c6245624"))
+	(wire
+		(pts
+			(xy 220.98 255.27)
+			(xy 220.98 257.81))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d563ce9d-9c53-48fc-85a8-697623fe5bf1"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 220.98 257.81 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "2006ab7d-c73b-4157-a5af-9af7daf6ad21"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.29999999999995 223.51999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "714675ad-c858-46b5-bfe1-49e43438d1d8")
+		(property "Reference" "TP60"
+			(at 368.3 230.378 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART6_TX"
+			(at 368.3 228.6 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 373.38 223.52 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "a5e62ba9-7e05-4f46-979f-95e518edb24b"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP60")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 368.3 223.52)
+			(xy 368.3 226.06))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b66659c5-6267-4b5a-ab64-f612a2d42d3a"))
+	(global_label "UART6_TX"
+		(shape input)
+		(at 368.3 226.06 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "33e68927-4aac-45bc-8416-793a054122af"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.29999999999995 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "ec1c6c88-4a71-4a39-966d-17a2901e58f5")
+		(property "Reference" "TP61"
+			(at 368.3 245.618 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "UART6_RX"
+			(at 368.3 243.84 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 373.38 238.76 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "552642b0-9e00-4b94-b0f8-2d4084f4cf47"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP61")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 368.3 238.76)
+			(xy 368.3 241.3))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f9a66250-6d65-4847-87e8-ceb9b1c046e4"))
+	(global_label "UART6_RX"
+		(shape input)
+		(at 368.3 241.3 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "51141a3e-9e68-4c96-bd14-03fdcaddd488"))
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 256.53999999999996 251.45999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced no)
+		(uuid "953fce01-9dba-4b15-94b0-3f99d7b8238e")
+		(property "Reference" "TP67"
+			(at 256.54 258.318 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Value" "DETECT6"
+			(at 256.54 256.54 0.0)
+			(effects
+				(font
+					(size 1 1))
+				(justify left)))
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 261.62 251.46 0.0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(pin "1"
+			(uuid "ef6a8644-2dfb-49b4-869f-505d1e81f373"))
+		(instances
+			(project "hub"
+				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/2bc3165f-0f55-4ec5-9d1f-a10845522e61"
+					(reference "TP67")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 256.54 251.46)
+			(xy 256.54 254.0))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "eb1fd33b-6c28-4f47-9167-c8256e5661d5"))
+	(global_label "DETECT6"
+		(shape input)
+		(at 256.54 254.0 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "4ea24549-b3f3-4413-94c1-aecfe724946f"))
+	(text "Ports 1/2 North, 3 East, 4/5 South, 6 West. Confirm mating map on samples."
+		(at 25.4 283.21 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left bottom))
+		(uuid "664553e0-93b1-485b-8e72-5970616dce8c")))

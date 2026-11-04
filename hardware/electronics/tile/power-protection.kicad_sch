@@ -1,5 +1,9 @@
-(kicad_sch (version 20250114) (generator "eeschema") (uuid "4a6f6ff4-3c27-4b70-b863-54b0f4f978b9") (paper "A2")
-(lib_symbols
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(uuid "4a6f6ff4-3c27-4b70-b863-54b0f4f978b9")
+	(paper "A2")
+	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes))
@@ -1190,7 +1194,7 @@
 							(font
 								(size 1.27 1.27))))))
 			(embedded_fonts no)))
-(embedded_fonts no)
+	(embedded_fonts no)
 	(symbol
 		(lib_id "Device:Fuse")
 		(at 30.48 49.53 0)
@@ -2453,6 +2457,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0712KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2529,6 +2539,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-07402KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2605,6 +2621,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-07402KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2681,6 +2703,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-071KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2757,6 +2785,18 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD07187KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2833,6 +2873,18 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2909,6 +2961,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3036,6 +3094,18 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD07100KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3163,6 +3233,18 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD0724K9L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3262,7 +3344,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 50V"
+		(property "Value" "100nF 50V X7R"
 			(at 34.29 285.75 0)
 			(effects
 				(font
@@ -3290,6 +3372,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3389,7 +3477,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 50V"
+		(property "Value" "100nF 50V X7R"
 			(at 83.82 285.75 0)
 			(effects
 				(font
@@ -3417,6 +3505,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3465,7 +3559,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 50V"
+		(property "Value" "100nF 50V X7R"
 			(at 138.43 285.75 0)
 			(effects
 				(font
@@ -3493,6 +3587,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3620,6 +3720,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H105K125AB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3949,5 +4055,4 @@
 	(title_block
 		(title "20V protection")
 		(rev "A")
-		(comment 1 "Draft - not for manufacture"))
-)
+		(comment 1 "Draft - not for manufacture")))

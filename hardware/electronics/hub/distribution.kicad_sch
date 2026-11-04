@@ -135,7 +135,8 @@
 			(width 0)
 			(type default))
 		(uuid "718d26f3-9138-494d-828c-42de7f4f10e8"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 30.48 60.96 180)
 		(effects
 			(font
@@ -181,7 +182,8 @@
 			(width 0)
 			(type default))
 		(uuid "eea5223b-c525-458a-8fe0-1a634e41e898"))
-	(label "PORT1_MON"
+	(global_label "PORT1_MON"
+		(shape bidirectional)
 		(at 116.84 50.8 0)
 		(effects
 			(font
@@ -196,7 +198,8 @@
 			(width 0)
 			(type default))
 		(uuid "82e4773f-9b7d-4b85-8de3-53f5a2b5cb6d"))
-	(label "PORT1_OC_N"
+	(global_label "PORT1_OC_N"
+		(shape bidirectional)
 		(at 116.84 60.96 0)
 		(effects
 			(font
@@ -211,7 +214,8 @@
 			(width 0)
 			(type default))
 		(uuid "e56884e3-b503-4c7a-9f64-3db9f653e728"))
-	(label "PORT1_HEALTH_N"
+	(global_label "PORT1_HEALTH_N"
+		(shape bidirectional)
 		(at 116.84 71.12 0)
 		(effects
 			(font
@@ -392,7 +396,8 @@
 			(width 0)
 			(type default))
 		(uuid "9d7765fa-b198-4b00-a211-f39d400b3fdd"))
-	(label "PORT1_MON"
+	(global_label "PORT1_MON"
+		(shape bidirectional)
 		(at 129.54 63.5 0)
 		(effects
 			(font
@@ -407,7 +412,8 @@
 			(width 0)
 			(type default))
 		(uuid "022cf614-50cb-4963-aec6-82f000b2266f"))
-	(label "HUB_20V"
+	(global_label "HUB_20V"
+		(shape bidirectional)
 		(at 165.1 40.64 180)
 		(effects
 			(font
@@ -422,7 +428,8 @@
 			(width 0)
 			(type default))
 		(uuid "1f6a0571-5e0b-41c4-b582-a7ba45c56b8b"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 165.1 50.8 180)
 		(effects
 			(font
@@ -437,7 +444,8 @@
 			(width 0)
 			(type default))
 		(uuid "7934a661-1f3a-41e4-8384-eec4fd5841b3"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 165.1 60.96 180)
 		(effects
 			(font
@@ -482,7 +490,8 @@
 			(width 0)
 			(type default))
 		(uuid "16b8fcd6-0dff-4817-99ed-f61570b4f10d"))
-	(label "PORT2_MON"
+	(global_label "PORT2_MON"
+		(shape bidirectional)
 		(at 251.46 50.8 0)
 		(effects
 			(font
@@ -497,7 +506,8 @@
 			(width 0)
 			(type default))
 		(uuid "92981b9d-f511-4493-bcf3-428420d567ac"))
-	(label "PORT2_OC_N"
+	(global_label "PORT2_OC_N"
+		(shape bidirectional)
 		(at 251.46 60.96 0)
 		(effects
 			(font
@@ -512,7 +522,8 @@
 			(width 0)
 			(type default))
 		(uuid "7d2c5def-c5df-4a8c-8f2d-99374524830b"))
-	(label "PORT2_HEALTH_N"
+	(global_label "PORT2_HEALTH_N"
+		(shape bidirectional)
 		(at 251.46 71.12 0)
 		(effects
 			(font
@@ -693,7 +704,8 @@
 			(width 0)
 			(type default))
 		(uuid "4f701f4a-77cc-499a-b5cd-cb83c0ab9aa8"))
-	(label "PORT2_MON"
+	(global_label "PORT2_MON"
+		(shape bidirectional)
 		(at 264.16 63.5 0)
 		(effects
 			(font
@@ -708,7 +720,8 @@
 			(width 0)
 			(type default))
 		(uuid "d4bb028c-04c2-4a66-a4ab-86818762ad86"))
-	(label "HUB_20V"
+	(global_label "HUB_20V"
+		(shape bidirectional)
 		(at 30.48 121.92 180)
 		(effects
 			(font
@@ -723,7 +736,8 @@
 			(width 0)
 			(type default))
 		(uuid "f51da636-ddd3-4779-8ec7-4b14079d2762"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 30.48 132.08 180)
 		(effects
 			(font
@@ -738,7 +752,8 @@
 			(width 0)
 			(type default))
 		(uuid "41702443-f2c6-4653-9411-90c1657ad7b1"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 30.48 142.24 180)
 		(effects
 			(font
@@ -783,7 +798,8 @@
 			(width 0)
 			(type default))
 		(uuid "2985b48d-05fa-4474-a874-8e4eb3ca5d84"))
-	(label "PORT3_MON"
+	(global_label "PORT3_MON"
+		(shape bidirectional)
 		(at 116.84 132.08 0)
 		(effects
 			(font
@@ -798,7 +814,8 @@
 			(width 0)
 			(type default))
 		(uuid "d351ac92-baf5-4246-b723-52b8252f156e"))
-	(label "PORT3_OC_N"
+	(global_label "PORT3_OC_N"
+		(shape bidirectional)
 		(at 116.84 142.24 0)
 		(effects
 			(font
@@ -813,7 +830,8 @@
 			(width 0)
 			(type default))
 		(uuid "8246aea1-3f5d-4e91-a61f-c8e3c528838f"))
-	(label "PORT3_HEALTH_N"
+	(global_label "PORT3_HEALTH_N"
+		(shape bidirectional)
 		(at 116.84 152.4 0)
 		(effects
 			(font
@@ -994,7 +1012,8 @@
 			(width 0)
 			(type default))
 		(uuid "076904e9-5c6a-4b5f-b12f-cd73bf8648a3"))
-	(label "PORT3_MON"
+	(global_label "PORT3_MON"
+		(shape bidirectional)
 		(at 129.54 144.78 0)
 		(effects
 			(font
@@ -1009,7 +1028,8 @@
 			(width 0)
 			(type default))
 		(uuid "63728f39-bcce-479c-ae25-00632628bb5b"))
-	(label "HUB_20V"
+	(global_label "HUB_20V"
+		(shape bidirectional)
 		(at 165.1 121.92 180)
 		(effects
 			(font
@@ -1024,7 +1044,8 @@
 			(width 0)
 			(type default))
 		(uuid "d9c9c301-12bc-4942-9878-1a280d44a1ae"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 165.1 132.08 180)
 		(effects
 			(font
@@ -1039,7 +1060,8 @@
 			(width 0)
 			(type default))
 		(uuid "0766016a-d407-49dc-a982-b06a655444a7"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 165.1 142.24 180)
 		(effects
 			(font
@@ -1084,7 +1106,8 @@
 			(width 0)
 			(type default))
 		(uuid "844f6d4d-14fa-473c-bf6c-cee553420443"))
-	(label "PORT4_MON"
+	(global_label "PORT4_MON"
+		(shape bidirectional)
 		(at 251.46 132.08 0)
 		(effects
 			(font
@@ -1099,7 +1122,8 @@
 			(width 0)
 			(type default))
 		(uuid "0b0b6448-149d-4aa3-a079-d230e6f65dc8"))
-	(label "PORT4_OC_N"
+	(global_label "PORT4_OC_N"
+		(shape bidirectional)
 		(at 251.46 142.24 0)
 		(effects
 			(font
@@ -1114,7 +1138,8 @@
 			(width 0)
 			(type default))
 		(uuid "28969172-3b22-410d-8e64-33be81757c39"))
-	(label "PORT4_HEALTH_N"
+	(global_label "PORT4_HEALTH_N"
+		(shape bidirectional)
 		(at 251.46 152.4 0)
 		(effects
 			(font
@@ -1295,7 +1320,8 @@
 			(width 0)
 			(type default))
 		(uuid "634881bf-7731-4eac-b84c-e88aa1a0bc10"))
-	(label "PORT4_MON"
+	(global_label "PORT4_MON"
+		(shape bidirectional)
 		(at 264.16 144.78 0)
 		(effects
 			(font
@@ -1310,7 +1336,8 @@
 			(width 0)
 			(type default))
 		(uuid "aaf065d4-801d-4e1d-a6a1-2363f9f78444"))
-	(label "HUB_20V"
+	(global_label "HUB_20V"
+		(shape bidirectional)
 		(at 30.48 203.2 180)
 		(effects
 			(font
@@ -1325,7 +1352,8 @@
 			(width 0)
 			(type default))
 		(uuid "622e6f9d-aabb-4142-86a4-d4784d68b03a"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 30.48 213.36 180)
 		(effects
 			(font
@@ -1340,7 +1368,8 @@
 			(width 0)
 			(type default))
 		(uuid "2fa3bfc7-4859-4a72-b145-b6cab26a80c3"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 30.48 223.52 180)
 		(effects
 			(font
@@ -1385,7 +1414,8 @@
 			(width 0)
 			(type default))
 		(uuid "6088cb11-2916-4235-b5cd-824cef826f7f"))
-	(label "PORT5_MON"
+	(global_label "PORT5_MON"
+		(shape bidirectional)
 		(at 116.84 213.36 0)
 		(effects
 			(font
@@ -1400,7 +1430,8 @@
 			(width 0)
 			(type default))
 		(uuid "0b60fa68-44d8-4916-827c-33ac0c323efb"))
-	(label "PORT5_OC_N"
+	(global_label "PORT5_OC_N"
+		(shape bidirectional)
 		(at 116.84 223.52 0)
 		(effects
 			(font
@@ -1415,7 +1446,8 @@
 			(width 0)
 			(type default))
 		(uuid "8b3eafc2-0de8-4998-a542-2ed4d9b0a2ac"))
-	(label "PORT5_HEALTH_N"
+	(global_label "PORT5_HEALTH_N"
+		(shape bidirectional)
 		(at 116.84 233.68 0)
 		(effects
 			(font
@@ -1596,7 +1628,8 @@
 			(width 0)
 			(type default))
 		(uuid "657eb887-8230-47cc-a6bc-cf38c85b3e06"))
-	(label "PORT5_MON"
+	(global_label "PORT5_MON"
+		(shape bidirectional)
 		(at 129.54 226.06 0)
 		(effects
 			(font
@@ -1611,7 +1644,8 @@
 			(width 0)
 			(type default))
 		(uuid "ca6ae178-ce95-49bb-850a-8eefb1be171f"))
-	(label "HUB_20V"
+	(global_label "HUB_20V"
+		(shape bidirectional)
 		(at 165.1 203.2 180)
 		(effects
 			(font
@@ -1626,7 +1660,8 @@
 			(width 0)
 			(type default))
 		(uuid "4fbf9fc3-7be7-4c90-9760-abc7560d943e"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 165.1 213.36 180)
 		(effects
 			(font
@@ -1641,7 +1676,8 @@
 			(width 0)
 			(type default))
 		(uuid "4857861b-6ff7-4da8-8862-8e8023ae1051"))
-	(label "CONTROL_GOOD"
+	(global_label "CONTROL_GOOD"
+		(shape bidirectional)
 		(at 165.1 223.52 180)
 		(effects
 			(font
@@ -1686,7 +1722,8 @@
 			(width 0)
 			(type default))
 		(uuid "62ae020d-5ed8-458d-ab98-a03321243402"))
-	(label "PORT6_MON"
+	(global_label "PORT6_MON"
+		(shape bidirectional)
 		(at 251.46 213.36 0)
 		(effects
 			(font
@@ -1701,7 +1738,8 @@
 			(width 0)
 			(type default))
 		(uuid "82d3fb59-bbcb-4305-9c40-0dbba5de013a"))
-	(label "PORT6_OC_N"
+	(global_label "PORT6_OC_N"
+		(shape bidirectional)
 		(at 251.46 223.52 0)
 		(effects
 			(font
@@ -1716,7 +1754,8 @@
 			(width 0)
 			(type default))
 		(uuid "1df5efce-bd04-4a09-b04c-1750f49bfad6"))
-	(label "PORT6_HEALTH_N"
+	(global_label "PORT6_HEALTH_N"
+		(shape bidirectional)
 		(at 251.46 233.68 0)
 		(effects
 			(font
@@ -1897,7 +1936,8 @@
 			(width 0)
 			(type default))
 		(uuid "4efa4e19-9e68-46e9-97be-5d1916ec3358"))
-	(label "PORT6_MON"
+	(global_label "PORT6_MON"
+		(shape bidirectional)
 		(at 264.16 226.06 0)
 		(effects
 			(font
@@ -1912,7 +1952,8 @@
 			(width 0)
 			(type default))
 		(uuid "46663fce-9ccd-4a5a-a7b4-5a81b76ee03b"))
-	(label "CONTROL_3V3"
+	(global_label "CONTROL_3V3"
+		(shape bidirectional)
 		(at 289.56 38.1 180)
 		(effects
 			(font
@@ -1990,7 +2031,8 @@
 			(width 0)
 			(type default))
 		(uuid "3c05e28e-63fd-48df-857b-02e240920803"))
-	(label "PORT1_OC_N"
+	(global_label "PORT1_OC_N"
+		(shape bidirectional)
 		(at 289.56 69.85 180)
 		(effects
 			(font
@@ -2005,7 +2047,8 @@
 			(width 0)
 			(type default))
 		(uuid "90bbf692-d065-49b7-bdbd-501c3972bebf"))
-	(label "PORT2_OC_N"
+	(global_label "PORT2_OC_N"
+		(shape bidirectional)
 		(at 289.56 76.2 180)
 		(effects
 			(font
@@ -2020,7 +2063,8 @@
 			(width 0)
 			(type default))
 		(uuid "9f953d45-2c3b-407d-a4d6-5f7d60f64ba1"))
-	(label "PORT3_OC_N"
+	(global_label "PORT3_OC_N"
+		(shape bidirectional)
 		(at 289.56 82.55 180)
 		(effects
 			(font
@@ -2035,7 +2079,8 @@
 			(width 0)
 			(type default))
 		(uuid "63ac599c-ce31-4dff-b3d6-aec2533078ad"))
-	(label "PORT4_OC_N"
+	(global_label "PORT4_OC_N"
+		(shape bidirectional)
 		(at 289.56 88.9 180)
 		(effects
 			(font
@@ -2050,7 +2095,8 @@
 			(width 0)
 			(type default))
 		(uuid "6f1db465-10d1-4d6b-aa34-c035388c3490"))
-	(label "PORT5_OC_N"
+	(global_label "PORT5_OC_N"
+		(shape bidirectional)
 		(at 289.56 95.25 180)
 		(effects
 			(font
@@ -2065,7 +2111,8 @@
 			(width 0)
 			(type default))
 		(uuid "7a847a90-d93d-4456-9011-70508a4b1432"))
-	(label "PORT6_OC_N"
+	(global_label "PORT6_OC_N"
+		(shape bidirectional)
 		(at 289.56 101.6 180)
 		(effects
 			(font
@@ -2080,7 +2127,8 @@
 			(width 0)
 			(type default))
 		(uuid "ae462917-c580-499f-acb4-84509d639a18"))
-	(label "PORT1_HEALTH_N"
+	(global_label "PORT1_HEALTH_N"
+		(shape bidirectional)
 		(at 289.56 107.95 180)
 		(effects
 			(font
@@ -2095,7 +2143,8 @@
 			(width 0)
 			(type default))
 		(uuid "8e533f8c-d4c7-46f7-8d85-f0ffef66f0f4"))
-	(label "PORT2_HEALTH_N"
+	(global_label "PORT2_HEALTH_N"
+		(shape bidirectional)
 		(at 289.56 114.3 180)
 		(effects
 			(font
@@ -2110,7 +2159,8 @@
 			(width 0)
 			(type default))
 		(uuid "3beb118a-9aea-4698-aaec-0bb77a4f773d"))
-	(label "PORT3_HEALTH_N"
+	(global_label "PORT3_HEALTH_N"
+		(shape bidirectional)
 		(at 289.56 120.65 180)
 		(effects
 			(font
@@ -2125,7 +2175,8 @@
 			(width 0)
 			(type default))
 		(uuid "b4987bd5-f8f5-46b0-a016-4cb4feed70be"))
-	(label "PORT4_HEALTH_N"
+	(global_label "PORT4_HEALTH_N"
+		(shape bidirectional)
 		(at 289.56 127.0 180)
 		(effects
 			(font
@@ -2140,7 +2191,8 @@
 			(width 0)
 			(type default))
 		(uuid "0f928f3d-dbb3-47ff-b233-367957d24249"))
-	(label "PORT5_HEALTH_N"
+	(global_label "PORT5_HEALTH_N"
+		(shape bidirectional)
 		(at 289.56 133.35 180)
 		(effects
 			(font
@@ -2155,7 +2207,8 @@
 			(width 0)
 			(type default))
 		(uuid "61733051-3d42-4226-8be8-355cd455e2d4"))
-	(label "PORT6_HEALTH_N"
+	(global_label "PORT6_HEALTH_N"
+		(shape bidirectional)
 		(at 289.56 139.7 180)
 		(effects
 			(font

@@ -2718,9 +2718,7 @@
 								(size 1 1))))))))
 	(sheet_instances
 		(path "/"
-			(page "1")
-		)
-	)
+			(page "1")))
 	(embedded_fonts no)
 	(sheet
 		(at 20 395)
@@ -2836,7 +2834,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C4")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C3216X7R1C106K160AC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 20.32 130.81)
@@ -3139,7 +3143,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V X7R"
 			(at 114.3 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3179,7 +3183,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C1")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 110.49 130.81)
@@ -4173,7 +4183,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R2")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-074K7L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 139.7 106.68)
@@ -4317,7 +4333,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R8")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 485.14 31.75)
@@ -4718,7 +4740,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V X7R"
 			(at 553.72 285.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4758,7 +4780,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C6")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 549.91 280.67)
@@ -4902,7 +4930,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C3")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H105K125AB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 20.32 43.18)
@@ -5097,7 +5131,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R4")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 240.03 40.64)
@@ -5241,7 +5281,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R5")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-071KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 240.03 101.6)
@@ -5384,7 +5430,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R7")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 330.2 40.64)
@@ -5488,7 +5540,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V X7R"
 			(at 53.34 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5528,7 +5580,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C5")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 49.53 130.81)
@@ -5906,7 +5964,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R1")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-074K7L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 110.49 114.3)
@@ -6050,7 +6114,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R10")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-07100KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 410.21 166.37)
@@ -6288,7 +6358,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R6")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-071KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 330.2 101.6)
@@ -6431,7 +6507,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C2")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1C475K125AB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 85.09 35.56)
@@ -7104,7 +7186,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R9")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 444.5 31.75)
@@ -7210,7 +7298,7 @@
 				(font
 					(size 1.0 1.0))
 				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 24.13 194.31 0)
 			(effects
 				(font
@@ -7225,7 +7313,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C8")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C3216X7R1H106K160AC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 20.32 191.77)
@@ -7325,7 +7419,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 50V"
+		(property "Value" "100nF 50V X7R"
 			(at 24.13 231.14 0)
 			(effects
 				(font
@@ -7346,7 +7440,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C9")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 20.32 226.06)
@@ -7446,7 +7546,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 119.38 231.14 0)
 			(effects
 				(font
@@ -7467,7 +7567,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C10")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 115.57 226.06)
@@ -7635,13 +7741,13 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "22uF 16V X7R"
+		(property "Value" "22uF 25V X7R"
 			(at 158.75 196.85 0)
 			(effects
 				(font
 					(size 1.0 1.0))
 				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 158.75 194.31 0)
 			(effects
 				(font
@@ -7656,7 +7762,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C11")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C1210C226K3RACTU"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 154.94 191.77)
@@ -7807,13 +7919,13 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "22uF 16V X7R"
+		(property "Value" "22uF 25V X7R"
 			(at 158.75 231.14 0)
 			(effects
 				(font
 					(size 1.0 1.0))
 				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 158.75 228.6 0)
 			(effects
 				(font
@@ -7828,7 +7940,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C12")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C1210C226K3RACTU"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 154.94 226.06)
@@ -8000,7 +8118,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R11")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-07150KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 105.41 271.78)
@@ -8070,7 +8194,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R12")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 144.78 271.78)
@@ -8191,7 +8321,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C13")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "CC0805KRX7R9BB103"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 185.42 271.78)
@@ -8312,7 +8448,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R13")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-07100KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 20.32 271.78)
@@ -8790,7 +8932,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R3")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-07330RL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 265.43 205.74)
@@ -8858,7 +9006,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R14")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-07100KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 270.51 251.46)
@@ -8957,7 +9111,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 313.69 256.54 0)
 			(effects
 				(font
@@ -8978,7 +9132,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C14")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 309.88 251.46)
@@ -9129,7 +9289,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 354.33 256.54 0)
 			(effects
 				(font
@@ -9150,7 +9310,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C15")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 350.52 251.46)
@@ -9322,7 +9488,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C16")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "CC0805KRX7R9BB103"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 444.5 71.12)
@@ -9443,7 +9615,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R15")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 384.81 311.15)
@@ -9513,7 +9691,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R16")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0724KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 425.45 311.15)
@@ -9583,7 +9767,19 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R17")
-					(unit 1)))))
+					(unit 1))))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD07187KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 464.82 311.15)
@@ -9653,7 +9849,19 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R18")
-					(unit 1)))))
+					(unit 1))))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 505.46 311.15)
@@ -9723,7 +9931,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R19")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 544.83 311.15)
@@ -9823,7 +10037,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 50V"
+		(property "Value" "100nF 50V X7R"
 			(at 388.62 351.79 0)
 			(effects
 				(font
@@ -9844,7 +10058,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C17")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 384.81 346.71)
@@ -9899,7 +10119,7 @@
 				(font
 					(size 1.0 1.0))
 				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 448.31 349.25 0)
 			(effects
 				(font
@@ -9914,7 +10134,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C18")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H105K125AB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 444.5 346.71)
@@ -10020,7 +10246,7 @@
 				(font
 					(size 1.0 1.0))
 				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 509.27 349.25 0)
 			(effects
 				(font
@@ -10035,7 +10261,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C19")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H105K125AB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 505.46 346.71)
@@ -10409,7 +10641,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 238.76 256.54 0)
 			(effects
 				(font
@@ -10430,7 +10662,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "C20")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 234.95 251.46)
@@ -11025,7 +11263,13 @@
 			(project "tile"
 				(path "/193582a6-3270-4375-9d7f-175597b65a73"
 					(reference "R20")
-					(unit 1)))))
+					(unit 1))))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes))))
 	(wire
 		(pts
 			(xy 59.69 271.78)
@@ -11552,6 +11796,18 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD073K32L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -11679,6 +11935,18 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD0735K7L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -11806,6 +12074,18 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -11933,6 +12213,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "CC0805KRX7R9BB103"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -12360,5 +12646,4 @@
 	(title_block
 		(title "Smart tile")
 		(rev "A")
-		(comment 1 "Draft - not for manufacture"))
-)
+		(comment 1 "Draft - not for manufacture")))

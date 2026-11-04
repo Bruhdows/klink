@@ -2,7 +2,7 @@
 
 Rev A uses 20V between tiles. The old 5V bus needed too much current for the larger loads. Each tile now makes its own 5V and 3.3V. Don't join those local rails between tiles.
 
-The schematic has source protection, switched module power, four UART links and two RGB LEDs. The PCB only has initial low-voltage placement. It still needs connector checks, protection tests and routing. See the [pinouts](interfaces.md).
+The schematic has source protection, switched module power, four UART links and two RGB LEDs. The PCB has 59 placed footprints and initial local low-voltage routes. It still needs connector checks, protection tests and routing. See the [pinouts](interfaces.md).
 
 ## Power path
 
@@ -80,7 +80,7 @@ Each positive tile-to-tile path has two fuses. Don't fuse GND. Current can retur
 
 ### Buck and 3.3V
 
-LMR36520ADDAR switches at 400kHz with internal compensation. The 100k/24.9k, 0.1% feedback divider gives nominal 5.016V. Output capacitance is two 22µF parts; bootstrap is 100nF. C24 is the required 1µF VCC bypass. Don't load VCC externally. EN uses 100k/10k; U7 sets the effective startup threshold.
+LMR36520ADDAR switches at 400kHz with internal compensation. The 100k/24.9k, 0.1% feedback divider gives nominal 5.016V. Output capacitance is two selected 22µF/25V X7R parts in 1210; bootstrap is 100nF. C24 is the required 1µF VCC bypass. Don't load VCC externally. EN uses 100k/10k; U7 sets the effective startup threshold.
 
 L1 is SRP7050TA-150M, 15µH ±20%. Ratings: 6A saturation at 20% inductance loss, 3.5A RMS at the stated 40°C rise, DCR up to 92mΩ at 25°C. The regulator's high-side limit is at most 3.6A. At 20V in and 5V out, calculated ripple is 0.625A peak-to-peak and peak current about 2.31A at 2A load. Winding loss at 2A and 92mΩ is about 0.37W before temperature correction.
 
@@ -102,7 +102,7 @@ C7 is 6TPE120MAZB, 120µF/6.3V, rated at 85°C. Category voltage drops to 5V at 
 
 D1/D3, WS2812B-V5, share one RGB chain through U6, SN74AHCT1G125, and R3=330Ω. Check the actual LED variant and reflow orientation.
 
-Each edge uses SN74LVC2G125DCUR buffers on local 3.3V. PB8 and a 10k pull-up disable them during reset. Ioff is specified up to ±10µA per I/O at VCC=0V and a 5.5V test input. That is leakage, not zero current.
+U8 is SN74LVC244APWR: one octal buffer handles four TX and four RX paths. Both output enables connect to PB8 and its 10k reset pull-up. This replaces four dual packages and three redundant bypass capacitors without changing neighbor pinouts or series protection. Its Ioff limit is ±10µA per I/O at 85°C, rising to ±20µA at 125°C, tested with VCC=0V and 5.5V on an I/O. This does not qualify a missing-ground or 20V signal fault.
 
 UART series resistors are 2.2k, 1%, at least 0.25W in 1206; pull-ups are 47k. With an assumed 100pF load, both ends' 4.4k gives a 0.44µs time constant. Start testing at 115200 baud. Faster links, missing ground and actual contact capacitance aren't checked. The resistors don't make 20V on a signal pin safe.
 
@@ -114,7 +114,7 @@ Bus sensing is 150k/10k with 10nF: 20V maps to 1.25V through U13. Off-state rail
 
 ## Hub and power budget
 
-The native Hub project in `hardware/electronics/hub/` contains 214 components on ten schematic pages. Six instances share `port-power.kicad_sch`; `shutdown.kicad_sch` implements the common fault logic. Outputs and current monitors terminate at copper test pads. Tile connectors, the main Hub supplies, MCU, USB data and storage remain unfinished. There is no Hub PCB.
+The native Hub has 350 components on fifteen schematic pages. PD input, master breaker, six protected outputs, common shutdown, supplies, MCU, six UART interfaces, USB data and SPI flash are connected. Production tile connectors remain unresolved; power, UART and detect outputs use test pads. There is no Hub PCB or working Hub firmware.
 
 ### Input
 
@@ -142,43 +142,59 @@ D8 and each output have SMBJ22A-E3/52 prototype clamps. Their 35.5V maximum clam
 
 ### Distribution recommendation
 
-Use a low-resistance 20V mesh supplied only by the six Hub outputs, with every positive and return path rated for at least 5A continuous at its qualified temperature, with a 4.5A distribution design current. This covers steady current concentration when a path opens, assuming only the Hub supplies power. The 5A selection leaves margin above the initial 4.394A trip bound; lifetime drift and contact wear still need qualification. Keep F1 and local/module protection. Remove or bypass F2-F5 only in a separately verified tile revision after contact, copper and fault-pulse qualification. The present tile still has its original 1A transit fuses and is not released for this architecture. No main-bus routes have been added.
+Retain the fused 20V mesh for V1. The realistic base loads below do not justify replacing the 1A transit fuses or doubling power contacts to satisfy a uniform 3W stress case. Keep F1, independently switched module supplies and the Hub's common hardware shutdown. Use grid adjacencies for motorized layouts; normal positive-path current must remain below the fuse's 0.6A budget at 70°C, with operating margin and redistribution included. Do not claim short-time contact capability from its listed continuous rating. Connector pulse withstand, missing-ground signal survival and raw-input surge coordination still block routing and release.
 
-The old mesh has 0.29Ω per loop link: 0.15Ω in two transit fuses, plus assumed 0.10Ω contacts and 0.04Ω copper. At 20 tiles × 3W, even the optimistic 0.15A/tile current floor gives 3A at the first connection, a 9.719V far-end drop and at least 20.559W loss. Each first contact dissipates at least 0.45W and its 1A edge fuse at least 0.675W. The constant-power model tightens its voltage bound below zero in three steps. Its numerical positive-DC boundary is about 1.803W/tile, well beyond the fuse's permitted continuous current. It is not a usable load rating.
-
-Lower-resistance contacts with the same 1A fuses leave most of that problem intact. Removing fuses while retaining the old assumed contact resistance gives a positive 20V solution, but far-end voltage is about 12.28V with the current Hub allowances, below the tile startup threshold and outside current limits. Higher fuse ratings alone neither fix contact heating nor guarantee fuse clearing under a source limited below the fuse rating.
-
-An 80mΩ maximum hot loop target is a practical V1 objective: about 30mΩ per power/return contact plus 20mΩ for both copper paths and joints. It is a requirement, not a verified SAMZO capability. Under the model's 0.12Ω common input, 0.12Ω port switch allowance, 0.225Ω local path and 5W Hub load, 16–20 tile 3W grids work with center, edge or corner placement at 18.5–20V. All 297 single-path opening cases across the three 20-tile grids at 19V remain inside the modeled limits. These are DC calculations, not cold-start or pulse qualification.
-
-Long chains need a separate load budget. At 19V an 80mΩ loop permits only about 2.393W/tile for twenty equal loads before a modeled limit; use less for operating margin. Sixteen tiles at 3W fit the same resistance target at 19V. Twenty tiles at 3W require roughly a 40mΩ loop target for margin at 19V: calculated far-end voltage 16.585V, source current 3.788A and network/input-path losses 6.973W. A single SAMZO contact's listed 30mΩ does not establish that target. Parallel contacts or a lower-resistance connector need separate mechanical, sharing and single-contact-loss qualification.
-
-Keeping the fused mesh with topology-dependent budgets is a lower-change fallback, but has substantial restrictions. At 19V and the 70°C fuse budget, the model gives approximately 2.79W/tile centrally, 2.11W at an edge, 1.46W at a corner and 0.53W in a twenty-tile chain, before operating margin. Opening one central Hub feed can raise a normal 20V, 3W/tile path from 0.612A to 0.790A, above even the 25°C fuse budget. Firmware load allocation cannot substitute for that missing hardware margin.
+The 80/40mΩ budgets below remain future high-load targets and stress comparisons. Their 104/137/277mΩ carrier calculations use candidate 9mΩ fuses, not the present 75mΩ nominal 1A parts. With the retained fuses, the corresponding cold/hot/degraded loop estimates are about 236/335/475mΩ. Hot fuse resistance and degraded contacts are assumptions requiring measurement.
 
 Prefer extra grid adjacencies or a ring that reaches another Hub face over a long singly fed chain; the marble path need not equal the electrical path. No external injector is needed. A directional power tree adds per-tile switching and still has the chain's voltage drop. A 48V bus would require a Hub boost stage, higher-voltage contacts/protection and revised module power, so it is not selected for V1. Parallel power/return contacts can reduce resistance, but require more spring bodies and wider carriers; do not multiply current ratings by contact count.
 
 For copper planning, two parallel 35µm layers, each 4mm wide with 80mm combined path length, calculate to 6.47mΩ per conductor at 100°C and 0.131W at 4.5A. That excludes necks, vias, joints and manufacturing tolerance. Meet the complete hot resistance budget, confirm minimum copper thickness, and validate temperature rise before routing approval. The calculation is not a trace ampacity qualification.
 
+### Complete link budget
+
+The complete link budget includes both mating contacts, two carriers, their attachment and contact solder joints, vias, main-board copper and two positive transit fuses. It is a sensitivity calculation, not a measured minimum/nominal/maximum specification. Actual worst-case SAMZO resistance remains unbounded by available evidence.
+
+At 25°C, an illustrative carrier route is 6mm × 1.4mm × 35µm per board, one layer, on each of two boards. Per conductor, 80mm of main-board copper on two 4mm-wide 35µm layers adds 5.023mΩ; both carriers add 4.305mΩ; two 0.3mm finished-hole vias with 25µm plating add 2.204mΩ; four contact/attachment joints at an assumed 0.25mΩ add 1mΩ. Four further solder joints for the two positive fuses add 1mΩ to the loop. Each spring has two solder feet; their internal current sharing is not characterized, so the joint count is a conservative lumped allowance. These are proposed dimensions, not existing tile routes. Spreading, necks and finish are additional uncertainties. The contact figure includes the mated interface and spring body once; do not count the drawing's resistance as two interfaces per conductor.
+
+### Transit protection choices
+
+The [Littelfuse 466 datasheet](https://www.littelfuse.com/assetdocs/littelfuse_fuse_466_datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f) lists 0466005.NR at 11mΩ nominal cold and 1.6A²s nominal melting energy. Its 5A rating becomes 3.75A continuous at 25°C and 3A in the 70°C example, below the 4.5A path requirement. It is not a suitable drop-in transit replacement. PTCs add hot resistance and thermal retry behavior; they do not solve the resistance or shared shutdown problem.
+
+The [451/453 datasheet, revision 2025-12-01](https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1) lists 0451007.MRL at 7A, 9mΩ nominal cold, 10.32A²s nominal melting energy, 125V and 400A interrupting capability at 32VDC. It is physically larger than 1206. Applying the standard 0.75 continuous factor and a conservative 0.90 temperature screening factor gives 4.725A; confirm the nominal rerating curve and actual enclosure temperature with the manufacturer. This is a measurement candidate, not a selected replacement. A normal Hub-fed short cannot be expected to clear a 7A fuse: the 4.394A input trip is below its rating, and the guaranteed 2× opening point requires 14A. Nominal melting I²t is not maximum clearing I²t.
+
+Larger fuses would serve only as coordinated backup for gross faults; the input breaker and shared output shutdown must clear ordinary network shorts. Approval requires measured peak current, clearing time and integrated I²t at each feeding path, including stored energy, reverse-blocking delay and a failed switching element. No fuse removal, higher rating or contact pulse rating follows from the present DC model. Four per-edge active breakers would add switches, sense circuitry and bidirectional feed/fault logic to every tile; even two 31mΩ typical TPS26630 paths add 62mΩ before contacts and return copper. They are not a low-cost drop-in solution.
+
+### Hub review limits
+
+Six nominal 4A output breakers do not provide 24A. The shared input threshold remains 4.014–4.394A including Hub consumption downstream of its shunt. At 19V, reserving 5W for the Hub and a further provisional 10mA gives only about 3.741A at the minimum input trip for all ports combined, before path-loss corrections and operating margin. A single branch can therefore trip the input before reaching its own upper threshold; that is intentional system shutdown, not selective branch discrimination. Equal-load grids fit more readily than singly fed chains. Keep the precision input monitor and shared latch; replacing them with the eFuse's 6A backup limit would violate the PD budget. The seven precision monitors and reverse-blocking stages remain cost drivers, but no safe component deletion is established by ERC or the stable-state logic tests. Grounded port UVLO selects the TPS26630 internal 15V threshold, as specified in TI table 5-1; it does not disable the port.
+
 Directly connected output capacitance is nominally 6µF at the Hub plus 4µF across twenty tile buses. At 21V and +20% capacitance this stores 2.646mJ. A source-free 40mΩ lumped RC example has 525A initial current and 0.0662A²s, above the fuse's nominal 0.0423A²s. This illustrates why a 4.5A DC limit or small energy figure gives no contact pulse rating. Real inductance, ESR, distribution and fuse minima are missing. Upstream Hub capacitors can feed during switch delay; local 20V capacitors, 5V rails and motors add energy subject to finite reverse-blocking response. Do not credit equal TVS sharing or nominal fuse I²t as guaranteed clearing. Measure the fault waveform and qualify contacts, finish, copper and clamps against it.
 
 100W is an input ceiling, not power available on every tile. One path carries all loads downstream of it. At both provisional module budgets, 4W for module 5V + 0.6W RGB + 0.33W logic gives 4.93W. At assumed 85% buck efficiency that's 5.8W from the bus, plus 8W module 20V. This is the roughly 14W planning case. Twenty such loads exceed 280W before other losses.
 
-STM32F405RGT6 is the Hub MCU candidate. ST DS8626 Rev 12 supports these LQFP64 pins:
+### Controller and supplies
 
-- USART1: PB6 TX / PB7 RX, AF7.
-- USART2: PA2 TX / PA3 RX, AF7.
-- USART3: PB10 TX / PB11 RX, AF7.
-- UART4: PA0 TX / PA1 RX, AF8.
-- UART5: PC12 TX / PD2 RX, AF8.
-- USART6: PC6 TX / PC7 RX, AF8.
-- USB OTG FS: PA11 DM / PA12 DP, AF10; PA9 VBUS sense reserved.
-- SWD: PA13 / PA14, NRST.
-- SPI1 flash: PA5 SCK / PA6 MISO / PA7 MOSI, AF5; PA4 CS.
-- I²C1 PD controller: PB8 SCL / PB9 SDA, AF4.
-- Power supervision: PC0-PC3 ADC candidates; additional GPIOs for branch faults/enables.
-- Clock: PH0 / PH1 reserved for HSE.
+Two SN74LVC244APWR packages buffer the six links, replacing six dual buffers and four bypass capacitors. U70 STM32F405RGT6 uses the six UART pin pairs and independent RX/TX DMA streams in [uart-allocation.csv](../../hardware/electronics/hub/uart-allocation.csv). SPI1 uses PA5/PA6/PA7 with PA15 chip select; ADC1 uses PC0-PC5 and PA4. DMA2 streams 0/3 serve SPI1, stream 4 serves ADC1; none conflicts with the UART allocation. DMA buffers must use SRAM1/2, not CCM. The 8MHz Abracon ASE oscillator uses HSE bypass, PLL M=8/N=336/P=2/Q=7 for 168MHz core and 48MHz USB. VCAP has two 2.2µF capacitors; VDDA shares the main 3.3V source with local bypassing. SWD, reset, BOOT0/BOOT1 and PA9/PA10 ROM serial recovery are accessible. W25Q32JVSSIQ provides 4MB program storage; atomic update and execution firmware remain unfinished.
 
-This is a pin check, not a finished Hub. RX DMA, transmit handling, USB clocks, VCAP, VBUS isolation, boot and debug still need review. STUSB4500 is implemented; external SPI flash remains a candidate; flash capacity is undecided.
+U60 protects an auxiliary supply upstream of the tile master but downstream of its current shunt. Nominal limit is 0.3A; its isolated AUX_RTN must not join GND. LMR36520 makes 5V and AP2112 makes Hub 3.3V. This keeps USB reporting alive after a tile-bus trip. U78 supervises the MCU rail; U79 uses Schmitt inputs to qualify MCU_RESET_N with CONTROL_GOOD; its fixed-low IN1 selects the AND function. Its MAIN_READY output drives the interface enables and inhibits the master and all ports while either rail is invalid. The reporting interfaces remain enabled after a latched tile-bus fault. Clearing control reset through SW1/Q70 temporarily disconnects USB; software must tolerate re-enumeration. Main-rail failure therefore cannot leave the grid powered merely because control logic remains alive. The 5W Hub allowance in network calculations is a reserve, not a measured draw. Reserve 150mA for the 3.3V logic rail; at 5V input its LDO loss is about 0.255W. Enclosure temperature and copper must be checked before releasing that thermal budget.
 
+The data USB-C port has separate CC pull-downs, USBLC6 protection, TS3USB30E isolation and a transistor VBUS detector. It does not power Hub rails. The switch selects the MCU only after MAIN_READY asserts and disables when VBUS is absent. Firmware must configure a self-powered HID/CDC composite device and use the external VBUS indication. The four bidirectional FS endpoints fit EP0 control, EP1 CDC bulk IN/OUT, EP2 HID IN/OUT and EP3 CDC notification IN. A preliminary RX/TX allocation of 128/16/64/32/16 words uses 256 of the controller’s 320 FIFO entries; validate descriptors and traffic on hardware. TCA9535 at address 0x20 reports sixteen hardware fault/status inputs; three TMUX1511 packages isolate I2C and seven analog monitors from the independently powered control rail. Keep all expander ports as inputs. None participates in the fault-clearing decision.
+
+### Tile and kit consumption
+
+The component-based budget separates base electronics from modules. WCH table 3-6 gives 2.2mA typical at 8MHz and 4.2mA at 48MHz, at 3.3V/25°C, without a guaranteed maximum operating-current value. The V5 LED sheet gives 0.6mA quiescent and 12mA channel test conditions. Including LDO loss, the 1k bleeder, buffers, switches, pull-ups, protection dividers and assumed buck efficiencies gives about 0.078W idle, 0.197W with 25% white lighting, and 0.504W at full white. A 20mA MCU/20mA-per-channel/70%-efficiency planning case is about 1.06W. These are estimates; supplied silicon, firmware and efficiency need measurements. Uniform 3W remains a separate stress test.
+
+At 19V, base electronics plus a reserved 5W Hub use approximately 8.2/8.9/11.3W for 16/20/32 moderately lit tiles. Full RGB gives about 13.1/15.2/21.4W before module loads. A planning kit with one running elevator, two 0.2A servos and four 20mA sensor modules uses roughly 13.8/14.6/17.0W in the tested grids. Servo currents are hypotheses for the still-unselected servos; the 1A stall hypothesis exceeds the declared 0.8A module budget.
+
+The 16/20/32-tile center/edge/corner grid sweep covers 1026 single positive, return and whole-connection openings with that moderately lit running kit placed near the Hub. All fit the modeled voltage/current limits; maximum positive current is about 0.35A. This does not qualify thermal behavior or faults. A 32-tile chain fails the hot transit-fuse budget with the same kit; starting the motor with other modules active can exceed it even in shorter chains. Prefer a grid, put the elevator near a Hub feed and stagger actuators. Firmware load admission and brightness limits still need implementation. Fuses are the hardware overload backstop, not an automatic topology-aware continuous-current controller.
+
+### Elevator
+
+The native prototype in `hardware/electronics/elevator/` has 47 components. It keeps the standard eight module signals and uses a service header while production mating geometry is unresolved. LMR36510ADDAR converts switched module 20V to 12V through SRP7050TA-330M. Its 2.4A maximum high-side limit is below the inductor's 3.5A room-temperature saturation figure; minimum inductance also clears TI's subharmonic criterion. Hot behavior still needs checking. A 100µF/25V hybrid bulk capacitor and SMBJ13A contain local energy; braking and reverse-blocking delay require waveform tests.
+
+DRV8876PWPR gives nominal 0.346A current regulation with 0.1%, 25ppm/K limit resistors. The initial static calculation gives approximately 0.32-0.38A through the stated temperature/error assumptions; chopping overshoot is excluded. ATtiny404-SSN reads current, rail voltage and a TCST2103 index sensor, controls direction/PWM/sleep, and reads the normally closed stop loop. PB0/PB1 provide I2C, PB2 provides TCA0 WO2 PWM, and UPDI remains available. Firmware must default off, enable BOD/watchdog, reject stale commands, and latch off on stall, lost progress or abnormal rail voltage. It is not implemented yet; do not power the motor as if those guards exist.
+
+The selected mechanical prototype motor is [Pololu 3044](https://www.pololu.com/product/3044): 12V, 130rpm/80mA no-load, with manufacturer-extrapolated 3.0kg·cm/0.75A stall figures, not continuous ratings. Plan a 300mm lift, 10mm drive radius and 60-100rpm output. Eight 16mm glass marbles plus 30g of rising carrier mass, 50% mechanical efficiency and 0.005N·m friction require approximately 0.020N·m. This is an assumed load case, not a measured mechanism. Provide anti-rollback restraint, a guarded belt and at least 10mm clearance above the electronics. Estimated bus demand is about 2.6W running and 6.7W at current-limited startup; an unrestricted stall is a rejected overload case near 14W. Converter efficiency and hot bridge resistance are assumptions.
 ## Datasheets
 
 - [TI TPS2660, SLVSDG2G](https://www.ti.com/lit/ds/symlink/tps2660.pdf), pins, RTN/GND separation, limits, MODE and PWP land pattern.
@@ -186,7 +202,7 @@ This is a pin check, not a finished Hub. RX DMA, transmit handling, USB clocks, 
 - [TI TPS25947, SLVSFC9C](https://www.ti.com/lit/ds/symlink/tps25947.pdf), true reverse blocking, variant, pins and RPW0010A copper/stencil drawings.
 - [Littelfuse 466 fuse series](https://www.littelfuse.com/assetdocs/littelfuse_fuse_466_datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f), 2023 data table, opening times and temperature rerating.
 - [Vishay SMBJ series, document 88392](https://www.vishay.com/docs/88392/smbj.pdf), clamp conditions and SMB dimensions.
-- [TI SN74LVC2G125, SCES204Q](https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf), pinout, leakage and electrical levels.
+- [TI SN74LVC244A](https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf), consolidated tile buffer; [TI SN74LVC2G125, SCES204Q](https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf), pinout, leakage and electrical levels.
 - [TI TMUX1511, SCDS390B](https://www.ti.com/lit/ds/symlink/tmux1511.pdf), 3.6V powered-off limit and PW14 pinout.
 - [TI TPS3808, SBVS050N](https://www.ti.com/lit/ds/symlink/tps3808.pdf), adjustable threshold, delay and power-off input ratings; [TI SN74LVC1G08](https://www.ti.com/lit/gpn/sn74lvc1g08), fail-safe logic and Ioff.
 - [Bourns SRP7050TA](https://www.bourns.com/docs/product-datasheets/srp7050ta.pdf), electrical table and recommended lands. The package drawing was inspected in a manufacturer-authored distributor mirror because direct download was unavailable.
@@ -201,3 +217,7 @@ Additional Hub references: [SN74LVC74A SCAS287W](https://www.ti.com/lit/ds/symli
 Schmitt and driver references: [SN74HCS11 SCLS790C](https://www.ti.com/lit/ds/symlink/sn74hcs11.pdf), [SN74LVC1G14 SCES218AA](https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf) and [onsemi BSS138LT1/D Rev 15](https://www.onsemi.com/pdf/datasheet/bss138lt1-d.pdf).
 
 Port ramp capacitor: [TDK C2012C0G1H223J125AA](https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012C0G1H223J125AA), capacitance tolerance, C0G temperature coefficient and reflow lands.
+
+Controller/module references: [ST RM0090](https://www.st.com/resource/en/reference_manual/dm00031020-stm32f405-415-stm32f407-417-stm32f427-437-and-stm32f429-439-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf), [Abracon ASE](https://abracon.com/Oscillators/ASEseries.pdf), [TCA9535](https://www.ti.com/lit/ds/symlink/tca9535.pdf), [TS3USB30E](https://www.ti.com/lit/ds/symlink/ts3usb30e.pdf), [LMR36510](https://www.ti.com/lit/ds/symlink/lmr36510.pdf), [DRV8876](https://www.ti.com/lit/ds/symlink/drv8876.pdf), [ATtiny404](https://ww1.microchip.com/downloads/en/DeviceDoc/50002687A.pdf), [TCST2103](https://www.vishay.com/docs/81147/tcst2103.pdf), [BAT54S](https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf) and [Panasonic ZC catalog](https://industrial.panasonic.com/cdbs/www-data/pdf/RDD0000/DMD0000COL92.pdf).
+
+Selected passives use Yageo RC/RT resistors, TDK low-voltage bypass parts and KEMET C1210C226K3RACTU 22µF/25V X7R output capacitors. The latter need 1210 lands and up to 2.8mm body clearance. DC bias, aging, effective capacitance and regulator transients remain qualification checks. References: [Yageo RT](https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL), [10nF capacitor](https://www.yageogroup.com/download/specsheet/CC0805KRX7R9BB103), [KEMET bulk capacitor](https://yageogroup.com/download/specsheet/C1210C226K3RACTU), [Omron B3U](https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf) and [Schmitt qualification gate](https://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf).

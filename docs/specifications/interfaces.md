@@ -39,7 +39,7 @@ For five contacts, the drawing gives:
 
 The missing bits matter: is 5A per contact with all contacts loaded? At what temperature rise and compression? Force, working travel, plating thickness and test conditions aren't given. The 500V entry has no test duration, so it doesn't prove transient survival.
 
-The distribution target now requires at least 5A continuous capability for every power and return path at the qualified temperature, including redistribution. The first V1 resistance target is no more than 80mΩ for a complete positive/return link including both copper paths and carrier joints. The listed 30mΩ contact figure has no established hot/compression/life conditions and does not qualify that target. A twenty-tile 3W chain across the lower input range needs closer to 40mΩ; that may require another contact arrangement. Short-pulse acceptance must come from waveform testing and manufacturer evidence, not the 5A continuous entry. Keep the production footprint unreleased.
+Connector and distribution-copper qualification must account for the Hub's 4.394A upper static input threshold and current redistribution. A 5A continuous connector/return-path qualification goal remains conservative with that hardware limit; it is not the normal tile-load estimate, and it does not establish a short-pulse rating. The transit fuses remain 1A. The 80/40mΩ loop targets belong to future high-load and 3W-per-tile chain comparisons, not the normal V1 load case. Working compression, hot resistance, wear and fault waveforms remain unqualified. Keep the production footprint unreleased.
 
 The springs compress perpendicular to the board. Horizontal tile mating needs vertical carriers: two spring boards and two flat-pad boards per tile are the current idea. The body fits between the ±18mm magnet centers on paper. Retention, solder access and wall clearance need samples. Both faces can't sit behind flush walls and still touch. The guard needs an upward escape path so a surrounded tile can lift out.
 
@@ -63,7 +63,9 @@ Start at `compression=0`, measure free height and force, then add measured shims
 
 The boards have five test channels, not assigned power/UART functions. Numbers are viewed from each contact face; check 1-to-5, 2-to-4, 3-to-3 mating and spring-end continuity before assembly. Confirm land width and finish before ordering.
 
-Start unpowered, then use a current-limited low-voltage supply for resistance and temperature tests with relevant contacts loaded. Four-wire leads at the holes still include PCB and spring resistance. Measure that baseline or use Kelvin probes near the contacts. No fit, holding force or contact-current test has passed yet.
+TP6 senses channel 1 at its contact land; TP7 senses channel 5. The added 0.2mm sense tracks carry meter current only. Force current uses TP1/TP5. With mirrored mating, spring TP6 measures against flat TP7 for one contact; spring TP7 measures against flat TP6 for the other. Confirm continuity unpowered first. These connections exclude force-lead and most coupon-track drop, but include the spring body and its solder connection. Probe the other spring foot too to detect unequal foot current or a poor solder joint.
+
+Start unpowered, then use a current-limited low-voltage supply for resistance and temperature tests with relevant contacts loaded. Four-wire leads at the force holes still include PCB and spring resistance. Record force-hole and land-sense drops separately; do not subtract an assumed PCB resistance. Existing 0.3–0.5mm fanout and single vias are not qualified 5A carriers. Begin at 0.1A; test coupon heating before increasing current. No fit, holding force or contact-current test has passed yet. The [prototype plan](prototype-plan.md#connector-measurements) specifies the sample setup.
 
 ## Top modules
 
@@ -86,7 +88,7 @@ Both power outputs default off. Read passive ID before enabling power. U12 keeps
 
 Signals are 3.3V, at most 3.6V with the tile off. No 5V pull-ups. Slow brownout and module startup/dropout need testing. The provisional 0.8A/5V and 0.4A/20V budgets aren't approved simultaneous loads. Motor modules must handle their own inductive/braking energy and the eventual transient limits.
 
-ID uses a 10k pull-up and a module resistor to GND: ADC ratio is R_ID / (10k + R_ID). Candidate values are 1k, 2.2k, 4.7k, 10k, 22k and 47k. Tolerance windows need testing. Open means absent/unknown; short is invalid. Neither enables power. Don't identify a module from one unfiltered sample.
+ID uses a 10k pull-up and a module resistor to GND: ADC ratio is R_ID / (10k + R_ID). Candidate values are 1k, 2.2k, 4.7k, 10k, 22k and 47k. The elevator prototype uses 22k; reserve that assignment while the module catalog is finalized. Tolerance windows need testing. Open means absent/unknown; short is invalid. Neither enables power. Don't identify a module from one unfiltered sample.
 
 C7471693 is still a pogo candidate. Ratings, force, compression, plating, pad size and assembly need checking.
 
@@ -97,3 +99,9 @@ CAD origin is the tile center, Z=0 underneath, North=+Y, East=+X. Preliminary PC
 The two Hub cells are 80mm apart. Relative to Hub center, long-edge contacts are X=±40mm, Y=±40mm; short-edge contacts are X=±80mm, Y=0. These are grid references, not final connector positions. A surrounded Hub has six possible neighbors, an edge Hub four and a corner Hub three.
 
 J1 exposes 3.3V monitor, GND, DIO and DCK. Don't power the tile through the monitor pad. Debug outputs must be high impedance when the tile is off. This connection has no powered-off buffer and still needs testing.
+
+## Future power-only connections
+
+An accessory using another output of the same Hub can feed an ordinary tile edge through 20V and GND, leaving UART/DETECT unused. It retains the tile's transit fuse and the Hub's common shutdown. Cable inductance, return resistance, fault energy and the actual additional feed location need qualification; do not treat it as another communication neighbor or use MODULE_20V as an input. V1 does not require this accessory.
+
+A separately powered injector must default off, block reverse current, limit its feed and participate in wired hardware shutdown of every source. Reserve separate permit and fault-return conductors: the logical permit is INPUT_ENABLE, and an isolated open-drain fault receiver can join the common fault decision. Merely sending a UART message is insufficient. The Hub input monitor cannot measure external-source current, so aggregate current, fuse loading and stored energy require a new coordinated budget. Existing tile bus voltage and local rails remain unchanged.

@@ -1,5 +1,9 @@
-(kicad_sch (version 20250114) (generator "eeschema") (uuid "bec36127-2397-4c6e-b6b0-6575144437c6") (paper "A2")
-(lib_symbols
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(uuid "bec36127-2397-4c6e-b6b0-6575144437c6")
+	(paper "A2")
+	(lib_symbols
 		(symbol "74xGxx:74LVC1G08"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1048,369 +1052,310 @@
 						(effects
 							(font
 								(size 1.27 1.27))))))
+			(embedded_fonts no))
+		(symbol "74xx:74HC244"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -7.62 16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Value" "74HC244"
+				(at -7.62 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "Description" "8-bit Buffer/Line Driver 3-state"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_keywords" "HCMOS BUFFER 3State"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm* SSOP*4.4x6.5mm*P0.65mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27))))
+			(symbol "74HC244_1_0"
+				(polyline
+					(pts
+						(xy 1.27 0)
+						(xy -1.27 1.27)
+						(xy -1.27 -1.27)
+						(xy 1.27 0))
+					(stroke
+						(width 0.1524)
+						(type default))
+					(fill
+						(type none)))
+				(pin input inverted
+					(at -12.7 -10.16 0)
+					(length 5.08)
+					(name "1OE"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 12.7 0)
+					(length 5.08)
+					(name "1A0"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "2Y0"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 10.16 0)
+					(length 5.08)
+					(name "1A1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "2Y1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 7.62 0)
+					(length 5.08)
+					(name "1A2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "2Y2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 5.08)
+					(name "1A3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 -5.08 180)
+					(length 5.08)
+					(name "2Y3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -20.32 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 5.08)
+					(name "2A3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 5.08 180)
+					(length 5.08)
+					(name "1Y3"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "2A2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 7.62 180)
+					(length 5.08)
+					(name "1Y2"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "2A1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 10.16 180)
+					(length 5.08)
+					(name "1Y1"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "2A0"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin tri_state line
+					(at 12.7 12.7 180)
+					(length 5.08)
+					(name "1Y0"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin input inverted
+					(at -12.7 -12.7 0)
+					(length 5.08)
+					(name "2OE"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 20.32 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27))))
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27))))))
+			(symbol "74HC244_1_1"
+				(rectangle
+					(start -7.62 15.24)
+					(end 7.62 -15.24)
+					(stroke
+						(width 0.254)
+						(type default))
+					(fill
+						(type background))))
 			(embedded_fonts no)))
-(embedded_fonts no)
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 59.69 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "81780cb5-08cf-4705-bd43-36fce7e03504")
-		(property "Reference" "U8"
-			(at 66.04 53.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 59.69 67.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 59.69 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U8")
-					(unit 1))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 59.69 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 59.69 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 59.69 49.53)
-			(xy 59.69 45.72))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "08e322a4-9e36-4ed1-920c-eaecf03f767a"))
-	(global_label "EDGE_IO_DISABLE"
-		(shape bidirectional)
-		(at 59.69 45.72 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "cc143179-2b59-4c96-9b13-ae1500c68bcd"))
-	(wire
-		(pts
-			(xy 44.45 59.69)
-			(xy 39.37 59.69))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "f82204d5-94e2-46fd-aa71-11a91b90bbde"))
-	(global_label "N_TX"
-		(shape bidirectional)
-		(at 39.37 59.69 180)
-		(effects
-			(font
-				(size 1 1))
-			(justify right bottom))
-		(uuid "4b62516b-f029-4088-bf8a-6d563636b743"))
-	(wire
-		(pts
-			(xy 72.39 59.69)
-			(xy 77.47 59.69))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "540be8aa-d22c-4452-b2e0-682ac0c6f656"))
-	(global_label "N_TX_DRV"
-		(shape bidirectional)
-		(at 77.47 59.69 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "307d066d-a9da-4e28-be7c-08e985236ce3"))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 59.69 105.41 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b44d1354-ec97-4029-ac08-9b13b474c68c")
-		(property "Reference" "U8"
-			(at 66.04 98.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 59.69 112.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(hide yes)))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 59.69 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U8")
-					(unit 2))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 59.69 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 59.69 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 72.39 105.41)
-			(xy 77.47 105.41))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "c369af5f-e1e4-43ed-9caa-027e95e4341d"))
-	(global_label "N_RX"
-		(shape bidirectional)
-		(at 77.47 105.41 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "9c6f8883-28d6-4013-8abc-1995839a0d51"))
-	(wire
-		(pts
-			(xy 44.45 105.41)
-			(xy 39.37 105.41))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "78af5919-c9d4-4bdf-99f9-97602d3bac6a"))
-	(global_label "N_RX_IN"
-		(shape bidirectional)
-		(at 39.37 105.41 180)
-		(effects
-			(font
-				(size 1 1))
-			(justify right bottom))
-		(uuid "ad2b7438-3a7d-4faa-b06c-7e4e84dd7bf4"))
-	(wire
-		(pts
-			(xy 59.69 95.25)
-			(xy 59.69 91.44))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "a89667aa-d904-4f31-8460-848446dac1bc"))
-	(global_label "EDGE_IO_DISABLE"
-		(shape bidirectional)
-		(at 59.69 91.44 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "7857943e-233f-4f1b-97e9-f505163b8fd8"))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 59.69 139.7 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5da3e285-f206-4d3f-adca-674383075e45")
-		(property "Reference" "U8"
-			(at 66.04 133.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 59.69 147.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(hide yes)))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 59.69 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U8")
-					(unit 3))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 59.69 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 59.69 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 59.69 149.86)
-			(xy 59.69 153.67))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "9951ff5d-07e2-4278-9b9b-d6fe6e1f86a4"))
-	(symbol
-		(lib_id "power:GND")
-		(at 59.69 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87e91d66-add4-46fc-9110-1ddd9c5a80c6")
-		(property "Reference" "#PWR075"
-			(at 59.69 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 59.69 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 59.69 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 59.69 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "a44497c4-8604-4f1b-9600-fb7de38f8e92"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR075")
-					(unit 1)))))
-	(wire
-		(pts
-			(xy 59.69 129.54)
-			(xy 59.69 125.73))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "04336894-a9b4-4b02-abc8-4c9295f654d2"))
-	(symbol
-		(lib_id "power:+3V3")
-		(at 59.69 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cbd4e591-ad28-4888-bbf2-9ca6514a2047")
-		(property "Reference" "#PWR240"
-			(at 59.69 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "+3V3"
-			(at 59.69 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 59.69 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 59.69 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 59.69 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "d55a9751-0f7d-4f59-bf82-0c3ed7db687a"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR240")
-					(unit 1)))))
+	(embedded_fonts no)
 	(symbol
 		(lib_id "Device:R")
 		(at 100.33 59.69 0)
@@ -1454,6 +1399,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -1530,6 +1481,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -1606,6 +1563,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -1733,6 +1696,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -1832,7 +1801,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 93.98 130.81 0)
 			(effects
 				(font
@@ -1860,6 +1829,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -1996,367 +1971,6 @@
 					(reference "#PWR074")
 					(unit 1)))))
 	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 190.5 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ac423cd7-fa9f-42a5-9820-edb5287d3094")
-		(property "Reference" "U9"
-			(at 196.85 53.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 190.5 67.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 190.5 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U9")
-					(unit 1))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 190.5 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 190.5 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 190.5 49.53)
-			(xy 190.5 45.72))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "9440c625-b5f1-4ab6-aa81-287b38693786"))
-	(global_label "EDGE_IO_DISABLE"
-		(shape bidirectional)
-		(at 190.5 45.72 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "0f505c5d-f885-472c-a350-410bf552f460"))
-	(wire
-		(pts
-			(xy 175.26 59.69)
-			(xy 170.18 59.69))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "ba0af344-ca35-4052-a2bc-1e57c28fe348"))
-	(global_label "E_TX"
-		(shape bidirectional)
-		(at 170.18 59.69 180)
-		(effects
-			(font
-				(size 1 1))
-			(justify right bottom))
-		(uuid "499efc7b-9adb-4ab7-a118-5288a38b8fd6"))
-	(wire
-		(pts
-			(xy 203.2 59.69)
-			(xy 208.28 59.69))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "1dce55dc-71b1-4d0b-91f0-6eca8e6106bd"))
-	(global_label "E_TX_DRV"
-		(shape bidirectional)
-		(at 208.28 59.69 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "b8009c79-b93f-4697-a4f2-d1f40556c9c2"))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 190.5 105.41 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d1b6ee9e-f20f-4e5b-93a1-b3eda3447318")
-		(property "Reference" "U9"
-			(at 196.85 98.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 190.5 112.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(hide yes)))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 190.5 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U9")
-					(unit 2))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 190.5 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 190.5 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 203.2 105.41)
-			(xy 208.28 105.41))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "8b1e905d-eb85-4346-85e9-d82f8e0cefef"))
-	(global_label "E_RX"
-		(shape bidirectional)
-		(at 208.28 105.41 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "2cdcd1e5-afbd-4130-a68c-e0b8210a27d4"))
-	(wire
-		(pts
-			(xy 175.26 105.41)
-			(xy 170.18 105.41))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "d752b28d-520f-4448-8f91-ef0bc16dd998"))
-	(global_label "E_RX_IN"
-		(shape bidirectional)
-		(at 170.18 105.41 180)
-		(effects
-			(font
-				(size 1 1))
-			(justify right bottom))
-		(uuid "d3218433-3b2c-45f7-9d57-44ca8104cede"))
-	(wire
-		(pts
-			(xy 190.5 95.25)
-			(xy 190.5 91.44))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "9b95dbc0-7439-40fd-85cc-0728fafd57c4"))
-	(global_label "EDGE_IO_DISABLE"
-		(shape bidirectional)
-		(at 190.5 91.44 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "8575ef5b-17f1-46cd-9418-a667dda2e25f"))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 190.5 139.7 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "127811cf-9dbd-4030-bbbf-11c69eff73e9")
-		(property "Reference" "U9"
-			(at 196.85 133.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 190.5 147.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(hide yes)))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 190.5 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U9")
-					(unit 3))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 190.5 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 190.5 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 190.5 149.86)
-			(xy 190.5 153.67))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "b8ea38c1-5edd-49a7-94bf-2d9f71d47ff3"))
-	(symbol
-		(lib_id "power:GND")
-		(at 190.5 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29ac7582-f7db-4bc9-8b17-9a49f9e14b97")
-		(property "Reference" "#PWR073"
-			(at 190.5 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 190.5 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 190.5 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 190.5 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "a44497c4-8604-4f1b-9600-fb7de38f8e92"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR073")
-					(unit 1)))))
-	(wire
-		(pts
-			(xy 190.5 129.54)
-			(xy 190.5 125.73))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "f66ae821-3345-45e6-b3e4-b4f0bc2bec14"))
-	(symbol
-		(lib_id "power:+3V3")
-		(at 190.5 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d044e05a-a4d6-4254-bac1-dcece00fabd5")
-		(property "Reference" "#PWR234"
-			(at 190.5 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "+3V3"
-			(at 190.5 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 190.5 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 190.5 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 190.5 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "d55a9751-0f7d-4f59-bf82-0c3ed7db687a"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR234")
-					(unit 1)))))
-	(symbol
 		(lib_id "Device:R")
 		(at 229.87 59.69 0)
 		(unit 1)
@@ -2399,6 +2013,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2475,6 +2095,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2551,6 +2177,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2678,6 +2310,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -2763,545 +2401,6 @@
 			(justify left bottom))
 		(uuid "1f6e8d00-6fb0-408c-9131-1c5934da0eeb"))
 	(symbol
-		(lib_id "Device:C")
-		(at 219.71 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "628e5832-2f77-4d82-b076-58da25432e4d")
-		(property "Reference" "C26"
-			(at 223.52 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "100nF 16V"
-			(at 223.52 130.81 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 219.71 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "C26")
-					(unit 1))))
-		(property "Datasheet" ""
-			(at 219.71 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor"
-			(at 219.71 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 219.71 125.73)
-			(xy 219.71 121.92))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "1b4d1824-ae31-443a-9351-dad9050b1193"))
-	(symbol
-		(lib_id "power:+3V3")
-		(at 219.71 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16edc31f-c029-48a0-b7f0-0e0baa4f43cc")
-		(property "Reference" "#PWR231"
-			(at 219.71 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "+3V3"
-			(at 219.71 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 219.71 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 219.71 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 219.71 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "d55a9751-0f7d-4f59-bf82-0c3ed7db687a"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR231")
-					(unit 1)))))
-	(wire
-		(pts
-			(xy 219.71 133.35)
-			(xy 219.71 137.16))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "893f3bdc-8c4f-45ce-b399-bd9ae9c74976"))
-	(symbol
-		(lib_id "power:GND")
-		(at 219.71 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29c63f97-406a-44a9-b91b-44cb475f2403")
-		(property "Reference" "#PWR072"
-			(at 219.71 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 219.71 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 219.71 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 219.71 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 219.71 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "a44497c4-8604-4f1b-9600-fb7de38f8e92"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR072")
-					(unit 1)))))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 320.04 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ae157b8-d5fc-4401-b368-3fcdd353a822")
-		(property "Reference" "U10"
-			(at 326.39 53.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 320.04 67.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 320.04 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U10")
-					(unit 1))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 320.04 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 320.04 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 320.04 49.53)
-			(xy 320.04 45.72))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "2e87be67-1e66-469a-81ac-bf64db839893"))
-	(global_label "EDGE_IO_DISABLE"
-		(shape bidirectional)
-		(at 320.04 45.72 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "94ce3fab-2a07-4221-874b-bcd6e68e183b"))
-	(wire
-		(pts
-			(xy 304.8 59.69)
-			(xy 299.72 59.69))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "758315c8-f855-4015-b502-f44d3f922675"))
-	(global_label "S_TX"
-		(shape bidirectional)
-		(at 299.72 59.69 180)
-		(effects
-			(font
-				(size 1 1))
-			(justify right bottom))
-		(uuid "325ddf3f-0d14-415c-8369-521bf9cebe9e"))
-	(wire
-		(pts
-			(xy 332.74 59.69)
-			(xy 337.82 59.69))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "6f6e1535-4f95-47bc-bc3a-33a392c25fed"))
-	(global_label "S_TX_DRV"
-		(shape bidirectional)
-		(at 337.82 59.69 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "76f90a38-1b9e-4967-9f0e-9a17dea9c68e"))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 320.04 105.41 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "764cc7d6-82ae-4a13-b083-7433aa8f21d6")
-		(property "Reference" "U10"
-			(at 326.39 98.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 320.04 112.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(hide yes)))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 320.04 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U10")
-					(unit 2))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 320.04 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 320.04 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 332.74 105.41)
-			(xy 337.82 105.41))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "a3e49434-2dd6-4b40-8617-f99696c2fd0b"))
-	(global_label "S_RX"
-		(shape bidirectional)
-		(at 337.82 105.41 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "93a26537-c1e0-4d87-b003-bf5c5d51dc7a"))
-	(wire
-		(pts
-			(xy 304.8 105.41)
-			(xy 299.72 105.41))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "5b78d815-bee4-444a-a4f0-0aa2f0c8fa00"))
-	(global_label "S_RX_IN"
-		(shape bidirectional)
-		(at 299.72 105.41 180)
-		(effects
-			(font
-				(size 1 1))
-			(justify right bottom))
-		(uuid "aecd1b4b-cc57-4ded-a77e-e5c51ce0ba88"))
-	(wire
-		(pts
-			(xy 320.04 95.25)
-			(xy 320.04 91.44))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "91af29c2-761a-45d2-993c-c82c05864190"))
-	(global_label "EDGE_IO_DISABLE"
-		(shape bidirectional)
-		(at 320.04 91.44 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "2eeca0d4-0194-49bd-906a-e7c9eb565807"))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 320.04 139.7 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "69154bd4-d98f-4e9b-b1b5-4a1aff005fbe")
-		(property "Reference" "U10"
-			(at 326.39 133.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 320.04 147.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(hide yes)))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 320.04 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U10")
-					(unit 3))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 320.04 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 320.04 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 320.04 149.86)
-			(xy 320.04 153.67))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "fc47eb96-031c-45a7-aef4-3a6ae08cc56c"))
-	(symbol
-		(lib_id "power:GND")
-		(at 320.04 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ebcf99c1-c267-44f6-8fce-2919df3eeb86")
-		(property "Reference" "#PWR066"
-			(at 320.04 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 320.04 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 320.04 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 320.04 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 320.04 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "a44497c4-8604-4f1b-9600-fb7de38f8e92"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR066")
-					(unit 1)))))
-	(wire
-		(pts
-			(xy 320.04 129.54)
-			(xy 320.04 125.73))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "8ca675e1-8f4b-496c-9db5-a60fac809772"))
-	(symbol
-		(lib_id "power:+3V3")
-		(at 320.04 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ffe0f707-fc40-432a-970d-2016911b0f55")
-		(property "Reference" "#PWR228"
-			(at 320.04 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "+3V3"
-			(at 320.04 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 320.04 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 320.04 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 320.04 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "d55a9751-0f7d-4f59-bf82-0c3ed7db687a"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR228")
-					(unit 1)))))
-	(symbol
 		(lib_id "Device:R")
 		(at 359.41 59.69 0)
 		(unit 1)
@@ -3344,6 +2443,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3420,6 +2525,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3496,6 +2607,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3623,6 +2740,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -3708,545 +2831,6 @@
 			(justify left bottom))
 		(uuid "ee00a041-40f1-43d1-a351-7b523482b81c"))
 	(symbol
-		(lib_id "Device:C")
-		(at 350.52 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e49782ad-f963-4afb-b8f7-ea798a690b84")
-		(property "Reference" "C27"
-			(at 354.33 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "100nF 16V"
-			(at 354.33 130.81 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 350.52 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "C27")
-					(unit 1))))
-		(property "Datasheet" ""
-			(at 350.52 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor"
-			(at 350.52 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 350.52 125.73)
-			(xy 350.52 121.92))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "413741aa-ea47-4169-9300-3b19cf3c544e"))
-	(symbol
-		(lib_id "power:+3V3")
-		(at 350.52 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38004326-17d4-4938-ac58-ec9e07f97f51")
-		(property "Reference" "#PWR225"
-			(at 350.52 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "+3V3"
-			(at 350.52 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 350.52 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 350.52 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 350.52 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "d55a9751-0f7d-4f59-bf82-0c3ed7db687a"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR225")
-					(unit 1)))))
-	(wire
-		(pts
-			(xy 350.52 133.35)
-			(xy 350.52 137.16))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "df7cde5e-3609-4004-8b5c-beab8e1149de"))
-	(symbol
-		(lib_id "power:GND")
-		(at 350.52 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e22617b-3984-425f-ad78-1b153d8bee8b")
-		(property "Reference" "#PWR065"
-			(at 350.52 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 350.52 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 350.52 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 350.52 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 350.52 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "a44497c4-8604-4f1b-9600-fb7de38f8e92"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR065")
-					(unit 1)))))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 449.58 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a5429edd-1635-4930-836a-8cd86b737bc7")
-		(property "Reference" "U11"
-			(at 455.93 53.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 449.58 67.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 449.58 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U11")
-					(unit 1))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 449.58 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 449.58 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 449.58 49.53)
-			(xy 449.58 45.72))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "3020c451-9795-48f9-9d8a-202cf223164d"))
-	(global_label "EDGE_IO_DISABLE"
-		(shape bidirectional)
-		(at 449.58 45.72 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "7deb4482-7d5b-4ee8-b708-589208fbfca5"))
-	(wire
-		(pts
-			(xy 434.34 59.69)
-			(xy 429.26 59.69))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "32cdb018-8e33-4af9-a6f8-8a9ae99d25fa"))
-	(global_label "W_TX"
-		(shape bidirectional)
-		(at 429.26 59.69 180)
-		(effects
-			(font
-				(size 1 1))
-			(justify right bottom))
-		(uuid "8c49520b-c8fa-4c6a-881e-7bcab2b50cd0"))
-	(wire
-		(pts
-			(xy 462.28 59.69)
-			(xy 467.36 59.69))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "81016891-98c4-4afc-968a-e7f902819986"))
-	(global_label "W_TX_DRV"
-		(shape bidirectional)
-		(at 467.36 59.69 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "2784cb0b-8115-42c8-b6bd-2388b6f5e573"))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 449.58 105.41 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "da707723-3224-4604-894f-bb0dfb60915c")
-		(property "Reference" "U11"
-			(at 455.93 98.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 449.58 112.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(hide yes)))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 449.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U11")
-					(unit 2))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 449.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 449.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 462.28 105.41)
-			(xy 467.36 105.41))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "98dbf316-b85c-4747-b596-ac50df2ad8c7"))
-	(global_label "W_RX"
-		(shape bidirectional)
-		(at 467.36 105.41 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "f08b0743-cbb2-4f99-803f-1b7c4d54119b"))
-	(wire
-		(pts
-			(xy 434.34 105.41)
-			(xy 429.26 105.41))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "8fd31cef-689c-4bfc-937a-4f802d171e64"))
-	(global_label "W_RX_IN"
-		(shape bidirectional)
-		(at 429.26 105.41 180)
-		(effects
-			(font
-				(size 1 1))
-			(justify right bottom))
-		(uuid "bdd4c4bb-3e1e-48b4-83c0-526cbc3223e7"))
-	(wire
-		(pts
-			(xy 449.58 95.25)
-			(xy 449.58 91.44))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "b06148bb-7cf5-423c-a9db-adbdac9da218"))
-	(global_label "EDGE_IO_DISABLE"
-		(shape bidirectional)
-		(at 449.58 91.44 0)
-		(effects
-			(font
-				(size 1 1))
-			(justify left bottom))
-		(uuid "f7f4f04f-d7b3-47a7-927a-3c35189446dc"))
-	(symbol
-		(lib_id "74xGxx:74LVC2G125")
-		(at 449.58 139.7 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7815cdde-bccf-4103-a41f-27df7ba1ab3b")
-		(property "Reference" "U11"
-			(at 455.93 133.65 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "SN74LVC2G125DCUR"
-			(at 449.58 147.62 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(hide yes)))
-		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 449.58 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "U11")
-					(unit 3))))
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf"
-			(at 449.58 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Dual tri-state buffer"
-			(at 449.58 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 449.58 149.86)
-			(xy 449.58 153.67))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "a66e1559-4da2-4c99-9dfe-18afa262ec61"))
-	(symbol
-		(lib_id "power:GND")
-		(at 449.58 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9eee9dc-1377-48a9-8c3d-41c5a72ee825")
-		(property "Reference" "#PWR063"
-			(at 449.58 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 449.58 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 449.58 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 449.58 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 449.58 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "a44497c4-8604-4f1b-9600-fb7de38f8e92"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR063")
-					(unit 1)))))
-	(wire
-		(pts
-			(xy 449.58 129.54)
-			(xy 449.58 125.73))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "d0d5ac3c-a3a6-4674-b6dc-f4777ea19e00"))
-	(symbol
-		(lib_id "power:+3V3")
-		(at 449.58 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0c8cbcd-bc98-4778-ade0-17d07f8f09b2")
-		(property "Reference" "#PWR222"
-			(at 449.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "+3V3"
-			(at 449.58 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 449.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 449.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 449.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "d55a9751-0f7d-4f59-bf82-0c3ed7db687a"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR222")
-					(unit 1)))))
-	(symbol
 		(lib_id "Device:R")
 		(at 490.22 59.69 0)
 		(unit 1)
@@ -4289,6 +2873,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -4365,6 +2955,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC1206FR-072K2L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -4441,6 +3037,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -4568,6 +3170,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0747KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -4652,184 +3260,6 @@
 				(size 1 1))
 			(justify left bottom))
 		(uuid "7fa14da7-f34c-4ca4-83bf-3ce209194635"))
-	(symbol
-		(lib_id "Device:C")
-		(at 480.06 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a82ef1f1-0b4c-49eb-996e-d7260edf00a7")
-		(property "Reference" "C28"
-			(at 483.87 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(justify left)))
-		(property "Value" "100nF 16V"
-			(at 483.87 130.81 0)
-			(effects
-				(font
-					(size 1.0 1.0))
-				(justify left)))
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 480.06 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "C28")
-					(unit 1))))
-		(property "Datasheet" ""
-			(at 480.06 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Description" "Unpolarized capacitor"
-			(at 480.06 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes))))
-	(wire
-		(pts
-			(xy 480.06 125.73)
-			(xy 480.06 121.92))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "7f6cf897-181d-4bfd-8b1a-24c4dbb920ac"))
-	(symbol
-		(lib_id "power:+3V3")
-		(at 480.06 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8bf49f84-54b5-45f4-982d-1a0fc0a5cc8d")
-		(property "Reference" "#PWR219"
-			(at 480.06 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "+3V3"
-			(at 480.06 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 480.06 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 480.06 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 480.06 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "d55a9751-0f7d-4f59-bf82-0c3ed7db687a"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR219")
-					(unit 1)))))
-	(wire
-		(pts
-			(xy 480.06 133.35)
-			(xy 480.06 137.16))
-		(stroke
-			(width 0)
-			(type default))
-		(uuid "8818a453-4480-4c6e-9203-43a79901e56f"))
-	(symbol
-		(lib_id "power:GND")
-		(at 480.06 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24f7b1eb-08c9-4e30-bb77-8e3b7db2b34a")
-		(property "Reference" "#PWR061"
-			(at 480.06 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))
-				(hide yes)))
-		(property "Value" "GND"
-			(at 480.06 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0 1.0))))
-		(property "Footprint" ""
-			(at 480.06 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Datasheet" ""
-			(at 480.06 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 480.06 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27))))
-		(pin "1"
-			(uuid "a44497c4-8604-4f1b-9600-fb7de38f8e92"))
-		(instances
-			(project "tile"
-				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
-					(reference "#PWR061")
-					(unit 1)))))
 	(symbol
 		(lib_id "Klink:TMUX1511PW")
 		(at 90.17 279.4 0)
@@ -5838,6 +4268,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -5965,6 +4401,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-07100KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -6092,6 +4534,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -6219,6 +4667,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -6346,6 +4800,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "RC0805FR-071KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -6524,6 +4984,18 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD07103KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -6600,6 +5072,18 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "TCR" "25ppm/K"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(property "MPN" "RT0805BRD0710KL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -6699,7 +5183,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 153.67 336.55 0)
 			(effects
 				(font
@@ -6727,6 +5211,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -6877,7 +5367,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 313.69 336.55 0)
 			(effects
 				(font
@@ -6905,6 +5395,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -7055,7 +5551,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 483.87 351.79 0)
 			(effects
 				(font
@@ -7083,6 +5579,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -7182,7 +5684,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Value" "100nF 16V"
+		(property "Value" "100nF 50V X7R"
 			(at 538.48 351.79 0)
 			(effects
 				(font
@@ -7210,6 +5712,12 @@
 			(effects
 				(font
 					(size 1.27 1.27))
+				(hide yes)))
+		(property "MPN" "C2012X7R1H104K125AE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1 1))
 				(hide yes))))
 	(wire
 		(pts
@@ -7412,4 +5920,420 @@
 		(title "Signal buffers")
 		(rev "A")
 		(comment 1 "Draft - not for manufacture"))
-)
+	(symbol
+		(lib_id "74xx:74HC244")
+		(at 165.1 86.36 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5dd73a7-f6e1-468e-804f-65bc2adc1d0d")
+		(property "Reference" "U8"
+			(at 152.4 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1))))
+		(property "Value" "SN74LVC244APWR"
+			(at 165.1 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1))))
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 165.1 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf"
+			(at 165.1 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property "Description" "8-bit Buffer/Line Driver 3-state"
+			(at 165.1 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(pin "1"
+			(uuid "0e35bea0-a612-4e57-a61f-d179d7e98e97"))
+		(pin "2"
+			(uuid "bd14c3cb-35a2-446d-a976-aa90eeb1924a"))
+		(pin "3"
+			(uuid "89fdfadb-a11f-4a88-a3a3-4d3aae94bb83"))
+		(pin "4"
+			(uuid "335e2259-5fe2-449c-a58d-59fd263c967c"))
+		(pin "5"
+			(uuid "159353e2-6d30-484a-956b-c3ec9fe2b7d5"))
+		(pin "6"
+			(uuid "89396fdd-21d9-4ad6-96a9-87e74313e2d1"))
+		(pin "7"
+			(uuid "d078c5f5-a013-45f6-83fe-cc1238373a92"))
+		(pin "8"
+			(uuid "398eb3d3-ad66-448f-b2f7-ec254f757ceb"))
+		(pin "9"
+			(uuid "a273fedf-fa6e-4d8f-b591-25ec2fcf1737"))
+		(pin "10"
+			(uuid "7d3a30fc-b8be-4ea6-8523-bd8d4c140941"))
+		(pin "11"
+			(uuid "47942bb6-f09d-499c-9e28-cdd2971239f9"))
+		(pin "12"
+			(uuid "210fb4d9-3697-40fd-b5a5-602dbe47c84d"))
+		(pin "13"
+			(uuid "7705a51c-53cd-4359-8082-9964a9587f11"))
+		(pin "14"
+			(uuid "358a7f8b-3953-4e65-b308-fd9ee8a21583"))
+		(pin "15"
+			(uuid "91067b9d-97d4-444b-8b16-68872fd9d8d0"))
+		(pin "16"
+			(uuid "fbbcf5b1-1fa6-4698-b906-979458d89e90"))
+		(pin "17"
+			(uuid "5ad61590-6f3b-4b6e-a8c9-7cafd1747e39"))
+		(pin "18"
+			(uuid "7c1a2979-e51c-4a8e-82ef-01e93981cac6"))
+		(pin "19"
+			(uuid "5cf6d288-d085-4e24-86f3-0802005234a2"))
+		(pin "20"
+			(uuid "11dac9d6-03ee-455b-be78-28619934fa07"))
+		(property "MPN" "SN74LVC244APWR"
+			(at 53.33999999999999 -2.5400000000000063 0)
+			(effects
+				(font
+					(size 1 1))
+				(hide yes)))
+		(instances
+			(project "tile"
+				(path "/193582a6-3270-4375-9d7f-175597b65a73/bec36127-2397-4c6e-b6b0-6575144437c6"
+					(reference "U8")
+					(unit 1)))))
+	(wire
+		(pts
+			(xy 152.4 96.52)
+			(xy 149.86 96.52))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "67b0e789-6da3-48b8-a5ef-76e19dffc9e2"))
+	(global_label "EDGE_IO_DISABLE"
+		(shape bidirectional)
+		(at 149.85999999999999 96.52 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "e232891f-8c51-4ac7-a299-b9eee11370aa"))
+	(wire
+		(pts
+			(xy 152.4 99.06)
+			(xy 149.86 99.06))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "1d8c44b2-42b2-435e-ac40-646b10e2bb25"))
+	(global_label "EDGE_IO_DISABLE"
+		(shape bidirectional)
+		(at 149.85999999999999 99.05999999999999 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "38480243-a8ff-4449-82ff-d7b23666296b"))
+	(wire
+		(pts
+			(xy 165.1 106.68)
+			(xy 165.1 109.22))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "4c7ecb4a-3070-4ca4-9633-02f0efa4bc0e"))
+	(global_label "GND"
+		(shape bidirectional)
+		(at 165.1 109.22 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "199bc65b-8c23-46b9-bace-f850db03e24b"))
+	(wire
+		(pts
+			(xy 165.1 66.04)
+			(xy 165.1 63.5))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "74244313-f2d1-47d0-a96b-403e243cd161"))
+	(global_label "+3V3"
+		(shape bidirectional)
+		(at 165.1 63.5 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "011360d0-8fa1-4ea0-84ff-ebd9af3039c8"))
+	(wire
+		(pts
+			(xy 152.4 73.66)
+			(xy 149.86 73.66))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "96afe24d-98a8-437b-aeb2-371bed16b229"))
+	(global_label "N_TX"
+		(shape bidirectional)
+		(at 149.85999999999999 73.66 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "9f542ef6-a9e0-40a1-b49b-c7b34ea706d9"))
+	(wire
+		(pts
+			(xy 177.8 73.66)
+			(xy 180.34 73.66))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "fd23e875-129a-4605-a2b1-c21cc9360000"))
+	(global_label "N_TX_DRV"
+		(shape bidirectional)
+		(at 180.33999999999997 73.66 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "2af46e3a-4a32-4dd0-95e4-ec8c1bfb9061"))
+	(wire
+		(pts
+			(xy 152.4 91.44)
+			(xy 149.86 91.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "266a407b-8496-4389-9a14-9ad6a74da362"))
+	(global_label "N_RX_IN"
+		(shape bidirectional)
+		(at 149.85999999999999 91.44 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "caea6ea3-36fe-4247-ac1e-ec9dcd2ec228"))
+	(wire
+		(pts
+			(xy 177.8 91.44)
+			(xy 180.34 91.44))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6d5ce9b0-2562-4cf9-ba7d-14c6e550900b"))
+	(global_label "N_RX"
+		(shape bidirectional)
+		(at 180.33999999999997 91.44 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "446e532b-b915-4689-9f20-b978f4e51c25"))
+	(wire
+		(pts
+			(xy 152.4 76.2)
+			(xy 149.86 76.2))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "e39d6727-b9cb-4809-a077-136728b2a352"))
+	(global_label "E_TX"
+		(shape bidirectional)
+		(at 149.85999999999999 76.19999999999999 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "5e94f4b3-e199-4259-a280-bfb987497509"))
+	(wire
+		(pts
+			(xy 177.8 76.2)
+			(xy 180.34 76.2))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "3b30de8b-0634-4f03-9674-efdbbbc7ad27"))
+	(global_label "E_TX_DRV"
+		(shape bidirectional)
+		(at 180.33999999999997 76.19999999999999 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "0c743fa6-7921-4d58-864a-2f27841b2b2b"))
+	(wire
+		(pts
+			(xy 152.4 88.9)
+			(xy 149.86 88.9))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "a7aff11b-8f3d-4dc3-b6a9-29a24134274b"))
+	(global_label "E_RX_IN"
+		(shape bidirectional)
+		(at 149.85999999999999 88.89999999999999 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "2c596e0e-ed37-4e06-b512-84e19c9458af"))
+	(wire
+		(pts
+			(xy 177.8 88.9)
+			(xy 180.34 88.9))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "74ea42ba-8c62-4c64-adc5-194a786bd437"))
+	(global_label "E_RX"
+		(shape bidirectional)
+		(at 180.33999999999997 88.89999999999999 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "f35936d7-2a58-4948-a154-8c6b2153049d"))
+	(wire
+		(pts
+			(xy 152.4 78.74)
+			(xy 149.86 78.74))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "b778d112-0ee9-412e-9afb-f02b4010ab56"))
+	(global_label "S_TX"
+		(shape bidirectional)
+		(at 149.85999999999999 78.74 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "60ed8f3a-8b30-4fc6-8148-8e0979c85b2e"))
+	(wire
+		(pts
+			(xy 177.8 78.74)
+			(xy 180.34 78.74))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f8e7fc7c-5013-4403-8f9a-40b961a24965"))
+	(global_label "S_TX_DRV"
+		(shape bidirectional)
+		(at 180.33999999999997 78.74 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "ce71915f-416e-438e-baf2-772024f3f893"))
+	(wire
+		(pts
+			(xy 152.4 86.36)
+			(xy 149.86 86.36))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "6059ae58-6609-4367-8580-519c44591963"))
+	(global_label "S_RX_IN"
+		(shape bidirectional)
+		(at 149.85999999999999 86.36 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "d0edeeb9-944f-4215-83ab-3ad4644dcafa"))
+	(wire
+		(pts
+			(xy 177.8 86.36)
+			(xy 180.34 86.36))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "9b760801-da34-4a75-a881-a2d1a03850f5"))
+	(global_label "S_RX"
+		(shape bidirectional)
+		(at 180.33999999999997 86.36 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "33460823-7e0b-4734-abf5-d57c1091e196"))
+	(wire
+		(pts
+			(xy 152.4 81.28)
+			(xy 149.86 81.28))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "dda253fb-72c5-4b36-af5c-31cfce84dfcc"))
+	(global_label "W_TX"
+		(shape bidirectional)
+		(at 149.85999999999999 81.27999999999999 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "7c19ed6b-23e8-4f2c-be66-aa53b8a8b947"))
+	(wire
+		(pts
+			(xy 177.8 81.28)
+			(xy 180.34 81.28))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "cb3d905c-fa46-472a-8e3d-f465d71139bc"))
+	(global_label "W_TX_DRV"
+		(shape bidirectional)
+		(at 180.33999999999997 81.27999999999999 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "02023c76-1690-4daf-8e47-52075d390e5f"))
+	(wire
+		(pts
+			(xy 152.4 83.82)
+			(xy 149.86 83.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "f356eede-b24c-45cc-b719-257152faa7eb"))
+	(global_label "W_RX_IN"
+		(shape bidirectional)
+		(at 149.85999999999999 83.82 180)
+		(effects
+			(font
+				(size 1 1))
+			(justify right bottom))
+		(uuid "25ff5741-2130-4221-bb7c-1901f8111719"))
+	(wire
+		(pts
+			(xy 177.8 83.82)
+			(xy 180.34 83.82))
+		(stroke
+			(width 0)
+			(type default))
+		(uuid "d0216cab-dda8-4029-b0ac-932a2e1c61e1"))
+	(global_label "W_RX"
+		(shape bidirectional)
+		(at 180.33999999999997 83.82 0)
+		(effects
+			(font
+				(size 1 1))
+			(justify left bottom))
+		(uuid "f4cc389f-411c-4929-827e-ed00234c2a39")))
