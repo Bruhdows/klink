@@ -24,20 +24,19 @@ locator_clearance = 0.3;
 pcb_post_diameter = 8;
 pcb_hole_diameter = 2.2;
 
-// Preliminary PCB preview. No routed board currently implements this outline.
+// Board body and mounting holes match the native tile PCB. Edge interfaces remain provisional.
 // PCB preview
+part = "base";
 show_pcb_preview = true;
-pcb_tongue_width = 17;
-pcb_tongue_extension = 5;
 
-show_landing_pcb_preview = true;
+show_landing_pcb_preview = false;
 landing_pcb_width = 17;
 landing_pcb_height = 6;
 landing_pcb_thickness = 1.6;
 landing_pcb_front = 0.35; // Recessed from outer wall
 landing_guide_clearance = 0.2;
 
-// Legacy 04F spring/pad pockets. Not approved for the SAMZO 23E candidate pair.
+// Legacy 04F spring/pad pockets. Not approved for SAMZO 03E315320 mating.
 // Electrical edge interface
 spring_window_width = 18;
 spring_window_height = 7;
@@ -141,6 +140,10 @@ module side_cutouts() {
 }
 
 module top_cutouts() {
+    for (xy = pcb_led_centers)
+        translate([xy[0], xy[1], pcb_mount_height])
+            cylinder(d = 3.2, h = tile_height-pcb_mount_height+0.1);
+
     for (x = [-mount_spacing, mount_spacing])
         for (y = [-mount_spacing, mount_spacing])
             translate([
@@ -186,30 +189,6 @@ module pcb_preview() {
                     cube([
                         pcb_preview_size,
                         pcb_preview_size,
-                        pcb_preview_thickness
-                    ]);
-
-                // North connector extension
-                translate([
-                    -pcb_tongue_width/2,
-                    pcb_preview_size/2,
-                    pcb_mount_height - pcb_preview_thickness
-                ])
-                    cube([
-                        pcb_tongue_width,
-                        pcb_tongue_extension,
-                        pcb_preview_thickness
-                    ]);
-
-                // East connector extension
-                translate([
-                    pcb_preview_size/2,
-                    -pcb_tongue_width/2,
-                    pcb_mount_height - pcb_preview_thickness
-                ])
-                    cube([
-                        pcb_tongue_extension,
-                        pcb_tongue_width,
                         pcb_preview_thickness
                     ]);
             }
@@ -309,7 +288,8 @@ module base_tile() {
     }
 }
 
-base_tile();
+if (part == "pcb_fit") intersection() { base_tile(); translate([0,0,-0.01]) pcb_preview(); }
+else base_tile();
 
 if ($preview && show_pcb_preview)
     pcb_preview();

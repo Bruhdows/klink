@@ -1474,7 +1474,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+		(property "Footprint" "Klink:USB_C_Receptacle_GCT_USB4105_RoundedGround"
 			(at 39.37 58.42 0.0)
 			(effects
 				(font
@@ -1734,7 +1734,7 @@
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef"
 					(reference "R1")
 					(unit 1))))
-		(property "MPN" "RC0805FR-07470RL"
+		(property "MPN" "RC2512FK-7W470RL"
 			(at 0 0 0)
 			(effects
 				(font

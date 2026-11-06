@@ -94,11 +94,20 @@ C7471693 is still a pogo candidate. Ratings, force, compression, plating, pad si
 
 ## Mechanical references
 
-CAD origin is the tile center, Z=0 underneath, North=+Y, East=+X. Preliminary PCB: 68mm square, 1.6mm thick, mounting centers ±30mm and 2.5mm preview holes. Posts support at Z=9mm, with the preview board below that plane. Check solder and screw clearance before fixing the outline. KiCad (100,100) maps to CAD (0,0), with PCB Y=100-CAD Y.
+CAD origin is the tile center, Z=0 underneath, North=+Y, East=+X. The native tile board body is 68mm square and 1.6mm thick, with mounting centers ±30mm and four 2.5mm holes. Its top face meets the posts at Z=9mm; its bottom is Z=7.4mm. KiCad (100,100) maps to CAD (0,0), with PCB Y=100-CAD Y. Edge connection regions remain empty and the old enclosure contact pockets remain provisional. Connector qualification may still change the edge outline.
+
+D1 and D3 are centered at CAD (-17,23) and (17,-23). The enclosure has matching 3.2mm light openings. Debug and test pads face the open underside. Bare-board volume checks exclude a 0.01mm shift at the intended support contact face; they do not establish printed fit or contact compression. Component height, diffuser performance and probe access still need an assembled sample.
+
+The tallest selected tile part is L1: the [Bourns drawing](https://www.bourns.com/docs/product-datasheets/srp7050ta.pdf) gives 4.8±0.2mm height. Allowing another 0.1mm for assembly leaves 1.4mm below the 15.5mm roof at its location. The 1210 output capacitors allow up to 2.8mm body height. The [WCH QFN28 drawing](https://akizukidenshi.com/goodsaffix/CH32X035.pdf) gives a maximum 0.8mm MCU height. These height checks do not replace the incomplete full-model collision review.
 
 The two Hub cells are 80mm apart. Relative to Hub center, long-edge contacts are X=±40mm, Y=±40mm; short-edge contacts are X=±80mm, Y=0. These are grid references, not final connector positions. A surrounded Hub has six possible neighbors, an edge Hub four and a corner Hub three.
 
 J1 exposes 3.3V monitor, GND, DIO and DCK. Don't power the tile through the monitor pad. Debug outputs must be high impedance when the tile is off. This connection has no powered-off buffer and still needs testing.
+
+The Hub board body is 148×68mm inside the 160×80mm enclosure. Two 14mm-wide USB tabs extend to Y=±39mm between the cell centers. Six mounting holes use X=-70,-20,+70mm and Y=±30mm. PCB bottom/top planes are Z=7.4/9mm. The 28mm enclosure height is provisional. Its 15×7mm USB openings clear the board tabs; plug overmould access needs a sample.
+
+The local USB4105 footprint retains the GCT drawing's pad centers, 0.6×1.15mm end-ground land envelopes and 0.65mm locating holes. End-ground corner radius is 0.24mm instead of the stock 0.15mm. Native minimum copper-to-hole distance increases from 0.1944mm to about 0.216mm, meeting the 0.20mm project rule. This rounding choice is within the recommended land envelope; it is not a manufacturer assembly qualification. See the [GCT drawing](https://gct.co/files/drawings/usb4105.pdf).
+
 
 ## Future power-only connections
 
