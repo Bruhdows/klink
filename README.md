@@ -45,11 +45,11 @@ The elevator layout is fully connected and passes native DRC. Electrical/thermal
 
 ## Validation and funding
 
-Native KiCad 10.0.8 ERC passes on all six circuit schematics. Elevator, button, sensor and gate have zero physical DRC violations, unconnected items or schematic-parity errors. Tile and Hub have zero physical DRC violations, but still have 117 and 407 unconnected items respectively. Tile J3-J7 have no released footprints. Those boards have no fabrication package. The [summary](hardware/manufacturing/validation.json) records source hashes and the incomplete state.
+Native KiCad 10.0.8 ERC passes on all six circuit schematics. Elevator, button, sensor and gate have zero physical DRC violations, unconnected items or schematic-parity errors. Tile and Hub have zero physical DRC violations, but still have 63 and 317 unconnected items respectively. Tile J3-J7 have no released footprints. Those boards have no fabrication package. The [summary](hardware/manufacturing/validation.json) records source hashes and the incomplete state.
 
 All three MCU targets compile. Host C protocol/safety tests pass with address and undefined-behavior sanitizers, alongside the Python client tests. Closed individual print meshes and STEP exports have been checked; physical fit, loads, temperature, signal integrity and protection transients remain untested.
 
-The complete sixteen-tile worksheet is approximately USD 1,444.09 plus a separately identified USD 361.02 uncertainty allowance, or USD 1,805.11. This is not a verified supplier quote or approved grant amount. Many parts/services still use clearly marked allowances, and some material rows still need exact purchase SKUs/links. TPS26630 is out of stock at the checked LCSC listing; TPS259470 stock is insufficient for the kit. The 3/5-tile trial estimates are separate and should not be added to the sixteen-tile total. Owned PETG and tools are not charged again.
+The complete sixteen-tile worksheet is approximately USD 1,372.89 plus a separately identified USD 343.22 uncertainty allowance, or USD 1,716.11. This is not a verified supplier quote or approved grant amount. Many parts/services still use clearly marked allowances, and some material rows still need exact purchase SKUs/links. TPS26630 remains a backorder item; the newer TPS259470 listing shows sufficient stock, but live stock and assembly inventory need confirmation. The cost basis records a USD 71.20 reduction in the base estimate, including listed Polish N45 magnets and domestic delivery; most rows remain unquoted. The 3/5-tile trial estimates are separate and should not be added to the sixteen-tile total. Owned PETG and tools are not charged again.
 
 ## Before submission and manufacturing
 

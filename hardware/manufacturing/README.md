@@ -8,7 +8,7 @@ Elevator, button, marble sensor and gate have zero native ERC violations, physic
 
 The four contact-test folders contain coupon Gerbers and drills. Their five channels have no product power/signal assignment. The new side-contact pair has zero native DRC violations and unconnected items. Verify compression, continuity, finish and temperature before assigning bus functions. See [interfaces](../../docs/specifications/interfaces.md).
 
-Tile and Hub fabrication packages are deliberately absent. The tile has 117 unconnected items and five unreleased connector footprints. The Hub has 407 unconnected items. A zero physical-violation count does not make either board complete.
+Tile and Hub fabrication packages are deliberately absent. The tile has 63 unconnected items and five unreleased connector footprints. The Hub has 317 unconnected items. A zero physical-violation count does not make either board complete.
 
 ## Board and assembly data
 
@@ -19,6 +19,8 @@ Button, sensor and gate service boards are two-layer, 1.6mm prototypes. The butt
 `positions.csv` is KiCad's native SMT-only export in mm. `cpl.csv` translates its headers and normalizes rotation to 0-360 degrees. Gerbers, drills and positions use the absolute KiCad origin, with Y negated in Cartesian placement output. Do not re-zero one file independently. The assembly BOM contains exactly the SMT references in the CPL that have selected MPNs. The engineering BOM also contains manually fitted and off-board items. Blank LCSC codes require sourcing; they do not authorize automatic substitution.
 
 Pin-1 polarity and stock-footprint rotations still require the assembler's placement preview. Reconcile every selected part, package and LCSC/JLC classification. Hidden joints require the supplier's stencil and X-ray review. A prototype population is required before ordering sixteen tile assemblies.
+
+The tile now has a connected 3.3V net and separate front copper for LOCAL_RTN and MODULE_RTN. LOCAL_RTN still has three disconnected filled regions. Hub outer ground fills and stitching supplement the inner reference planes, but ground and power connections remain incomplete. The auxiliary current-limit resistor placement and return must be resolved before routing approval; a long indirect route is not accepted as a substitute for local support-component placement.
 
 The tile's exposed-pad ground via now sits outside solder lands. Its tracked custom rule file permits only the localized 0.10mm GND fanout with 0.125mm clearance; board-wide rules remain unchanged. Confirm that geometry with the fabricator. Isolated LOCAL_RTN, MODULE_RTN and AUX_RTN must never be replaced by GND fills.
 
