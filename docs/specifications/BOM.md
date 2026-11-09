@@ -1,12 +1,56 @@
 # BOM
 
-The [tile BOM CSV](../../hardware/electronics/tile/bom.csv) has all 124 references, quantities, footprints and purchase links. It's a working list, not an assembly order. Blank prices mean unknown, not free.
+The root [bom.csv](../../bom.csv) is the consolidated purchasing and funding worksheet. It covers sixteen tiles, one Hub, one elevator, button/sensor/gate electronics, contacts, magnets, fabrication, assembly, mechanics, power supply, cables and delivered-cost allowances. Per-board CSVs retain engineering references and selected MPNs. Bare copper pads are not purchased components. `budget_class` separates the base estimate, owned material and the explicit uncertainty row; the latter is not a purchase SKU.
 
-The target is 35-45 PLN per assembled tile. There isn't a quote confirming that yet.
+## Current estimate
 
-For prototype budgeting, allow USD 20–35 per tile for the present electronic parts, USD 3–7 for four carrier boards, finish and their assembly, and USD 5–12 for main-board fabrication/assembly at small quantities. That is USD 28–54 per tile before magnets, plastic, modules, tax and shipping, or USD 560–1080 for twenty. These are procurement allowances, not a complete quote or evidence that the PLN target is attainable. The [TPS26600 listing](https://www.digikey.com/en/products/detail/texas-instruments/TPS26600PWPR/6199305) alone shows USD 4.02 at quantity one, with two needed per tile; [TPS259470](https://www.digikey.com/en/products/detail/texas-instruments/TPS259470LRPWR/14124014) shows USD 1.261 at ten in the checked cached listing. Obtain consolidated 20/40/80-piece quotes before changing the target.
+At 2026-11-08, the sixteen-tile worksheet totals USD 1,444.09 before a separate 25% uncertainty allowance of USD 361.02, or USD 1,805.11 including it. This is a provisional engineering budget, not a supplier quote or an approved funding request. Most MPNs and manufacturing services still use explicitly marked allowances. Several material links still identify a supplier/category rather than a selected purchasable SKU. Close those rows before submitting a purchase-linked final BOM.
 
-V1 retains 0466001.NR 1A fuses: four transit positions plus one local position per tile, or eighty fuses for sixteen tiles. The earlier 7A candidate is not selected. The two SAMZO spring bodies remain about USD 0.95/tile at the earlier cached price; contact finish and any necessary attachment can cost more than the springs. Qualify samples before releasing their production geometry.
+The separate three-tile electronics trial estimate is USD 904.13 plus USD 226.03 uncertainty. The five-tile trial estimate is USD 978.48 plus USD 244.62 uncertainty. These include the Hub, elevator, electronic-module bring-up, power/cabling, contact fixtures and small-batch overhead. They exclude the full return's baseboard/rods/foot fasteners. Minimum bare-board batches and component order multiples are counted. Reuse successful trial assemblies in the final sixteen; do not add the two project totals together.
+
+Owned PETG has zero requested purchase cost. Three kilograms is a material reservation, not a weighed stock or slicer result. Existing tools and unpaid assembly time have no grant charge. Confirm available plastic before slicing the final kit.
+
+The earlier 35-45 PLN assembled-tile target has no supporting quote. The worksheet preserves the sixteen-tile kit and all protection. It does not achieve that target by reducing the tile count.
+
+## Checked sourcing
+
+Supplier pages were read on 2026-11-08. Prices below exclude assembly, shipping and tax and do not reserve stock.
+
+- [TPS26600PWPR, C544399](https://www.lcsc.com/product-image/C544399.html): USD 1.0992 at 30+, 6,387 shown. The kit needs 33 across tiles and Hub. The 32 tile devices cost USD 35.17 at that tier, USD 93.47 below the earlier USD 4.02 each allowance. The circuit is unchanged.
+- [LMR36520ADDAR, C2879422](https://www.lcsc.com/product-image/C2879422.html): USD 1.0022 at 10+, 5,727 shown; seventeen required.
+- [CH32X035G8U6, C7437027](https://www.lcsc.com/product-image/C7437027.html): USD 0.4234 at 10+, 8,785 shown; sixteen required.
+- [TMUX1511PWR, C2866750](https://www.lcsc.com/product-image/C2866750.html): USD 0.3304 at 30+, 7,205 shown; thirty-five required.
+- [TPS259470LRPWR, C3662793](https://www.lcsc.com/product-image/C3662793.html): only four shown against sixteen needed. Its displayed 10+ tier is a price reference, not a deliverable kit supply. Obtain an alternate authorized-distributor quote for the same MPN.
+- [TPS26630RGET, C2864391](https://www.lcsc.com/product-image/C2864391.html): out of stock. Its USD 3.0921 reference price does not settle availability. RGET remains the approved reel-size alternate to RGER; do not substitute a different TPS2663 variant. The public [TI RGET page](https://www.ti.com/product/TPS2663/part-details/TPS26630RGET) and [Mouser RGER page](https://www.mouser.com/en/ProductDetail/Texas-Instruments/TPS26630RGER?qs=vLWxofP3U2ztcw332RlqMw%3D%3D), checked on 2026-11-09, also show no available stock. No authorized deliverable source is confirmed.
+- [0466001.NR](https://www.mouser.com/en/ProductDetail/Littelfuse/0466001.NR?qs=ar9f0rk5DXDy6tpNfF8WnQ%3D%3D): retain eighty 1A fuses. LCSC C151134 is unavailable; the checked Mouser cut-tape listing shows USD 0.555 at 50+. No full reel or MouseReel is needed.
+
+The worksheet also records checked tiers and unavoidable order multiples for AP2112, SN74LVC244A, the AHCT RGB buffer, the LVC AND gate and both selected 10k resistor types. Their MPNs are retained. Similar-looking marketplace substitutes are not approved.
+
+## Assembly plan
+
+All six boards place purchased components on the front side. The tile has 109 populated purchase positions, 41 selected MPNs and 349 numbered solder joints before unreleased contacts. The Hub has 309 purchased board positions and 68 MPNs; its other schematic references are bare test copper. Off-board optical parts remain separate purchased items.
+
+[JLCPCB's current capabilities](https://jlcpcb.com/capabilities/pcb-assembly-capabilities) allow Economic PCBA on single-sided 2/4/6-layer boards, with a standard stackup, 0.4mm minimum IC pitch and limited finish options. The tile's 0.4mm MCU pitch meets that listed minimum. Economic eligibility is not confirmed: the 0.10mm MCU ground fanout, selected parts, stencil, finish and the full order still need supplier review. Edge plating, castellations and gold fingers are not supported by that service. Do not quietly choose those processes to eliminate carriers while budgeting Economic PCBA.
+
+The checked [assembly fee schedule](https://jlcpcb.com/help/article/pcb-assembly-price) lists USD 8.18 Economic setup, USD 1.53 stencil, USD 0.0016 per SMT joint and USD 3.07 per ordinary extended feeder. If all 41 tile MPNs incurred that feeder fee, loading alone would be USD 125.87 per order. Actual Basic/Preferred classification can lower it. Tile SMT joints calculate to USD 1.68/2.79/8.93 for 3/5/16 boards, before feeders, X-ray, manual joints, PCB fabrication and tax. Confirm every footprint rotation against the assembly preview. Avoid a second assembly side and speculative spare component purchases.
+
+Do not order main boards until routing and connector/protection release. Compare a single shared tile batch against separate trial/final setup fees, but buy only the trial population first. Obtain a quote for the minimum Hub/elevator population rather than assuming one-board Economic assembly is available. The BOM service rows are allowances for this unresolved choice. Hand-assemble the small service modules with owned tools where practical.
+
+## Mechanical quantities
+
+The current contact budget retains seventy edge carriers: sixty-four tile faces and six Hub faces. Thirty-five faces are sprung in the fixed cardinal arrangement. Five separate SAMZO bodies and eight top-contact candidates are budgeted for qualification; worn specimens are not production inventory. Side contacts remain sample candidates; no carrier-removal savings are counted. Four electronic modules need thirty-two top contacts; passive tracks need none.
+
+Magnets total 268: 192 in sixteen bases, twelve Hub side magnets and sixty-four across the removable modules. Twenty-seven packs of ten leave two unavoidable MOQ remainders. The sample candidate is [S-06-03-N](https://www.supermagnete.pl/eng/disc-magnets-neodymium/disc-magnet-6mm-3mm_S-06-03-N). The USD unit cost is an allowance because its listing is in EUR and the bulk/delivery basket is unquoted.
+
+The [M6 cut list](../../hardware/manufacturing/rod-cut-list.csv) fits eighteen rods into five one-metre bars. It includes 2mm saw kerf per cut and 4mm end trim per bar. Its 4,068mm finished length assumes a 12mm baseboard and 8mm below-board nut/washer/thread allowance. Measure actual material and nut stacks before cutting. The [54-hole drilling list](../../hardware/manufacturing/baseboard-drill.csv) uses the same support stations. Thirty supported track seats plus eighteen clamped rod anchors require ninety-six M6 nut/washer pairs; thirty-six M4x25 sets attach the nine feet.
+
+PCB mount choices are ordinary M2 nuts and screws, avoiding inserts. Tile screws are M2x8; the elevated Hub PCB uses M2x30 and a nominal 0.6mm washer stack. Elevator screws are M2x10 and gate service-board screws M2x6. Printed nut pockets assume 4.0mm across flats and at most 1.6mm thickness, with clearance. Print fit and screw engagement remain tests. The gate uses two M2x30 clamp screws and an M3 axle; supplied servo horn hardware still needs checking.
+
+Retain [Pololu 3044](https://www.pololu.com/product/3044), the 12V 250:1 HPCB gearmotor, at the checked USD 26.45 listing. An unspecified local N20 cannot be adopted without ratio, winding/current, shaft, body and torque data. The selected gate prototype uses [FEETECH FS90](https://www.pololu.com/product/2818), listed at USD 8.40 and documented for 3.3V control, avoiding an additional level-shifter board. Servo clamp/horn fit and stall current remain untested.
+
+## Earlier selection evidence
+
+The material below records previous part selections and historical allowances. Current quantities, procurement status and project totals are in the root CSV above. Do not add these older cost ranges to the current total.
 
 ## Parts in the schematic
 
@@ -49,7 +93,7 @@ These are estimates in different currencies, not landed costs or current stock c
 
 J3-J7 have no released footprints. J1 and test points are bare copper; J2 is DNP and excluded from the PCB. They have no purchased-component quantity.
 
-Exact ceramic capacitor and resistor parts are unfinished. Check voltage, power, tolerance, ripple and DC-bias loss. UART resistors need 2.2k, 1%, at least 0.25W in 1206. C7 and the fuses have temperature limits in [Rev A](rev-a.md).
+Exact ceramic capacitor and resistor selections are present in the current CSVs. Check stock, voltage, power, tolerance, ripple and effective capacitance against those MPNs. UART resistors use 2.2k, 1%, at least 0.25W in 1206. C7 and the fuses have temperature limits in [Rev A](rev-a.md). J3-J7 still lack released purchase parts; bare test/debug copper and the excluded factory connector are not missing purchase selections.
 
 Twenty tiles need 240 magnets: 160 side and 80 top, all 6 × 3 mm. PETG mass, fasteners and module counts still need measuring. The marble target is 16mm glass.
 
@@ -88,3 +132,17 @@ Two declared 3D references remain unavailable: the tile's WQFN-28 4×4mm package
 
 
 Hub R1 now specifies RC2512FK-7W470RL: 470Ω, 1%, 2W at 70°C, 6.35×3.10mm body. The previous 0805 purchase number did not match its 2512 footprint or 2W requirement. The resistance and circuit are unchanged. The [Yageo part sheet](https://www.yageogroup.com/component-documentation/download/specsheet/RC2512FK-7W470RL) confirms the selection; stock and board-temperature derating still need procurement/assembly review.
+
+The seven CSD19537Q3 positions now use a local land pattern correcting the stock source/gate pad centers to 0.650mm pitch. The previous centers left 0.140mm gaps. The corrected 0.150mm gaps follow [TI SLPS549B section 7.2](https://www.ti.com/lit/ds/symlink/csd19537q3.pdf). Drain copper and the stencil now follow sections 7.2 and 7.3 as well: 0.450×0.310mm source/gate paste apertures, 0.450×0.340mm drain-finger apertures, and two 1.445×1.020mm drain-body apertures. Land and stencil assembly qualification still needs the supplier. The purchase part and electrical pin mapping are unchanged.
+
+## Bench modules and kit costs
+
+The [button BOM](../../hardware/electronics/button/bom.csv) and [sensor BOM](../../hardware/electronics/marble-sensor/bom.csv) cover the new service-header prototypes. The sensor's TSAL6200 and TEFT4300 are wired off-board. Its 220Ω emitter resistor is RC1206FR-07220RL, 0.25W in 1206, to retain dissipation margin if the emitter is shorted. Neither board releases the spring-contact interface or proves marble detection.
+
+Retain USD 584–1060 for sixteen tile assemblies, Hub parts, elevator electronics and the motor, with the exclusions above; gate/splitter parts are also unquoted. Add USD 5–13 as a parts allowance for one button and one sensor, before their PCB fabrication and assembly. The printable return and elevator add roughly a kilogram or more of solid-volume PETG; slicer infill, supports, guards and guides change the actual mass. Budget plastic by sliced mass and keep machine time separate. Rods, nuts, fasteners, the baseboard, mating harnesses, top spring contacts and module magnets need a separate quote. The mating harness purchase parts and final frame fastener lengths remain unselected. These are allowances, not a production price.
+
+The [S-06-03-N sample candidate](https://www.supermagnete.pl/eng/disc-magnets-neodymium/disc-magnet-6mm-3mm_S-06-03-N) specifies 6×3mm, ±0.1mm, axial N45 and Ni-Cu-Ni plating. The checked listing gives EUR 0.37 each in a ten-piece pack, including VAT, before shipping. Thirty samples cost EUR 11.10. Its steel pull-force listing does not establish retention between printed tiles. The sixteen bases alone need 192 magnets; Hub and module magnets are additional.
+
+Before final Hub routing, quote three assembly alternatives. R412-R415 can use one isolated four-resistor 10k/1% array while retaining all four nets; this removes three placements if the array, footprint and placement quote justify it. [Yageo's YC/TC data](https://www.yageogroup.com/component-documentation/download/specsheet/YC164-FR-071KL) provides the relevant family data; no array substitution is selected yet. Quote production debug access with Hub J2 PD_SERVICE and J4 SWD unpopulated, using a test fixture while retaining copper access. Finally, compare qualified direct side contacts with the 64 carrier boards and their attachment operations in a sixteen-tile kit. Do not count any of these savings yet. Keep the per-port enable pull-downs, precision trips, independent shutdown and transit fuses.
+
+The elevator vias now sit outside solder lands. The tile MCU ground via has moved out of its solder land; the localized 0.10mm ground fanout and 0.125mm clearance still need assembler acceptance. Include that requirement, stackup and stencil review in the fabrication quote.

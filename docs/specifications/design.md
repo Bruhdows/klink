@@ -19,7 +19,7 @@ Tiles are 80 × 80 × 20 mm. Each gets twelve 6 × 3 mm magnets: eight on the si
 
 Bases keep the same cardinal orientation. Tracks can rotate where they fit. Electronic modules need keying so they can't connect backwards. PCB dimensions are still provisional; see [interfaces](interfaces.md).
 
-The Hub takes two grid cells, about 160 × 80 mm and 60-80 mm tall, with six tile connections.
+The Hub takes two grid cells, 160 × 80 mm, with six tile connections. Its current enclosure is 28mm tall. That height remains provisional pending component, plug and cable fit tests.
 
 ## Modules
 
@@ -33,7 +33,7 @@ Servos remain candidates with unmeasured loads. The elevator prototype uses a do
 
 ## Software
 
-Tile firmware handles links, module ID, I/O, power switching, faults and RGB. Hub firmware handles discovery, routing limits, USB, storage and standalone programs.
+Buildable tile firmware now provides links, module ID, I/O, protected power control, faults and RGB. Hub firmware provides discovery, routing, HID/CDC USB, program storage and standalone rules. Hardware testing and automatic power/load admission remain unfinished. See the firmware README for the implemented limits.
 
 The plan is a TypeScript SDK and Klink Studio in the browser. Use WebHID for Studio and CDC for SDK/development access. The SDK should work without depending on one transport.
 

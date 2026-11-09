@@ -22,7 +22,7 @@ Install magnets with the fixed cardinal polarity in [interfaces](../../docs/spec
 
 Build and hand-cycle a short chain before all thirty links. The nominal idler stack is a recessed M3x40 cap screw, 2.5mm front spacer, 623-2Z bearing, 25mm rear spacer, frame, rear washer and nut. The spacers are intended to contact the inner race. Verify the purchased bearing, screw head, shaft/seat fit and end clearance; this is not a tested clamp stack.
 
-Secure the frame and return supports before adding marbles or power. The reference baseboard is 12mm thick; rod lengths include 8mm below it for a washer, nut and thread. Recalculate before cutting if the purchased board or hardware differs. Use the supplied FS90 horn on the gate; its engagement and slot alignment need a real sample.
+Secure the frame and return supports before adding marbles or power. The reference baseboard is 12mm thick; rod lengths include 8mm below it for a washer, nut and thread. Recalculate before cutting if the purchased board or hardware differs. Use the supplied FS90 horn on the gate; its engagement and slot alignment need a real sample. The [gate service-board preview](../../docs/images/gate-3d.png) shows its current five-part interface.
 
 ## Remaining integration work
 
