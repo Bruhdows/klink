@@ -2533,7 +2533,7 @@
 				(path "/d87f6403-94c7-4fd7-81df-d73c6ca215ef/778ffb0c-8721-4b73-a7d9-f174de37be85"
 					(reference "Q1")
 					(unit 1))))
-		(property "Footprint" "Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET"
+		(property "Footprint" "Klink:CSD19537Q3_TI"
 			(at 0 0 0)
 			(effects
 				(font

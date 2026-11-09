@@ -22,7 +22,7 @@ locator_clearance = 0.3;
 
 // PCB mounting
 pcb_post_diameter = 8;
-pcb_hole_diameter = 2.2;
+pcb_hole_diameter = pcb_screw_clearance;
 
 // Board body and mounting holes match the native tile PCB. Edge interfaces remain provisional.
 // PCB preview
@@ -168,12 +168,14 @@ module top_cutouts() {
 
 module pcb_holes() {
     for (x = [-pcb_mount_spacing, pcb_mount_spacing])
-        for (y = [-pcb_mount_spacing, pcb_mount_spacing])
+        for (y = [-pcb_mount_spacing, pcb_mount_spacing]) {
             translate([x, y, pcb_mount_height - 0.05])
-                cylinder(
-                    d = pcb_hole_diameter,
-                    h = tile_height - roof_thickness - pcb_mount_height - 0.2
-                );
+                cylinder(d=pcb_hole_diameter,h=6.6);
+            // Slide an M2 nut in from the open interior before fitting the PCB.
+            translate([x,y,12]) cylinder(d=pcb_nut_af/cos(30),h=pcb_nut_depth,$fn=6);
+            translate([x>0 ? x-7 : x,-pcb_nut_af/2+y,12])
+                cube([7,pcb_nut_af,pcb_nut_depth]);
+        }
 }
 
 module pcb_preview() {

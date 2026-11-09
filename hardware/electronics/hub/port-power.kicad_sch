@@ -1602,7 +1602,7 @@
 				(font
 					(size 1.27 1.27))
 				(justify left)))
-		(property "Footprint" "Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET"
+		(property "Footprint" "Klink:CSD19537Q3_TI"
 			(at -27.94 -2.54 0)
 			(effects
 				(font

@@ -1,0 +1,9 @@
+Comment,Designator,Footprint,LCSC Part #,MPN,Assembly status
+1uF 16V,C1,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H105K125AB,quote and rotation review required
+1uF 16V,C2,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H105K125AB,quote and rotation review required
+1nF 50V,C3,Capacitor_SMD:C_0805_2012Metric,,C2012C0G1H102J125AA,quote and rotation review required
+2.2k 1%,R1,Resistor_SMD:R_0805_2012Metric,,RC0805FR-072K2L,quote and rotation review required
+220 1% 0.25W,R2,Resistor_SMD:R_1206_3216Metric,,RC1206FR-07220RL,quote and rotation review required
+10k 1%,R3,Resistor_SMD:R_0805_2012Metric,C84376,RC0805FR-0710KL,quote and rotation review required
+1k 1%,R4,Resistor_SMD:R_0805_2012Metric,,RC0805FR-071KL,quote and rotation review required
+AP2112K-3.3TRG1,U1,Package_TO_SOT_SMD:SOT-23-5,C51118,AP2112K-3.3TRG1,quote and rotation review required

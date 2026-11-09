@@ -1,0 +1,4 @@
+Comment,Designator,Footprint,LCSC Part #,MPN,Assembly status
+4.7k 1%,R1,Resistor_SMD:R_0805_2012Metric,,RC0805FR-074K7L,quote and rotation review required
+1k 1%,R2,Resistor_SMD:R_0805_2012Metric,,RC0805FR-071KL,quote and rotation review required
+100nF 50V X7R,C1,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H104K125AE,quote and rotation review required

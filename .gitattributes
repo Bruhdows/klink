@@ -1,0 +1,4 @@
+# Review generated 3D geometry through CAD views and editable design sources.
+*.step binary
+*.stl binary
+*.FCStd binary

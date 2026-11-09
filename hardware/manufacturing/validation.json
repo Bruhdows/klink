@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-09",
+  "kicad_version": "10.0.8",
+  "boards": {
+    "tile": {
+      "pcb_sha256": "3d567ea680393fe5464042b43295e30aac7286a26117c4eb38f6da058be10d2c",
+      "project_sha256": "64adced66d85ed6f48c0df333d5c525f3cfadc59bd5022be500ae593c76f9cb6",
+      "custom_rules_sha256": "c094ec2614f45c435405fc48724a70ed098e7e2731c84f322eca5d2610a2a05c",
+      "erc_violations": 0,
+      "physical_drc_violations": 0,
+      "unconnected_items": 117,
+      "schematic_parity": {
+        "missing_footprint": 5
+      },
+      "fabrication_draft_exported": false
+    },
+    "hub": {
+      "pcb_sha256": "72a2744970e5769942a5d48c83ee260fe1e4d468b9241cebdb042314cff594a8",
+      "project_sha256": "8048d230c761d78286209e43f5164eb9488b502b416a08900a6739b588b94e5e",
+      "custom_rules_sha256": null,
+      "erc_violations": 0,
+      "physical_drc_violations": 0,
+      "unconnected_items": 407,
+      "schematic_parity": {},
+      "fabrication_draft_exported": false
+    },
+    "elevator": {
+      "pcb_sha256": "fbaeee36012441797239664a47aa2a7cdc03937b4db81fe3be7c6ccb1288c681",
+      "project_sha256": "c9f730f979631a20ee1460180782e4ebfe13f1b6c3dd5cadd90ca61e4b06454e",
+      "custom_rules_sha256": null,
+      "erc_violations": 0,
+      "physical_drc_violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": {},
+      "fabrication_draft_exported": true
+    },
+    "button": {
+      "pcb_sha256": "823197b42ea5dde0946904ee515bec47559ac5bccddcbe690a2b0a0609b6ce2d",
+      "project_sha256": "e7235010694b5d3b00e6aadc584717e48e5998da3bc1f0d68242e30432899d85",
+      "custom_rules_sha256": null,
+      "erc_violations": 0,
+      "physical_drc_violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": {},
+      "fabrication_draft_exported": true
+    },
+    "marble-sensor": {
+      "pcb_sha256": "dfb7ea761214c5f21390ea56999dc96e26028b28112a5fd429fad8e5a541502f",
+      "project_sha256": "918037e88e427a3f8cfec6eba8b7c9fd59ddd821d48aa5af940b05db64c6ed61",
+      "custom_rules_sha256": null,
+      "erc_violations": 0,
+      "physical_drc_violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": {},
+      "fabrication_draft_exported": true
+    },
+    "gate": {
+      "pcb_sha256": "b8dbaf8e4a757eaf1e4f1b80e6bb984aae9cdf84816fa53bc070504c0b23a8fa",
+      "project_sha256": "e16786deddbd6bb9d9e4bce436695918a763ed9da0f9462f207e528b71859939",
+      "custom_rules_sha256": null,
+      "erc_violations": 0,
+      "physical_drc_violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": {},
+      "fabrication_draft_exported": true
+    }
+  },
+  "manufacturing_status": "prototype fabrication drafts only; no main-board production release",
+  "hardware_tests_performed": false,
+  "remaining_missing_tile_footprints": [
+    "J3",
+    "J4",
+    "J5",
+    "J6",
+    "J7"
+  ],
+  "missing_declared_models": [
+    "tile U1 WQFN-28 4x4mm EP2.7x2.7mm",
+    "hub Y70 Abracon ASE 3.2x2.5mm"
+  ],
+  "firmware": {
+    "build_targets": [
+      "CH32X035G8U6",
+      "STM32F405RGT6",
+      "ATtiny404-SSN"
+    ],
+    "host_c_safety_tests": "passed with address/undefined-behavior sanitizers",
+    "python_client_tests": 3,
+    "run_on_hardware": false
+  }
+}

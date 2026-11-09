@@ -1,6 +1,7 @@
 // Keying/compression coupon only. Contact holes are provisional, not approved pogo seats.
 include <../common/tile_dimensions.scad>
 $fn = 48;
+part = "assembly"; // assembly, tile, module
 contact_pitch = 3.5;
 contact_hole_diameter = 1.6;
 contact_count = 8;
@@ -43,5 +44,6 @@ module module_coupon() {
     }
 }
 
-tile_coupon();
-translate([plate_width+layout_gap,0,0]) module_coupon();
+if(part=="tile") tile_coupon();
+else if(part=="module") module_coupon();
+else { tile_coupon(); translate([plate_width+layout_gap,0,0]) module_coupon(); }

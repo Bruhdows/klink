@@ -1,0 +1,14 @@
+Reference,Value,MPN,Footprint,Assembly,Quantity,Qty_for_two_prototypes,Datasheet,purchase_url,unit_price,currency,price_status,checked_date,lcsc_reference
+C1,1uF 16V,C2012X7R1H105K125AB,Capacitor_SMD:C_0805_2012Metric,PCB,1,2,,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C2,1uF 16V,C2012X7R1H105K125AB,Capacitor_SMD:C_0805_2012Metric,PCB,1,2,,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C3,1nF 50V,C2012C0G1H102J125AA,Capacitor_SMD:C_0805_2012Metric,PCB,1,2,,https://www.mouser.com/ProductDetail/TDK/C2012C0G1H102J125AA,0.1,USD,engineering allowance; NOT a verified supplier price,,
+D1,TSAL6200 (off-board),TSAL6200,,off-board,1,2,https://www.vishay.com/docs/81010/tsal6200.pdf,https://www.mouser.com/ProductDetail/Vishay/TSAL6200,0.45,USD,engineering allowance; NOT a verified supplier price,,
+J1,MODULE_SERVICE,M20-9990846,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,PCB,1,2,,https://www.mouser.com/ProductDetail/Harwin/M20-9990846,0.7,USD,engineering allowance; NOT a verified supplier price,,
+J2,IR_EMITTER,M20-9990246,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,PCB,1,2,,https://www.mouser.com/ProductDetail/Harwin/M20-9990246,0.7,USD,engineering allowance; NOT a verified supplier price,,
+J3,PHOTOTRANSISTOR_C_E,M20-9990246,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,PCB,1,2,,https://www.mouser.com/ProductDetail/Harwin/M20-9990246,0.7,USD,engineering allowance; NOT a verified supplier price,,
+Q1,TEFT4300 (off-board),TEFT4300,,off-board,1,2,https://www.vishay.com/docs/81549/teft4300.pdf,https://www.mouser.com/ProductDetail/Vishay/TEFT4300,0.55,USD,engineering allowance; NOT a verified supplier price,,
+R1,2.2k 1%,RC0805FR-072K2L,Resistor_SMD:R_0805_2012Metric,PCB,1,2,,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-072K2L,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R2,220 1% 0.25W,RC1206FR-07220RL,Resistor_SMD:R_1206_3216Metric,PCB,1,2,,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-07220RL,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R3,10k 1%,RC0805FR-0710KL,Resistor_SMD:R_0805_2012Metric,PCB,1,2,,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R4,1k 1%,RC0805FR-071KL,Resistor_SMD:R_0805_2012Metric,PCB,1,2,,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-071KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+U1,AP2112K-3.3TRG1,AP2112K-3.3TRG1,Package_TO_SOT_SMD:SOT-23-5,PCB,1,2,https://www.diodes.com/assets/Datasheets/AP2112.pdf,https://www.lcsc.com/product-detail/C51118.html,0.1848,USD,supplier reference listing; not a quote,2026-11-08,C51118

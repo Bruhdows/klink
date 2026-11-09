@@ -1,0 +1,43 @@
+Comment,Designator,Footprint,LCSC Part #,MPN,Assembly status
+10uF 50V X7R,C1,Capacitor_SMD:C_1206_3216Metric,,C3216X7R1H106K160AC,quote and rotation review required
+100nF 50V X7R,C2,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H104K125AE,quote and rotation review required
+1uF 16V,C3,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H105K125AB,quote and rotation review required
+22uF 25V X7R,C4,Capacitor_SMD:C_1210_3225Metric,,C1210C226K3RACTU,quote and rotation review required
+22uF 25V X7R,C5,Capacitor_SMD:C_1210_3225Metric,,C1210C226K3RACTU,quote and rotation review required
+100uF 25V,C6,Capacitor_SMD:CP_Elec_6.3x7.7,,EEH-ZC1E101XP,quote and rotation review required
+1uF 16V,C7,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H105K125AB,quote and rotation review required
+4.7uF 16V,C8,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1C475K125AB,quote and rotation review required
+100nF 50V X7R,C9,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H104K125AE,quote and rotation review required
+100nF 50V X7R,C10,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H104K125AE,quote and rotation review required
+22nF 50V,C11,Klink:C_TDK_C2012_Reflow,,C2012C0G1H223J125AA,quote and rotation review required
+100nF 50V X7R,C12,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H104K125AE,quote and rotation review required
+100nF 50V X7R,C13,Capacitor_SMD:C_0805_2012Metric,,C2012X7R1H104K125AE,quote and rotation review required
+10nF 16V,C14,Capacitor_SMD:C_0805_2012Metric,,CC0805KRX7R9BB103,quote and rotation review required
+10nF 16V,C15,Capacitor_SMD:C_0805_2012Metric,,CC0805KRX7R9BB103,quote and rotation review required
+SMBJ13A-E3/52,D1,Diode_SMD:D_SMB,,SMBJ13A-E3/52,quote and rotation review required
+"BAT54S,215",D2,Package_TO_SOT_SMD:SOT-23,,"BAT54S,215",quote and rotation review required
+33uH,L1,Klink:L_Bourns_SRP7050TA,,SRP7050TA-330M,quote and rotation review required
+22k 1%,R1,Resistor_SMD:R_0805_2012Metric,,RC0805FR-0722KL,quote and rotation review required
+100k 1%,R2,Resistor_SMD:R_0805_2012Metric,,RC0805FR-07100KL,quote and rotation review required
+10k 1%,R3,Resistor_SMD:R_0805_2012Metric,C84376,RC0805FR-0710KL,quote and rotation review required
+110k 0.1%,R4,Resistor_SMD:R_0805_2012Metric,,RT0805BRD07110KL,quote and rotation review required
+10k 0.1%,R5,Resistor_SMD:R_0805_2012Metric,C110775,RT0805BRD0710KL,quote and rotation review required
+23.2k 0.1%,R6,Resistor_SMD:R_0805_2012Metric,,RT0805BRD0723K2L,quote and rotation review required
+10k 0.1%,R7,Resistor_SMD:R_0805_2012Metric,C110775,RT0805BRD0710KL,quote and rotation review required
+2.87k 0.1%,R8,Resistor_SMD:R_0805_2012Metric,,RT0805BRD072K87L,quote and rotation review required
+10k 1%,R9,Resistor_SMD:R_0805_2012Metric,C84376,RC0805FR-0710KL,quote and rotation review required
+100k 1%,R10,Resistor_SMD:R_0805_2012Metric,,RC0805FR-07100KL,quote and rotation review required
+100k 1%,R11,Resistor_SMD:R_0805_2012Metric,,RC0805FR-07100KL,quote and rotation review required
+100k 1%,R12,Resistor_SMD:R_0805_2012Metric,,RC0805FR-07100KL,quote and rotation review required
+100k 1%,R13,Resistor_SMD:R_0805_2012Metric,,RC0805FR-07100KL,quote and rotation review required
+100k 1%,R14,Resistor_SMD:R_0805_2012Metric,,RC0805FR-07100KL,quote and rotation review required
+1k 1%,R15,Resistor_SMD:R_0805_2012Metric,,RC0805FR-071KL,quote and rotation review required
+150k 1%,R16,Resistor_SMD:R_0805_2012Metric,,RC0805FR-07150KL,quote and rotation review required
+22k 1%,R17,Resistor_SMD:R_0805_2012Metric,,RC0805FR-0722KL,quote and rotation review required
+10k 1%,R18,Resistor_SMD:R_0805_2012Metric,C84376,RC0805FR-0710KL,quote and rotation review required
+150 1% 0.25W,R19,Resistor_SMD:R_1206_3216Metric,,RC1206FR-07150RL,quote and rotation review required
+1k 1%,R20,Resistor_SMD:R_0805_2012Metric,,RC0805FR-071KL,quote and rotation review required
+LMR36510ADDAR,U1,Package_SO:TI_SO-PowerPAD-8,,LMR36510ADDAR,quote and rotation review required
+AP2112K-3.3TRG1,U2,Package_TO_SOT_SMD:SOT-23-5,C51118,AP2112K-3.3TRG1,quote and rotation review required
+DRV8876PWPR,U3,Klink:TI_PWP0016A_Mask3.3x3.3,,DRV8876PWPR,quote and rotation review required
+ATtiny404-SSN,U4,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,,ATTINY404-SSN,quote and rotation review required

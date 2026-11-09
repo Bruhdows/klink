@@ -1,0 +1,5 @@
+Reference,Value,MPN,Footprint,Assembly,Quantity,Qty_for_two_prototypes,Datasheet,purchase_url,unit_price,currency,price_status,checked_date
+J1,MODULE_SERVICE,M20-9990846,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,PCB,1,2,,https://www.mouser.com/ProductDetail/Harwin/M20-9990846,0.7,USD,engineering allowance; NOT a verified supplier price,
+R1,1k 1%,RC0805FR-071KL,Resistor_SMD:R_0805_2012Metric,PCB,1,2,,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-071KL,0.04,USD,engineering allowance; NOT a verified supplier price,
+R2,1k 1%,RC0805FR-071KL,Resistor_SMD:R_0805_2012Metric,PCB,1,2,,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-071KL,0.04,USD,engineering allowance; NOT a verified supplier price,
+SW1,430476085716,430476085716,Button_Switch_THT:SW_PUSH-12mm_Wuerth-430476085716,PCB,1,2,https://www.we-online.com/components/products/datasheet/430476085716.pdf,https://www.mouser.com/ProductDetail/Wurth-Elektronik/430476085716,1.2,USD,engineering allowance; NOT a verified supplier price,

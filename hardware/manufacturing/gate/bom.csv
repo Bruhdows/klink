@@ -1,0 +1,6 @@
+Reference,Value,MPN,Footprint,Quantity,purchase_url,unit_price,currency,price_status,checked_date
+J1,MODULE_SERVICE,M20-9990846,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,1,https://www.mouser.com/ProductDetail/Harwin/M20-9990846,0.7,USD,engineering allowance; NOT a verified supplier price,
+J2,FS90_SERVO,M20-9990346,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1,https://www.mouser.com/ProductDetail/Harwin/M20-9990346,0.7,USD,engineering allowance; NOT a verified supplier price,
+R1,4.7k 1%,RC0805FR-074K7L,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-074K7L,0.04,USD,engineering allowance; NOT a verified supplier price,
+R2,1k 1%,RC0805FR-071KL,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-071KL,0.04,USD,engineering allowance; NOT a verified supplier price,
+C1,100nF 50V X7R,C2012X7R1H104K125AE,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,

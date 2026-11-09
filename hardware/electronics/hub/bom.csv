@@ -1,351 +1,351 @@
-Reference,Value,MPN,Alternate,TCR,Footprint,Quantity
-C1,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C2,1uF 10V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C3,1uF 10V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C4,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-J1,USB4105-GF-A,USB4105-GF-A,,,Klink:USB_C_Receptacle_GCT_USB4105_RoundedGround,1
-J2,PD_SERVICE,TSW-108-07-G-S,,,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,1
-R1,470 1% 2W,RC2512FK-7W470RL,,,Resistor_SMD:R_2512_6332Metric,1
-R2,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R3,4.7k 1%,RC0805FR-074K7L,,,Resistor_SMD:R_0805_2012Metric,1
-R4,4.7k 1%,RC0805FR-074K7L,,,Resistor_SMD:R_0805_2012Metric,1
-R5,4.7k 1%,RC0805FR-074K7L,,,Resistor_SMD:R_0805_2012Metric,1
-R6,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R7,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-U1,STUSB4500QTR,STUSB4500QTR,,,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm,1
-C5,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C6,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C7,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C8,100nF 50V,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C9,10uF 50V X7R,C3216X7R1H106K160AC,,,Capacitor_SMD:C_1206_3216Metric,1
-C10,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C11,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C12,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C13,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C14,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C462,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-D8,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1
-Q1,CSD19537Q3,CSD19537Q3,,,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,1
-Q2,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1
-R8,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1
-R9,135k 0.1%,TNPW0805135KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R10,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R11,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R12,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R13,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R14,10.5k 0.1%,ERA6AEB1052V,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R15,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R16,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R17,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R18,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R19,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R20,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1
-R473,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-SW1,RESET,B3U-1000P,,,Button_Switch_SMD:SW_SPST_B3U-1000P,1
-TP1,HUB_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP2,INPUT_CURRENT,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP3,INPUT_OC_N,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP4,INPUT_FAULT_N,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-U2,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1
-U3,TPS70933DBVR,TPS70933DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1
-U4,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1
-U5,SN74LVC1G14DBVR,SN74LVC1G14DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1
-U6,SN74LVC1G11DBVR,SN74LVC1G11DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1
-U7,TPS3808G30DBVR,TPS3808G30DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1
-U79,SN74LVC1G97DBVR,SN74LVC1G97DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1
-TP10,PORT1_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP11,PORT2_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP12,PORT3_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP13,PORT4_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP14,PORT5_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP15,PORT6_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP20,PORT1_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP21,PORT2_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP22,PORT3_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP23,PORT4_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP24,PORT5_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP25,PORT6_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-C100,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C101,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C102,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C103,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1
-C104,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-D100,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1
-Q10,CSD19537Q3,CSD19537Q3,,,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,1
-Q11,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1
-R100,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1
-R101,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R102,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R103,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R104,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R105,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R106,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R107,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R108,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R109,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R110,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1
-U20,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1
-U21,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1
-C110,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C111,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C112,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C113,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1
-C114,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-D101,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1
-Q12,CSD19537Q3,CSD19537Q3,,,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,1
-Q13,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1
-R120,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1
-R121,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R122,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R123,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R124,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R125,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R126,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R127,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R128,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R129,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R130,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1
-U22,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1
-U23,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1
-C120,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C121,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C122,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C123,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1
-C124,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-D102,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1
-Q14,CSD19537Q3,CSD19537Q3,,,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,1
-Q15,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1
-R140,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1
-R141,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R142,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R143,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R144,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R145,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R146,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R147,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R148,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R149,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R150,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1
-U24,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1
-U25,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1
-C130,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C131,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C132,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C133,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1
-C134,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-D103,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1
-Q16,CSD19537Q3,CSD19537Q3,,,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,1
-Q17,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1
-R160,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1
-R161,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R162,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R163,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R164,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R165,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R166,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R167,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R168,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R169,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R170,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1
-U26,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1
-U27,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1
-C140,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C141,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C142,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C143,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1
-C144,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-D104,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1
-Q18,CSD19537Q3,CSD19537Q3,,,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,1
-Q19,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1
-R180,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1
-R181,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R182,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R183,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R184,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R185,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R186,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R187,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R188,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R189,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R190,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1
-U28,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1
-U29,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1
-C150,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C151,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C152,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C153,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1
-C154,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-D105,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1
-Q20,CSD19537Q3,CSD19537Q3,,,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,1
-Q21,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1
-R200,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1
-R201,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R202,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R203,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R204,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R205,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R206,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R207,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R208,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R209,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R210,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1
-U30,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1
-U31,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1
-C300,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C303,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C306,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C307,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C308,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C309,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C310,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C311,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C312,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C313,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-R302,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1
-R303,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1
-R304,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-TP30,FAULT_LATCHED,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP31,ARMED,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-U40,SN74HCS11PWR,SN74HCS11PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1
-U43,SN74HCS11PWR,SN74HCS11PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1
-U46,SN74LVC1G32DBVR,SN74LVC1G32DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1
-U47,SN74LVC1G08DBVR,SN74LVC1G08DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1
-U48,SN74LVC1G32DBVR,SN74LVC1G32DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1
-U49,SN74LVC1G04DBVR,SN74LVC1G04DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1
-U50,SN74LVC74APWR,SN74LVC74APWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1
-U51,SN74LVC2G17DBVR,SN74LVC2G17DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1
-U52,TPS3808G01DBVR,TPS3808G01DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1
-U53,SN74LVC2G17DBVR,SN74LVC2G17DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1
-C400,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C401,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C402,10uF 50V X7R,C3216X7R1H106K160AC,,,Capacitor_SMD:C_1206_3216Metric,1
-C403,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C404,1uF 16V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C405,22uF 25V X7R,C1210C226K3RACTU,,,Capacitor_SMD:C_1210_3225Metric,1
-C406,22uF 25V X7R,C1210C226K3RACTU,,,Capacitor_SMD:C_1210_3225Metric,1
-C407,1uF 16V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C408,10uF 16V X7R,C3216X7R1C106K160AC,,,Capacitor_SMD:C_1206_3216Metric,1
-L60,SRP7050TA-150M,SRP7050TA-150M,,,Klink:L_Bourns_SRP7050TA,1
-R400,40.2k 1%,RC0805FR-0740K2L,,,Resistor_SMD:R_0805_2012Metric,1
-R401,402k 1%,RC0805FR-07402KL,,,Resistor_SMD:R_0805_2012Metric,1
-R402,187k 0.1%,RT0805BRD07187KL,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R403,10k 0.1%,RT0805BRD0710KL,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R404,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1
-R405,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R406,100k 0.1%,RT0805BRD07100KL,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R407,24.9k 0.1%,RT0805BRD0724K9L,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1
-R408,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-U60,TPS26600PWPR,TPS26600PWPR,,,Klink:TI_PWP0016A_Mask3.3x3.3,1
-U61,LMR36520ADDAR,LMR36520ADDAR,,,Package_SO:TI_SO-PowerPAD-8,1
-U62,AP2112K-3.3TRG1,AP2112K-3.3TRG1,,,Package_TO_SOT_SMD:SOT-23-5,1
-C410,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C411,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C412,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C413,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C414,4.7uF 16V,C2012X7R1C475K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C415,2.2uF 16V X7R,C2012X7R1C225K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C416,2.2uF 16V X7R,C2012X7R1C225K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C417,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C418,1uF 16V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1
-C419,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C420,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C421,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-J4,SWD,TSW-106-07-G-S,,,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,1
-R411,33 1%,RC0805FR-0733RL,,,Resistor_SMD:R_0805_2012Metric,1
-R412,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R413,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R414,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R415,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R416,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1
-R417,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R418,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R419,1k 1%,RC0805FR-071KL,,,Resistor_SMD:R_0805_2012Metric,1
-R420,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-SW2,SW_Push,B3U-1000P,,,Button_Switch_SMD:SW_SPST_B3U-1000P,1
-SW3,SW_Push,B3U-1000P,,,Button_Switch_SMD:SW_SPST_B3U-1000P,1
-TP40,BOOT_UART_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP41,BOOT_UART_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP42,GND,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP43,HUB_5V,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP44,HUB_3V3,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-U70,STM32F405RGT6,STM32F405RGT6,,,Package_QFP:LQFP-64_10x10mm_P0.5mm,1
-U71,W25Q32JVSSIQ,W25Q32JVSSIQ,,,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,1
-U78,TPS3808G30DBVR,TPS3808G30DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1
-Y70,ASE-8.000MHZ-LC-T,ASE-8.000MHZ-LC-T,,,Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm,1
-C440,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C443,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-R440,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R441,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R442,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R443,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R444,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R445,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R446,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R447,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R448,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R449,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R450,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R451,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R452,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R453,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R454,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R455,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R456,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R457,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R458,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R459,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R460,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R461,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1
-R462,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R463,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-R480,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R481,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R482,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R483,1k 1%,RC0805FR-071KL,,,Resistor_SMD:R_0805_2012Metric,1
-R484,1k 1%,RC0805FR-071KL,,,Resistor_SMD:R_0805_2012Metric,1
-R485,1k 1%,RC0805FR-071KL,,,Resistor_SMD:R_0805_2012Metric,1
-TP50,UART1_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP51,UART1_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP52,UART2_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP53,UART2_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP54,UART3_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP55,UART3_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP56,UART4_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP57,UART4_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP58,UART5_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP59,UART5_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP60,UART6_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP61,UART6_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP62,DETECT1,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP63,DETECT2,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP64,DETECT3,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP65,DETECT4,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP66,DETECT5,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-TP67,DETECT6,,,,TestPoint:TestPoint_Pad_D2.0mm,1
-U80,SN74LVC244APWR,SN74LVC244APWR,,,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,1
-U83,SN74LVC244APWR,SN74LVC244APWR,,,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,1
-C450,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C451,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C452,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C453,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-Q70,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1
-R470,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1
-R471,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1
-R472,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1
-U74,TMUX1511PWR,TMUX1511PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1
-U75,TMUX1511PWR,TMUX1511PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1
-U76,TMUX1511PWR,TMUX1511PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1
-U77,TCA9535PWR,TCA9535PWR,,,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1
-C460,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-C461,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1
-J3,USB4105-GF-A,USB4105-GF-A,,,Klink:USB_C_Receptacle_GCT_USB4105_RoundedGround,1
-Q71,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1
-R490,5.1k 1%,RC0805FR-075K1L,,,Resistor_SMD:R_0805_2012Metric,1
-R491,5.1k 1%,RC0805FR-075K1L,,,Resistor_SMD:R_0805_2012Metric,1
-R492,22 1%,RC0805FR-0722RL,,,Resistor_SMD:R_0805_2012Metric,1
-R493,22 1%,RC0805FR-0722RL,,,Resistor_SMD:R_0805_2012Metric,1
-R494,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1
-R495,1M 1%,RC0805FR-071ML,,,Resistor_SMD:R_0805_2012Metric,1
-R496,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1
-U72,TS3USB30EDGSR,TS3USB30EDGSR,,,Package_SO:TSSOP-10_3x3mm_P0.5mm,1
-U73,USBLC6-2SC6,USBLC6-2SC6,,,Package_TO_SOT_SMD:SOT-23-6,1
+Reference,Value,MPN,Alternate,TCR,Footprint,Quantity,purchase_url,unit_price,currency,price_status,checked_date,lcsc_reference
+C1,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C2,1uF 10V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C3,1uF 10V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C4,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+J1,USB4105-GF-A,USB4105-GF-A,,,Klink:USB_C_Receptacle_GCT_USB4105_RoundedGround,1,https://www.mouser.com/ProductDetail/GCT/USB4105-GF-A,0.9,USD,engineering allowance; NOT a verified supplier price,,
+J2,PD_SERVICE,TSW-108-07-G-S,,,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,1,https://www.mouser.com/ProductDetail/Samtec/TSW-108-07-G-S,0.7,USD,engineering allowance; NOT a verified supplier price,,
+R1,470 1% 2W,RC2512FK-7W470RL,,,Resistor_SMD:R_2512_6332Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC2512FK-7W470RL,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R2,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R3,4.7k 1%,RC0805FR-074K7L,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-074K7L,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R4,4.7k 1%,RC0805FR-074K7L,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-074K7L,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R5,4.7k 1%,RC0805FR-074K7L,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-074K7L,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R6,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R7,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+U1,STUSB4500QTR,STUSB4500QTR,,,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm,1,https://www.mouser.com/ProductDetail/STMicroelectronics/STUSB4500QTR,3,USD,engineering allowance; NOT a verified supplier price,,
+C5,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C6,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C7,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C8,100nF 50V,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C9,10uF 50V X7R,C3216X7R1H106K160AC,,,Capacitor_SMD:C_1206_3216Metric,1,https://www.mouser.com/ProductDetail/TDK/C3216X7R1H106K160AC,0.35,USD,engineering allowance; NOT a verified supplier price,,
+C10,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C11,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C12,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C13,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C14,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C462,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+D8,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1,https://www.mouser.com/ProductDetail/Vishay/SMBJ22A-E3%2F52,0.35,USD,engineering allowance; NOT a verified supplier price,,
+Q1,CSD19537Q3,CSD19537Q3,,,Klink:CSD19537Q3_TI,1,https://www.mouser.com/ProductDetail/Texas-Instruments/CSD19537Q3,1.5,USD,engineering allowance; NOT a verified supplier price,,
+Q2,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1,https://www.mouser.com/ProductDetail/onsemi/BSS138LT1G,0.15,USD,engineering allowance; NOT a verified supplier price,,
+R8,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1,https://www.mouser.com/ProductDetail/Vishay/WSL2512R0100FEA,0.7,USD,engineering allowance; NOT a verified supplier price,,
+R9,135k 0.1%,TNPW0805135KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805135KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R10,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R11,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805172KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R12,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R13,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW08053K00BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R14,10.5k 0.1%,ERA6AEB1052V,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Panasonic/ERA6AEB1052V,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R15,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R16,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R17,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R18,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R19,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R20,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR0710KL,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R473,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+SW1,RESET,B3U-1000P,,,Button_Switch_SMD:SW_SPST_B3U-1000P,1,https://www.mouser.com/ProductDetail/Omron/B3U-1000P,0.7,USD,engineering allowance; NOT a verified supplier price,,
+TP1,HUB_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP2,INPUT_CURRENT,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP3,INPUT_OC_N,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP4,INPUT_FAULT_N,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+U2,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1,https://www.lcsc.com/product-detail/C2864391.html,3.0921,USD,supplier reference listing; not a quote,2026-11-08,C2864391
+U3,TPS70933DBVR,TPS70933DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1,https://www.mouser.com/ProductDetail/Texas-Instruments/TPS70933DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U4,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/INA301A1IDGKR,3.5,USD,engineering allowance; NOT a verified supplier price,,
+U5,SN74LVC1G14DBVR,SN74LVC1G14DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC1G14DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U6,SN74LVC1G11DBVR,SN74LVC1G11DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC1G11DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U7,TPS3808G30DBVR,TPS3808G30DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1,https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3808G30DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U79,SN74LVC1G97DBVR,SN74LVC1G97DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC1G97DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+TP10,PORT1_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP11,PORT2_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP12,PORT3_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP13,PORT4_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP14,PORT5_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP15,PORT6_20V,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP20,PORT1_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP21,PORT2_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP22,PORT3_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP23,PORT4_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP24,PORT5_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP25,PORT6_MON,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+C100,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C101,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C102,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C103,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1,https://www.mouser.com/ProductDetail/TDK/C2012C0G1H223J125AA,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C104,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+D100,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1,https://www.mouser.com/ProductDetail/Vishay/SMBJ22A-E3%2F52,0.35,USD,engineering allowance; NOT a verified supplier price,,
+Q10,CSD19537Q3,CSD19537Q3,,,Klink:CSD19537Q3_TI,1,https://www.mouser.com/ProductDetail/Texas-Instruments/CSD19537Q3,1.5,USD,engineering allowance; NOT a verified supplier price,,
+Q11,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1,https://www.mouser.com/ProductDetail/onsemi/BSS138LT1G,0.15,USD,engineering allowance; NOT a verified supplier price,,
+R100,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1,https://www.mouser.com/ProductDetail/Vishay/WSL2512R0100FEA,0.7,USD,engineering allowance; NOT a verified supplier price,,
+R101,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R102,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW08053K00BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R103,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R104,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R105,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805130KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R106,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R107,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805172KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R108,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R109,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R110,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR0710KL,0.1,USD,engineering allowance; NOT a verified supplier price,,
+U20,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1,https://www.lcsc.com/product-detail/C2864391.html,3.0921,USD,supplier reference listing; not a quote,2026-11-08,C2864391
+U21,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/INA301A1IDGKR,3.5,USD,engineering allowance; NOT a verified supplier price,,
+C110,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C111,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C112,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C113,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1,https://www.mouser.com/ProductDetail/TDK/C2012C0G1H223J125AA,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C114,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+D101,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1,https://www.mouser.com/ProductDetail/Vishay/SMBJ22A-E3%2F52,0.35,USD,engineering allowance; NOT a verified supplier price,,
+Q12,CSD19537Q3,CSD19537Q3,,,Klink:CSD19537Q3_TI,1,https://www.mouser.com/ProductDetail/Texas-Instruments/CSD19537Q3,1.5,USD,engineering allowance; NOT a verified supplier price,,
+Q13,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1,https://www.mouser.com/ProductDetail/onsemi/BSS138LT1G,0.15,USD,engineering allowance; NOT a verified supplier price,,
+R120,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1,https://www.mouser.com/ProductDetail/Vishay/WSL2512R0100FEA,0.7,USD,engineering allowance; NOT a verified supplier price,,
+R121,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R122,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW08053K00BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R123,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R124,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R125,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805130KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R126,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R127,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805172KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R128,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R129,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R130,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR0710KL,0.1,USD,engineering allowance; NOT a verified supplier price,,
+U22,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1,https://www.lcsc.com/product-detail/C2864391.html,3.0921,USD,supplier reference listing; not a quote,2026-11-08,C2864391
+U23,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/INA301A1IDGKR,3.5,USD,engineering allowance; NOT a verified supplier price,,
+C120,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C121,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C122,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C123,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1,https://www.mouser.com/ProductDetail/TDK/C2012C0G1H223J125AA,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C124,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+D102,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1,https://www.mouser.com/ProductDetail/Vishay/SMBJ22A-E3%2F52,0.35,USD,engineering allowance; NOT a verified supplier price,,
+Q14,CSD19537Q3,CSD19537Q3,,,Klink:CSD19537Q3_TI,1,https://www.mouser.com/ProductDetail/Texas-Instruments/CSD19537Q3,1.5,USD,engineering allowance; NOT a verified supplier price,,
+Q15,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1,https://www.mouser.com/ProductDetail/onsemi/BSS138LT1G,0.15,USD,engineering allowance; NOT a verified supplier price,,
+R140,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1,https://www.mouser.com/ProductDetail/Vishay/WSL2512R0100FEA,0.7,USD,engineering allowance; NOT a verified supplier price,,
+R141,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R142,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW08053K00BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R143,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R144,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R145,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805130KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R146,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R147,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805172KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R148,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R149,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R150,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR0710KL,0.1,USD,engineering allowance; NOT a verified supplier price,,
+U24,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1,https://www.lcsc.com/product-detail/C2864391.html,3.0921,USD,supplier reference listing; not a quote,2026-11-08,C2864391
+U25,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/INA301A1IDGKR,3.5,USD,engineering allowance; NOT a verified supplier price,,
+C130,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C131,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C132,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C133,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1,https://www.mouser.com/ProductDetail/TDK/C2012C0G1H223J125AA,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C134,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+D103,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1,https://www.mouser.com/ProductDetail/Vishay/SMBJ22A-E3%2F52,0.35,USD,engineering allowance; NOT a verified supplier price,,
+Q16,CSD19537Q3,CSD19537Q3,,,Klink:CSD19537Q3_TI,1,https://www.mouser.com/ProductDetail/Texas-Instruments/CSD19537Q3,1.5,USD,engineering allowance; NOT a verified supplier price,,
+Q17,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1,https://www.mouser.com/ProductDetail/onsemi/BSS138LT1G,0.15,USD,engineering allowance; NOT a verified supplier price,,
+R160,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1,https://www.mouser.com/ProductDetail/Vishay/WSL2512R0100FEA,0.7,USD,engineering allowance; NOT a verified supplier price,,
+R161,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R162,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW08053K00BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R163,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R164,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R165,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805130KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R166,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R167,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805172KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R168,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R169,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R170,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR0710KL,0.1,USD,engineering allowance; NOT a verified supplier price,,
+U26,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1,https://www.lcsc.com/product-detail/C2864391.html,3.0921,USD,supplier reference listing; not a quote,2026-11-08,C2864391
+U27,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/INA301A1IDGKR,3.5,USD,engineering allowance; NOT a verified supplier price,,
+C140,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C141,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C142,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C143,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1,https://www.mouser.com/ProductDetail/TDK/C2012C0G1H223J125AA,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C144,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+D104,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1,https://www.mouser.com/ProductDetail/Vishay/SMBJ22A-E3%2F52,0.35,USD,engineering allowance; NOT a verified supplier price,,
+Q18,CSD19537Q3,CSD19537Q3,,,Klink:CSD19537Q3_TI,1,https://www.mouser.com/ProductDetail/Texas-Instruments/CSD19537Q3,1.5,USD,engineering allowance; NOT a verified supplier price,,
+Q19,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1,https://www.mouser.com/ProductDetail/onsemi/BSS138LT1G,0.15,USD,engineering allowance; NOT a verified supplier price,,
+R180,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1,https://www.mouser.com/ProductDetail/Vishay/WSL2512R0100FEA,0.7,USD,engineering allowance; NOT a verified supplier price,,
+R181,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R182,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW08053K00BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R183,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R184,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R185,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805130KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R186,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R187,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805172KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R188,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R189,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R190,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR0710KL,0.1,USD,engineering allowance; NOT a verified supplier price,,
+U28,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1,https://www.lcsc.com/product-detail/C2864391.html,3.0921,USD,supplier reference listing; not a quote,2026-11-08,C2864391
+U29,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/INA301A1IDGKR,3.5,USD,engineering allowance; NOT a verified supplier price,,
+C150,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C151,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C152,1uF 50V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C153,22nF 50V C0G,C2012C0G1H223J125AA,,,Klink:C_TDK_C2012_Reflow,1,https://www.mouser.com/ProductDetail/TDK/C2012C0G1H223J125AA,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C154,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+D105,SMBJ22A-E3/52,SMBJ22A-E3/52,,,Diode_SMD:D_SMB,1,https://www.mouser.com/ProductDetail/Vishay/SMBJ22A-E3%2F52,0.35,USD,engineering allowance; NOT a verified supplier price,,
+Q20,CSD19537Q3,CSD19537Q3,,,Klink:CSD19537Q3_TI,1,https://www.mouser.com/ProductDetail/Texas-Instruments/CSD19537Q3,1.5,USD,engineering allowance; NOT a verified supplier price,,
+Q21,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1,https://www.mouser.com/ProductDetail/onsemi/BSS138LT1G,0.15,USD,engineering allowance; NOT a verified supplier price,,
+R200,10m 1% 1W,WSL2512R0100FEA,,,Klink:R_Vishay_WSL2512_10m,1,https://www.mouser.com/ProductDetail/Vishay/WSL2512R0100FEA,0.7,USD,engineering allowance; NOT a verified supplier price,,
+R201,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R202,3k 0.1%,TNPW08053K00BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW08053K00BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R203,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R204,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R205,130k 0.1%,TNPW0805130KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805130KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R206,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R207,172k 0.1%,TNPW0805172KBEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW0805172KBEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R208,10k 0.1%,TNPW080510K0BEEA,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Vishay/TNPW080510K0BEEA,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R209,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R210,10k 1% 0.25W,RC1206FR0710KL,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR0710KL,0.1,USD,engineering allowance; NOT a verified supplier price,,
+U30,TPS26630RGER,TPS26630RGER,TPS26630RGET,,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,1,https://www.lcsc.com/product-detail/C2864391.html,3.0921,USD,supplier reference listing; not a quote,2026-11-08,C2864391
+U31,INA301A1IDGKR,INA301A1IDGKR,,,Package_SO:VSSOP-8_3x3mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/INA301A1IDGKR,3.5,USD,engineering allowance; NOT a verified supplier price,,
+C300,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C303,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C306,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C307,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C308,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C309,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C310,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C311,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C312,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C313,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R302,22k 1%,RC0805FR-0722KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R303,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-07100KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R304,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+TP30,FAULT_LATCHED,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP31,ARMED,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+U40,SN74HCS11PWR,SN74HCS11PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74HCS11PWR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U43,SN74HCS11PWR,SN74HCS11PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74HCS11PWR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U46,SN74LVC1G32DBVR,SN74LVC1G32DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC1G32DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U47,SN74LVC1G08DBVR,SN74LVC1G08DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1,https://www.lcsc.com/product-detail/C7666.html,0.0489,USD,supplier reference listing; not a quote,2026-11-08,C7666
+U48,SN74LVC1G32DBVR,SN74LVC1G32DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC1G32DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U49,SN74LVC1G04DBVR,SN74LVC1G04DBVR,,,Package_TO_SOT_SMD:SOT-23-5,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC1G04DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U50,SN74LVC74APWR,SN74LVC74APWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC74APWR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U51,SN74LVC2G17DBVR,SN74LVC2G17DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC2G17DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U52,TPS3808G01DBVR,TPS3808G01DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1,https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3808G01DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U53,SN74LVC2G17DBVR,SN74LVC2G17DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1,https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LVC2G17DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+C400,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C401,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C402,10uF 50V X7R,C3216X7R1H106K160AC,,,Capacitor_SMD:C_1206_3216Metric,1,https://www.mouser.com/ProductDetail/TDK/C3216X7R1H106K160AC,0.35,USD,engineering allowance; NOT a verified supplier price,,
+C403,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C404,1uF 16V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C405,22uF 25V X7R,C1210C226K3RACTU,,,Capacitor_SMD:C_1210_3225Metric,1,https://www.mouser.com/ProductDetail/KEMET/C1210C226K3RACTU,0.35,USD,engineering allowance; NOT a verified supplier price,,
+C406,22uF 25V X7R,C1210C226K3RACTU,,,Capacitor_SMD:C_1210_3225Metric,1,https://www.mouser.com/ProductDetail/KEMET/C1210C226K3RACTU,0.35,USD,engineering allowance; NOT a verified supplier price,,
+C407,1uF 16V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C408,10uF 16V X7R,C3216X7R1C106K160AC,,,Capacitor_SMD:C_1206_3216Metric,1,https://www.mouser.com/ProductDetail/TDK/C3216X7R1C106K160AC,0.35,USD,engineering allowance; NOT a verified supplier price,,
+L60,SRP7050TA-150M,SRP7050TA-150M,,,Klink:L_Bourns_SRP7050TA,1,https://www.mouser.com/ProductDetail/Bourns/SRP7050TA-150M,1.1,USD,engineering allowance; NOT a verified supplier price,,
+R400,40.2k 1%,RC0805FR-0740K2L,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0740K2L,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R401,402k 1%,RC0805FR-07402KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-07402KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R402,187k 0.1%,RT0805BRD07187KL,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RT0805BRD07187KL,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R403,10k 0.1%,RT0805BRD0710KL,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C110775.html,0.0433,USD,supplier reference listing; not a quote,2026-11-08,C110775
+R404,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-07100KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R405,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R406,100k 0.1%,RT0805BRD07100KL,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RT0805BRD07100KL,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R407,24.9k 0.1%,RT0805BRD0724K9L,,25ppm/K,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RT0805BRD0724K9L,0.3,USD,engineering allowance; NOT a verified supplier price,,
+R408,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+U60,TPS26600PWPR,TPS26600PWPR,,,Klink:TI_PWP0016A_Mask3.3x3.3,1,https://www.lcsc.com/product-detail/C544399.html,1.0992,USD,supplier reference listing; not a quote,2026-11-08,C544399
+U61,LMR36520ADDAR,LMR36520ADDAR,,,Package_SO:TI_SO-PowerPAD-8,1,https://www.lcsc.com/product-detail/C2879422.html,1.0022,USD,supplier reference listing; not a quote,2026-11-08,C2879422
+U62,AP2112K-3.3TRG1,AP2112K-3.3TRG1,,,Package_TO_SOT_SMD:SOT-23-5,1,https://www.lcsc.com/product-detail/C51118.html,0.1848,USD,supplier reference listing; not a quote,2026-11-08,C51118
+C410,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C411,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C412,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C413,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C414,4.7uF 16V,C2012X7R1C475K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1C475K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C415,2.2uF 16V X7R,C2012X7R1C225K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1C225K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C416,2.2uF 16V X7R,C2012X7R1C225K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1C225K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C417,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C418,1uF 16V,C2012X7R1H105K125AB,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H105K125AB,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C419,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C420,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C421,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+J4,SWD,TSW-106-07-G-S,,,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,1,https://www.mouser.com/ProductDetail/Samtec/TSW-106-07-G-S,0.7,USD,engineering allowance; NOT a verified supplier price,,
+R411,33 1%,RC0805FR-0733RL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0733RL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R412,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R413,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R414,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R415,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R416,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-07100KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R417,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R418,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R419,1k 1%,RC0805FR-071KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-071KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R420,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+SW2,SW_Push,B3U-1000P,,,Button_Switch_SMD:SW_SPST_B3U-1000P,1,https://www.mouser.com/ProductDetail/Omron/B3U-1000P,0.7,USD,engineering allowance; NOT a verified supplier price,,
+SW3,SW_Push,B3U-1000P,,,Button_Switch_SMD:SW_SPST_B3U-1000P,1,https://www.mouser.com/ProductDetail/Omron/B3U-1000P,0.7,USD,engineering allowance; NOT a verified supplier price,,
+TP40,BOOT_UART_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP41,BOOT_UART_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP42,GND,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP43,HUB_5V,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP44,HUB_3V3,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+U70,STM32F405RGT6,STM32F405RGT6,,,Package_QFP:LQFP-64_10x10mm_P0.5mm,1,https://www.mouser.com/ProductDetail/STMicroelectronics/STM32F405RGT6,7,USD,engineering allowance; NOT a verified supplier price,,
+U71,W25Q32JVSSIQ,W25Q32JVSSIQ,,,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,1,https://www.mouser.com/ProductDetail/Winbond/W25Q32JVSSIQ,0.8,USD,engineering allowance; NOT a verified supplier price,,
+U78,TPS3808G30DBVR,TPS3808G30DBVR,,,Package_TO_SOT_SMD:SOT-23-6,1,https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3808G30DBVR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+Y70,ASE-8.000MHZ-LC-T,ASE-8.000MHZ-LC-T,,,Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm,1,https://www.mouser.com/ProductDetail/Abracon/ASE-8.000MHZ-LC-T,1.5,USD,engineering allowance; NOT a verified supplier price,,
+C440,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C443,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R440,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R441,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R442,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R443,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R444,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R445,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R446,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R447,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R448,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R449,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R450,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R451,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R452,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R453,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R454,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R455,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R456,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R457,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R458,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R459,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R460,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R461,2.2k 1% 0.25W,RC1206FR-072K2L,,,Resistor_SMD:R_1206_3216Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC1206FR-072K2L,0.1,USD,engineering allowance; NOT a verified supplier price,,
+R462,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R463,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R480,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R481,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R482,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R483,1k 1%,RC0805FR-071KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-071KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R484,1k 1%,RC0805FR-071KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-071KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R485,1k 1%,RC0805FR-071KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-071KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+TP50,UART1_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP51,UART1_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP52,UART2_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP53,UART2_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP54,UART3_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP55,UART3_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP56,UART4_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP57,UART4_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP58,UART5_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP59,UART5_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP60,UART6_TX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP61,UART6_RX,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP62,DETECT1,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP63,DETECT2,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP64,DETECT3,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP65,DETECT4,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP66,DETECT5,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+TP67,DETECT6,,,,TestPoint:TestPoint_Pad_D2.0mm,1,,,,,,
+U80,SN74LVC244APWR,SN74LVC244APWR,,,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,1,https://www.lcsc.com/product-detail/C7668.html,0.3026,USD,supplier reference listing; not a quote,2026-11-08,C7668
+U83,SN74LVC244APWR,SN74LVC244APWR,,,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,1,https://www.lcsc.com/product-detail/C7668.html,0.3026,USD,supplier reference listing; not a quote,2026-11-08,C7668
+C450,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C451,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C452,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C453,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+Q70,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1,https://www.mouser.com/ProductDetail/onsemi/BSS138LT1G,0.15,USD,engineering allowance; NOT a verified supplier price,,
+R470,10k 1%,RC0805FR-0710KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.lcsc.com/product-detail/C84376.html,0.0049,USD,supplier reference listing; not a quote,2026-11-08,C84376
+R471,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-07100KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R472,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-07100KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+U74,TMUX1511PWR,TMUX1511PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.lcsc.com/product-detail/C2866750.html,0.3304,USD,supplier reference listing; not a quote,2026-11-08,C2866750
+U75,TMUX1511PWR,TMUX1511PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.lcsc.com/product-detail/C2866750.html,0.3304,USD,supplier reference listing; not a quote,2026-11-08,C2866750
+U76,TMUX1511PWR,TMUX1511PWR,,,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.lcsc.com/product-detail/C2866750.html,0.3304,USD,supplier reference listing; not a quote,2026-11-08,C2866750
+U77,TCA9535PWR,TCA9535PWR,,,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/TCA9535PWR,1,USD,engineering allowance; NOT a verified supplier price,,
+C460,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+C461,100nF 50V X7R,C2012X7R1H104K125AE,,,Capacitor_SMD:C_0805_2012Metric,1,https://www.mouser.com/ProductDetail/TDK/C2012X7R1H104K125AE,0.1,USD,engineering allowance; NOT a verified supplier price,,
+J3,USB4105-GF-A,USB4105-GF-A,,,Klink:USB_C_Receptacle_GCT_USB4105_RoundedGround,1,https://www.mouser.com/ProductDetail/GCT/USB4105-GF-A,0.9,USD,engineering allowance; NOT a verified supplier price,,
+Q71,BSS138LT1G,BSS138LT1G,,,Package_TO_SOT_SMD:SOT-23,1,https://www.mouser.com/ProductDetail/onsemi/BSS138LT1G,0.15,USD,engineering allowance; NOT a verified supplier price,,
+R490,5.1k 1%,RC0805FR-075K1L,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-075K1L,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R491,5.1k 1%,RC0805FR-075K1L,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-075K1L,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R492,22 1%,RC0805FR-0722RL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722RL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R493,22 1%,RC0805FR-0722RL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0722RL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R494,100k 1%,RC0805FR-07100KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-07100KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R495,1M 1%,RC0805FR-071ML,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-071ML,0.04,USD,engineering allowance; NOT a verified supplier price,,
+R496,47k 1%,RC0805FR-0747KL,,,Resistor_SMD:R_0805_2012Metric,1,https://www.mouser.com/ProductDetail/Yageo/RC0805FR-0747KL,0.04,USD,engineering allowance; NOT a verified supplier price,,
+U72,TS3USB30EDGSR,TS3USB30EDGSR,,,Package_SO:TSSOP-10_3x3mm_P0.5mm,1,https://www.mouser.com/ProductDetail/Texas-Instruments/TS3USB30EDGSR,0.7,USD,engineering allowance; NOT a verified supplier price,,
+U73,USBLC6-2SC6,USBLC6-2SC6,,,Package_TO_SOT_SMD:SOT-23-6,1,https://www.mouser.com/ProductDetail/STMicroelectronics/USBLC6-2SC6,0.7,USD,engineering allowance; NOT a verified supplier price,,

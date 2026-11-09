@@ -3,6 +3,7 @@ include <../common/tile_dimensions.scad>
 $fn = 48;
 part = "assembly";
 show_references = true;
+print_orientation = false;
 chain_pitch = 24;
 sprocket_pins = 6;
 straight_links = 12;
@@ -20,6 +21,8 @@ rail_width = 2.4;
 rail_height = 5;
 frame_height = 394;
 frame_split = 200;
+base_thickness = 4;
+magnet_pocket_depth = 3.2;
 pcb_top = 90;
 pcb_thickness = 1.6;
 pcb_y = 15;
@@ -30,15 +33,22 @@ motor_face_y = 7;
 motor_shaft_length = 9;
 motor_shaft_diameter = 3;
 motor_clearance = 0.2;
+hinge_nut_height = 1.6; // Test hardware requirement, not a measured sample.
+drive_disc_y = 6.8;
 track_marble_height = 13.5;
 exit_marble_height = track_marble_height + 17 * tile_height;
 release_height = upper_axis + pitch_radius*cos(30) + carrier_offset;
 exit_rail_top = release_height - sqrt(8*8-pow(rail_spacing-rail_width/2,2));
+// Vishay 81147 rev 1.0, drawing 6.550-5040.01-4 issue 2.
+index_y = chain_y - 6.75;
+sensor_base_z = lower_axis + 14.8 + 10.8 - 2.6;
 
 assert(sprocket_pins == 6);
 assert(spoon_half_width + 0.5 < rail_spacing - rail_width/2);
 assert(motor_face_y + motor_length + 3 < tile_size/2-2);
 assert(pcb_top - pcb_thickness > lower_axis + motor_height/2 + 10);
+assert(drive_disc_y - (4 + hinge_nut_height) >= 1);
+assert(base_thickness - magnet_pocket_depth >= 0.8-0.001);
 
 module y_cylinder(d, h) { rotate([-90,0,0]) cylinder(d=d,h=h); }
 module bolt_y(x,z,d=3.2) { translate([x,24,z]) y_cylinder(d,18); }
@@ -84,9 +94,10 @@ module carrier() {
 module sprocket(idler=false) {
     difference() {
         union() {
-            translate([0,6,0]) y_cylinder(51,4);
-            translate([0,2.5,0]) y_cylinder(30,1.5);
-            translate([0,2.5,0]) y_cylinder(14,idler ? 11.5 : 10.2);
+            translate([0,drive_disc_y,0]) y_cylinder(51,4);
+            // Move the drive index disc forward so the sensor's rear arm clears the wheel.
+            if(!idler) translate([0,-7.5,0]) y_cylinder(30,1.5);
+            translate([0,idler ? 2.5 : -7.5,0]) y_cylinder(14,idler ? 11.5 : 20.2);
         }
         for (a=[0:360/sprocket_pins:359]) rotate([0,a,0]) {
             translate([pitch_radius,5,0]) y_cylinder(2+2*pin_clearance+0.4,6);
@@ -102,8 +113,9 @@ module sprocket(idler=false) {
             translate([0,11,0]) rotate([0,90,0]) cylinder(d=2.5,h=9);
         }
         // Six optical edges per revolution for the external TCST2103 index sensor.
-        for (a=[0:60:359]) rotate([0,a+30,0])
-            translate([9,2,-1.5]) cube([5,9,3]);
+        // Open the index rim. A closed outer rim cannot interrupt a slot sensor.
+        if(!idler) for (a=[0:60:359]) rotate([0,a+30,0])
+            translate([9,-7.6,-1.5]) cube([7,1.7,3]);
     }
 }
 
@@ -136,12 +148,15 @@ module motor_strap() {
 
 pcb_holes = [[-27,34],[27,34],[-14,-4],[14,-4]];
 module pcb_supports() {
-    for (xy=pcb_holes) {
-        translate([xy[0]-3,xy[1]-3,pcb_top-pcb_thickness-8]) cube([6,37-xy[1],3]);
-        difference() {
+    for (xy=pcb_holes) difference() {
+        union() {
+            translate([xy[0]-3,xy[1]-3,pcb_top-pcb_thickness-8]) cube([6,37-xy[1],3]);
             translate([xy[0],xy[1],pcb_top-pcb_thickness-5]) cylinder(d=6,h=5);
-            translate([xy[0],xy[1],pcb_top-pcb_thickness-5.1]) cylinder(d=2.2,h=5.3);
         }
+        translate([xy[0],xy[1],pcb_top-pcb_thickness-8.1])
+            cylinder(d=pcb_screw_clearance,h=8.3);
+        translate([xy[0],xy[1],pcb_top-pcb_thickness-8.1])
+            cylinder(d=pcb_nut_af/cos(30),h=pcb_nut_depth+.1,$fn=6);
     }
 }
 module back_frame(z0,z1) {
@@ -157,6 +172,10 @@ module back_frame(z0,z1) {
         for (x=[-57,57]) for (z=[frame_split-6,frame_split+6]) bolt_y(x,z);
         hull() for (z=[upper_axis-3,upper_axis+3]) bolt_y(0,z);
         for(x=[-57.5,-67.5]) bolt_y(x,354);
+        for(x=[-5,5]) bolt_y(x,sensor_base_z+2);
+        // Two 2.5mm cable ties retain the motor/sensor looms outside the access window.
+        for(x=[-18,-12]) translate([x-1.6,24,73.1]) cube([3.2,15,1.8]);
+        for(x=[12,18]) translate([x-1.6,24,107.1]) cube([3.2,15,1.8]);
         for(x=[-57,57]) for(z=x>0 ? [lower_axis,180,220,upper_axis] : [lower_axis,upper_axis]) bolt_y(x,z);
         for(z=[30,190,210,370]) for(x=[-61,53])
             translate([x,28,z]) rotate([0,90,0]) cylinder(d=2.5,h=9);
@@ -165,13 +184,13 @@ module back_frame(z0,z1) {
 module lower_frame() {
     union() {
         difference() {
-            translate([-tile_size,-tile_size/2,0]) cube([2*tile_size,tile_size,3]);
+            translate([-tile_size,-tile_size/2,0]) cube([2*tile_size,tile_size,base_thickness]);
             for (cx=[-40,40]) for (x=[-mount_spacing,mount_spacing])
                 for (y=[-mount_spacing,mount_spacing]) translate([cx+x,y,-0.1])
-                    cylinder(d=6.25,h=2.8);
-            translate([-53,chain_y-5,1.8]) cube([106,10,1.3]);
+                    cylinder(d=6.25,h=magnet_pocket_depth+0.1);
+            translate([-53,chain_y-5,1.8]) cube([106,10,base_thickness-1.8+0.1]);
             // Keep a wiring opening at the first cell's unresolved module interface.
-            translate([-55,-8,-0.1]) cube([30,16,3.2]);
+            translate([-55,-8,-0.1]) cube([30,16,base_thickness+0.2]);
         }
         back_frame(0,frame_split);
         motor_saddle();
@@ -208,8 +227,12 @@ module pawl_mount() {
 }
 
 module rail(a,b) {
-    hull() for (q=[a,b]) translate([q[0],q[1]-rail_width/2,q[2]-rail_height])
-        cube([0.1,rail_width,rail_height]);
+    intersection() {
+        hull() for (q=[a,b]) translate([q[0],q[1]-rail_width/2,q[2]-rail_height])
+            cube([0.1,rail_width,rail_height]);
+        // End exactly at the interface plane; avoid the hull's 0.1mm overhang.
+        translate([min(a[0],b[0]),-50,-50]) cube([abs(b[0]-a[0]),100,500]);
+    }
 }
 module feed_fork() {
     union() {
@@ -265,6 +288,8 @@ module guard(z0,z1) {
         }
         translate([30,-25,3]) cube([36,52,22]);
         translate([-66,-25,344]) cube([38,52,40]);
+        // Clearance for the fixed sensor flange, its screws and the removable bracket.
+        translate([-8.5,-28,sensor_base_z-7]) cube([17,8,14]);
         for(z=[30,190,210,370]) for(x=[-63,59])
             translate([x,28,z]) rotate([0,90,0]) cylinder(d=3.2,h=5);
     }
@@ -298,6 +323,45 @@ module pcb_reference() {
         }
 }
 
+module index_sensor_bracket() {
+    difference() {
+        union() {
+            translate([-8,index_y-12.4,sensor_base_z]) cube([16,31-index_y+12.4,3]);
+            translate([-8,28,sensor_base_z-4]) cube([16,3,10]);
+            for(x=[-8,6]) translate([x,1,sensor_base_z-4]) cube([2,29,4.1]);
+        }
+        for(y=[index_y-9.5,index_y+9.5])
+            translate([0,y,sensor_base_z-0.1]) cylinder(d=3.3,h=3.2);
+        // Four leads exit outward from the flange; leave solder and wire access.
+        translate([-3,index_y-5.6,sensor_base_z-0.1]) cube([6,11.2,3.2]);
+        for(x=[-5,5]) translate([x,27,sensor_base_z+2]) y_cylinder(3.2,5);
+    }
+}
+module index_sensor_reference() {
+    // Conservative nominal package envelope, not a supplier STEP or a fit qualification.
+    difference() {
+        union() {
+            translate([-3.15,index_y-12.25,sensor_base_z-3.1]) cube([6.3,24.5,3.1]);
+            for(y=[index_y-5.95,index_y+1.55])
+                translate([-3.15,y,sensor_base_z-10.8]) cube([6.3,4.4,7.7]);
+        }
+        for(y=[index_y-9.5,index_y+9.5])
+            translate([0,y,sensor_base_z-3.2]) cylinder(d=3.3,h=3.3);
+    }
+}
+module elevator_assembly() {
+    lower_frame(); upper_frame(); motor_strap(); pawl(); index_sensor_bracket();
+    for(x=[-57,57]) translate([x,0,0]) splice();
+    translate([0,chain_y,lower_axis]) sprocket();
+    translate([0,chain_y,upper_axis]) sprocket(true);
+    // Recessed M3x40 head, front spacer, 623-2Z and rear spacer clamp the inner race.
+    // Nominal axial stack only; verify the purchased bearing and printed fit.
+    translate([0,-0.5,upper_axis]) axle_spacer(2.5);
+    translate([0,6,upper_axis]) axle_spacer(25);
+    chain(); exit_fork(); marble_guides();
+}
+
+module selected_part() {
 if(part=="link") link_body();
 else if(part=="carrier") carrier();
 else if(part=="drive") sprocket();
@@ -307,6 +371,24 @@ else if(part=="spacer_rear") axle_spacer(25);
 else if(part=="splice") splice();
 else if(part=="pawl") pawl();
 else if(part=="strap") motor_strap();
+else if(part=="sensor_bracket") index_sensor_bracket();
+else if(part=="sensor_collision") intersection() {
+    // Exclude the intended zero-thickness flange/bracket support contact.
+    translate([0,0,-0.01]) index_sensor_reference();
+    union() {
+        // Continuous rotational envelope contains the wheel at every angle.
+        translate([0,chain_y,lower_axis]) {
+            translate([0,drive_disc_y,0]) y_cylinder(51,4);
+            translate([0,-7.5,0]) y_cylinder(30,1.5);
+            translate([0,-7.5,0]) y_cylinder(14,20.2);
+        }
+        chain(); motor_reference(); pcb_reference(); index_sensor_bracket();
+    }
+}
+else if(part=="sensor_guard_collision") intersection() {
+    union() { index_sensor_reference(); index_sensor_bracket(); }
+    guard(0,frame_split);
+}
 else if(part=="lower_frame") lower_frame();
 else if(part=="upper_frame") upper_frame();
 else if(part=="feed") feed_fork();
@@ -316,6 +398,22 @@ else if(part=="guard_upper") guard(frame_split,frame_height);
 else if(part=="guides_lower") intersection() { marble_guides(); translate([-65,-25,0]) cube([130,65,frame_split]); }
 else if(part=="guides_upper") intersection() { marble_guides(); translate([-65,-25,frame_split]) cube([130,65,frame_height-frame_split]); }
 else if(part=="pcb_collision") intersection() { chain(); pcb_reference(); }
+else if(part=="base_chain_collision")
+    union() {
+        // Lower half-turn only. The upper half of this wheel is not a chain path.
+        for(a=concat([0:5:30],[210:5:355])) intersection() {
+            translate([0,chain_y,lower_axis]) rotate([0,-a,0])
+                translate([pitch_radius*cos(30),0,-chain_pitch/2]) carrier();
+            lower_frame();
+        }
+        // Conservative swept envelopes for both straight legs, including every carrier height.
+        for(side=[-1,1]) intersection() {
+            hull() for(z=[lower_axis,upper_axis])
+                translate([side*pitch_radius,chain_y,z])
+                    rotate([0,side>0 ? 0 : 180,0]) carrier();
+            lower_frame();
+        }
+    }
 else if(part=="feed_collision" || part=="exit_collision")
     for(a=[0:5:355]) intersection() {
         translate([0,chain_y,part=="feed_collision" ? lower_axis : upper_axis])
@@ -323,16 +421,27 @@ else if(part=="feed_collision" || part=="exit_collision")
         if(part=="feed_collision") feed_fork(); else exit_fork();
     }
 else {
-    lower_frame(); upper_frame(); motor_strap(); pawl();
-    for(x=[-57,57]) translate([x,0,0]) splice();
-    translate([0,chain_y,lower_axis]) sprocket();
-    translate([0,chain_y,upper_axis]) sprocket(true);
-    chain(); exit_fork(); marble_guides();
+    elevator_assembly();
     if ($preview) {
         color([0.5,0.5,0.5,0.2]) guard(0,frame_height);
         if(show_references) {
             color("gray") motor_reference();
             color("green") pcb_reference();
+            color("black") index_sensor_reference();
         }
     }
 }
+}
+if(print_orientation) {
+    if(part=="link") translate([0,0,4]) rotate([90,0,0]) selected_part();
+    else if(part=="carrier") translate([0,0,4.2]) rotate([90,0,0]) selected_part();
+    else if(part=="drive") translate([0,0,7.5]) rotate([90,0,0]) selected_part();
+    else if(part=="idler") translate([0,0,-2.5]) rotate([90,0,0]) selected_part();
+    else if(part=="spacer_front" || part=="spacer_rear") rotate([90,0,0]) selected_part();
+    else if(part=="splice") translate([0,0,-34]) rotate([90,0,0]) selected_part();
+    else if(part=="pawl") translate([0,0,-2]) rotate([90,0,0]) selected_part();
+    else if(part=="strap") translate([0,0,lower_axis+9.2]) rotate([180,0,0]) selected_part();
+    else if(part=="sensor_bracket") translate([-(sensor_base_z-4),0,8]) rotate([0,90,0]) selected_part();
+    else if(part=="upper_frame") translate([0,-frame_split,34]) rotate([-90,0,0]) selected_part();
+    else selected_part();
+} else selected_part();

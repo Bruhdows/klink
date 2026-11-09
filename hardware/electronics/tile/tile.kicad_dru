@@ -1,0 +1,7 @@
+(version 1)
+# Only the low-current MCU exposed-pad escape. Board-wide rules are unchanged.
+(rule "MCU ground dogbone"
+ (layer "F.Cu")
+ (condition "A.Type == 'Track' && A.NetName == 'GND' && A.Line_Width < 0.2mm && A.intersectsArea('MCU ground fanout')")
+ (constraint track_width (min 0.1mm) (max 0.1mm))
+ (constraint clearance (min 0.125mm)))
